@@ -1,0 +1,54 @@
+--- a/android/android-emu-base/android/utils/string.h
++++ b/android/android-emu-base/android/utils/string.h
+@@ -16,14 +16,22 @@
+ 
+ #include <stdbool.h>
+ #include <stddef.h>
+-#if defined(__APPLE__) || defined(__FreeBSD__)
+ #include <string.h>
++
++#if defined(__APPLE__) || defined(__FreeBSD__)
++#define AEMU_HAS_STRLCPY 1
++#elif defined(__GLIBC_PREREQ)
++// glibc 2.38 added strlcpy to the miscellaneous API.
++// https://sourceware.org/bugzilla/show_bug.cgi?id=178
++#if __GLIBC_PREREQ(2, 38) && defined(__USE_MISC)
++#define AEMU_HAS_STRLCPY 1
++#endif
+ #endif
+ 
+ ANDROID_BEGIN_HEADER
+ 
+-#if !defined(__APPLE__) && !defined(__FreeBSD__)
+-size_t strlcpy(char* dst, const char * src, size_t size);
++#ifndef AEMU_HAS_STRLCPY
++size_t strlcpy(char* dst, const char* src, size_t size);
+ #endif
+ 
+ /* returns true if |string| ends with |suffix| */
+--- a/android/android-emu-base/android/utils/string.cpp
++++ b/android/android-emu-base/android/utils/string.cpp
+@@ -17,20 +17,11 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
+-#if defined(__APPLE__) || defined(__FreeBSD__)
+-
+-// already defined in C library
+-
+-#else // __linux__ && _WIN32
+-
+-// NOTE: linux has this defined in libbsd if we want to switch to
+-// that some day
+-
+-size_t strlcpy(char* dst, const char * src, size_t size)
+-{
++#ifndef AEMU_HAS_STRLCPY
++size_t strlcpy(char* dst, const char* src, size_t size) {
+     size_t srcLen = strlen(src);
+     if (size > 0) {
+-        size_t copyLen = std::min(srcLen, size-1);
++        size_t copyLen = std::min(srcLen, size - 1);
+         memcpy(dst, src, copyLen);
+         dst[copyLen] = 0;
+     }

@@ -1,0 +1,6 @@
+#!/bin/busybox sh
+/bin/busybox mount -t proc proc /proc
+/bin/busybox mount -t binder binder /binder || /bin/busybox poweroff -f
+test -c /binder/binder-control || /bin/busybox poweroff -f
+echo "AOSSTUDIO_EMULATOR_BOOT_OK $(/bin/busybox uname -r)"
+/bin/busybox poweroff -f

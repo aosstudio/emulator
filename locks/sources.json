@@ -1,0 +1,2879 @@
+{
+  "qt": {
+    "qtbase": {
+      "url": "https://codeload.github.com/qt/qtbase/tar.gz/372eaedc5b8c771c46acc4c96e91bbade4ca3624",
+      "sha256": "a5398b865bc94fdae0647ad5fc116ed9d1bc7fad2bd1d9f3d8b6581c61b8a76e",
+      "archive": "qtbase-372eaedc5b8c771c46acc4c96e91bbade4ca3624.tar.gz",
+      "tree_root": "qtbase-372eaedc5b8c771c46acc4c96e91bbade4ca3624",
+      "directory": "qtbase",
+      "license": "LGPL-3.0-only or GPL options, with file-level licenses and upstream notices"
+    },
+    "qtimageformats": {
+      "url": "https://codeload.github.com/qt/qtimageformats/tar.gz/4f89d7ef7d4f30c1907915435b432d957b62b7ff",
+      "sha256": "e2618735105b98ab701346a486a60aedff52fae2b2460c22fe6bac8432e96c51",
+      "archive": "qtimageformats-4f89d7ef7d4f30c1907915435b432d957b62b7ff.tar.gz",
+      "tree_root": "qtimageformats-4f89d7ef7d4f30c1907915435b432d957b62b7ff",
+      "directory": "qtimageformats",
+      "license": "LGPL-3.0-only or GPL options, with file-level licenses and upstream notices"
+    },
+    "qtsvg": {
+      "url": "https://codeload.github.com/qt/qtsvg/tar.gz/220cd8c6261552f0fcf47061c64f862adae29b55",
+      "sha256": "7bafcd3928d0d80ca097e446ff763eca8f7776a74930eff18147750f59da7cd1",
+      "archive": "qtsvg-220cd8c6261552f0fcf47061c64f862adae29b55.tar.gz",
+      "tree_root": "qtsvg-220cd8c6261552f0fcf47061c64f862adae29b55",
+      "directory": "qtsvg",
+      "license": "LGPL-3.0-only or GPL options, with file-level licenses and upstream notices"
+    }
+  },
+  "netsim": {
+    "build__bazel": {
+      "url": "https://android.googlesource.com/platform/build/bazel/+archive/0d382f91916499455604916a191e3bcf0cddf4fe.tar.gz",
+      "archive": "build__bazel-0d382f91916499455604916a191e3bcf0cddf4fe.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "build/bazel",
+      "tree_sha256": "30471aefc8c83670f27c5f3d4d83c081d53012adc9331b0370dc37163a56723e"
+    },
+    "prebuilts__clang__host__linux-x86__clang-r563880c": {
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/21b19c041de1f1df9b97fd9902ae5405c6cf8eb9/clang-r563880c.tar.gz",
+      "archive": "prebuilts__clang__host__linux-x86__clang-r563880c-21b19c041de1f1df9b97fd9902ae5405c6cf8eb9.tar.gz",
+      "license": "Apache-2.0 WITH LLVM-exception and bundled licenses",
+      "directory": "prebuilts/clang/host/linux-x86/clang-r563880c",
+      "tree_sha256": "21366e6e63199a043699678798136833f13c9d388254282fcc76cf22d0411cc1"
+    },
+    "prebuilts__gcc__linux-x86__host__x86_64-linux-glibc2.17-4.8": {
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/+archive/f58b56eac26d03223f438e985f3d6334f6590cc6.tar.gz",
+      "archive": "prebuilts__gcc__linux-x86__host__x86_64-linux-glibc2.17-4.8-f58b56eac26d03223f438e985f3d6334f6590cc6.tar.gz",
+      "license": "GPL with runtime exceptions and upstream notices",
+      "directory": "prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
+      "tree_sha256": "577d0c0e54c4b03c762b2864ce7e4a984c9b77bd3ec4458d76d14d64cfab0ee9"
+    },
+    "tools__netsim": {
+      "url": "https://android.googlesource.com/platform/tools/netsim/+archive/6efc7b9852d5572abe1db6cf2011093cdcbeed7e.tar.gz",
+      "archive": "tools__netsim-6efc7b9852d5572abe1db6cf2011093cdcbeed7e.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "tools/netsim",
+      "tree_sha256": "7de479e7c673795f66906256b72ecca0ebbb989997fd8268f6e86f735f5e7ae3"
+    },
+    "tools__rootcanal": {
+      "url": "https://android.googlesource.com/platform/tools/rootcanal/+archive/bba9b040de190d195ec34e52f8e722e43696b7dd.tar.gz",
+      "archive": "tools__rootcanal-bba9b040de190d195ec34e52f8e722e43696b7dd.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "tools/rootcanal",
+      "tree_sha256": "c2054ad4bab456595266e70ac86677565f3c5577ae8020ba181727e16bf158c8"
+    },
+    "bcr": {
+      "url": "https://codeload.github.com/bazelbuild/bazel-central-registry/tar.gz/0bbd24f1e529d035e86dc9d3e614559ba38a8a7c",
+      "archive": "bcr.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "registry",
+      "tree_root": "bazel-central-registry-0bbd24f1e529d035e86dc9d3e614559ba38a8a7c",
+      "sha256": "2ce422872bcf84d4155803bcdbf9295466d1a4df918c8b96f0e3815fdb08b953"
+    },
+    "aho-corasick": {
+      "url": "https://static.crates.io/crates/aho-corasick/aho-corasick-1.1.5.crate",
+      "archive": "aho-corasick-1.1.5.crate",
+      "license": "Unlicense OR MIT",
+      "directory": "external/rust/android-crates-io/crates/aho-corasick",
+      "tree_root": "aho-corasick-1.1.5",
+      "sha256": "c982642fa9e8606056828ee9a8505737230110bb1099153c79efe865c59d12ba"
+    },
+    "android_log-sys": {
+      "url": "https://static.crates.io/crates/android_log-sys/android_log-sys-0.3.2.crate",
+      "archive": "android_log-sys-0.3.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/android_log-sys",
+      "tree_root": "android_log-sys-0.3.2",
+      "sha256": "84521a3cf562bc62942e294181d9eef17eb38ceb8c68677bc49f144e4c3d4f8d"
+    },
+    "anstyle": {
+      "url": "https://static.crates.io/crates/anstyle/anstyle-1.0.14.crate",
+      "archive": "anstyle-1.0.14.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/anstyle",
+      "tree_root": "anstyle-1.0.14",
+      "sha256": "940b3a0ca603d1eade50a4846a2afffd5ef57a9feac2c0e2ec2e14f9ead76000"
+    },
+    "anyhow": {
+      "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.104.crate",
+      "archive": "anyhow-1.0.104.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/anyhow",
+      "tree_root": "anyhow-1.0.104",
+      "sha256": "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470"
+    },
+    "argh": {
+      "url": "https://static.crates.io/crates/argh/argh-0.1.19.crate",
+      "archive": "argh-0.1.19.crate",
+      "license": "BSD-3-Clause",
+      "directory": "external/rust/android-crates-io/crates/argh",
+      "tree_root": "argh-0.1.19",
+      "sha256": "211818e820cda9ca6f167a64a5c808837366a6dfd807157c64c1304c486cd033"
+    },
+    "argh_derive": {
+      "url": "https://static.crates.io/crates/argh_derive/argh_derive-0.1.19.crate",
+      "archive": "argh_derive-0.1.19.crate",
+      "license": "BSD-3-Clause",
+      "directory": "external/rust/android-crates-io/crates/argh_derive",
+      "tree_root": "argh_derive-0.1.19",
+      "sha256": "c442a9d18cef5dde467405d27d461d080d68972d6d0dfd0408265b6749ec427d"
+    },
+    "argh_shared": {
+      "url": "https://static.crates.io/crates/argh_shared/argh_shared-0.1.19.crate",
+      "archive": "argh_shared-0.1.19.crate",
+      "license": "BSD-3-Clause",
+      "directory": "external/rust/android-crates-io/crates/argh_shared",
+      "tree_root": "argh_shared-0.1.19",
+      "sha256": "e5ade012bac4db278517a0132c8c10c6427025868dca16c801087c28d5a411f1"
+    },
+    "async-trait": {
+      "url": "https://static.crates.io/crates/async-trait/async-trait-0.1.89.crate",
+      "archive": "async-trait-0.1.89.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/async-trait",
+      "tree_root": "async-trait-0.1.89",
+      "sha256": "9035ad2d096bed7955a320ee7e2230574d28fd3c3a0f186cbea1ff3c7eed5dbb"
+    },
+    "atomic-waker": {
+      "url": "https://static.crates.io/crates/atomic-waker/atomic-waker-1.1.2.crate",
+      "archive": "atomic-waker-1.1.2.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/atomic-waker",
+      "tree_root": "atomic-waker-1.1.2",
+      "sha256": "1505bd5d3d116872e7271a6d4e16d81d0c8570876c8de68093a09ac269d8aac0"
+    },
+    "base64": {
+      "url": "https://static.crates.io/crates/base64/base64-0.23.1.crate",
+      "archive": "base64-0.23.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/base64",
+      "tree_root": "base64-0.23.1",
+      "sha256": "ac07cdecf99051d9a5238b80f35af32cdeba5b336e55d957b318b50137e18da5"
+    },
+    "bitflags": {
+      "url": "https://static.crates.io/crates/bitflags/bitflags-2.13.2.crate",
+      "archive": "bitflags-2.13.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/bitflags",
+      "tree_root": "bitflags-2.13.2",
+      "sha256": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06"
+    },
+    "byteorder": {
+      "url": "https://static.crates.io/crates/byteorder/byteorder-1.5.0.crate",
+      "archive": "byteorder-1.5.0.crate",
+      "license": "Unlicense OR MIT",
+      "directory": "external/rust/android-crates-io/crates/byteorder",
+      "tree_root": "byteorder-1.5.0",
+      "sha256": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
+    },
+    "bytes": {
+      "url": "https://static.crates.io/crates/bytes/bytes-1.12.1.crate",
+      "archive": "bytes-1.12.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/bytes",
+      "tree_root": "bytes-1.12.1",
+      "sha256": "fc652a48c352aef3ea3aed32080501cf3ef6ed5da78602a020c991775b0aff04"
+    },
+    "cfg-if": {
+      "url": "https://static.crates.io/crates/cfg-if/cfg-if-1.0.5.crate",
+      "archive": "cfg-if-1.0.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/cfg-if",
+      "tree_root": "cfg-if-1.0.5",
+      "sha256": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+    },
+    "chacha20": {
+      "url": "https://static.crates.io/crates/chacha20/chacha20-0.10.2.crate",
+      "archive": "chacha20-0.10.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/chacha20",
+      "tree_root": "chacha20-0.10.2",
+      "sha256": "65c35e4b699c7e15ccbe7ee35c005e4fc0a278d22238a2857e6ce2dadeda1b06"
+    },
+    "chrono": {
+      "url": "https://static.crates.io/crates/chrono/chrono-0.4.45.crate",
+      "archive": "chrono-0.4.45.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/chrono",
+      "tree_root": "chrono-0.4.45",
+      "sha256": "1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327"
+    },
+    "clap": {
+      "url": "https://static.crates.io/crates/clap/clap-4.6.1.crate",
+      "archive": "clap-4.6.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/clap",
+      "tree_root": "clap-4.6.1",
+      "sha256": "1ddb117e43bbf7dacf0a4190fef4d345b9bad68dfc649cb349e7d17d28428e51"
+    },
+    "clap_builder": {
+      "url": "https://static.crates.io/crates/clap_builder/clap_builder-4.6.0.crate",
+      "archive": "clap_builder-4.6.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/clap_builder",
+      "tree_root": "clap_builder-4.6.0",
+      "sha256": "714a53001bf66416adb0e2ef5ac857140e7dc3a0c48fb28b2f10762fc4b5069f"
+    },
+    "clap_derive": {
+      "url": "https://static.crates.io/crates/clap_derive/clap_derive-4.6.1.crate",
+      "archive": "clap_derive-4.6.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/clap_derive",
+      "tree_root": "clap_derive-4.6.1",
+      "sha256": "f2ce8604710f6733aa641a2b3731eaa1e8b3d9973d5e3565da11800813f997a9"
+    },
+    "clap_lex": {
+      "url": "https://static.crates.io/crates/clap_lex/clap_lex-1.1.1.crate",
+      "archive": "clap_lex-1.1.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/clap_lex",
+      "tree_root": "clap_lex-1.1.1",
+      "sha256": "1c133bc6a41be0d194c306b5506d15e6feeea7b1d6604bd3f8310dfb2ca96486"
+    },
+    "codespan-reporting": {
+      "url": "https://static.crates.io/crates/codespan-reporting/codespan-reporting-0.13.1.crate",
+      "archive": "codespan-reporting-0.13.1.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/codespan-reporting",
+      "tree_root": "codespan-reporting-0.13.1",
+      "sha256": "af491d569909a7e4dee0ad7db7f5341fef5c614d5b8ec8cf765732aba3cff681"
+    },
+    "command-fds": {
+      "url": "https://static.crates.io/crates/command-fds/command-fds-0.3.3.crate",
+      "archive": "command-fds-0.3.3.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/command-fds",
+      "tree_root": "command-fds-0.3.3",
+      "sha256": "1b60b5124979fccd9addd89d8b97a1d6eebb4950694520c75ddd722535ea443f"
+    },
+    "cpufeatures": {
+      "url": "https://static.crates.io/crates/cpufeatures/cpufeatures-0.3.1.crate",
+      "archive": "cpufeatures-0.3.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/cpufeatures",
+      "tree_root": "cpufeatures-0.3.1",
+      "sha256": "5ca28b0ae3115b884660db4118d803791fd6756b6e88f39c0f3f7859060d7566"
+    },
+    "crc32fast": {
+      "url": "https://static.crates.io/crates/crc32fast/crc32fast-1.5.2.crate",
+      "archive": "crc32fast-1.5.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/crc32fast",
+      "tree_root": "crc32fast-1.5.2",
+      "sha256": "01a7799fd6b852db0e61728dde9a204c423b44d689dbd432522543614b490e78"
+    },
+    "displaydoc": {
+      "url": "https://static.crates.io/crates/displaydoc/displaydoc-0.2.6.crate",
+      "archive": "displaydoc-0.2.6.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/displaydoc",
+      "tree_root": "displaydoc-0.2.6",
+      "sha256": "1ac70aa55017e108007fbaf5aa0f54b021c98f92ff8af59d42eda9da96e3dd4f"
+    },
+    "downcast": {
+      "url": "https://static.crates.io/crates/downcast/downcast-0.11.0.crate",
+      "archive": "downcast-0.11.0.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/downcast",
+      "tree_root": "downcast-0.11.0",
+      "sha256": "1435fa1053d8b2fbbe9be7e97eca7f33d37b28409959813daefc1446a14247f1"
+    },
+    "equivalent": {
+      "url": "https://static.crates.io/crates/equivalent/equivalent-1.0.2.crate",
+      "archive": "equivalent-1.0.2.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/equivalent",
+      "tree_root": "equivalent-1.0.2",
+      "sha256": "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f"
+    },
+    "errno": {
+      "url": "https://static.crates.io/crates/errno/errno-0.3.14.crate",
+      "archive": "errno-0.3.14.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/errno",
+      "tree_root": "errno-0.3.14",
+      "sha256": "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
+    },
+    "fastrand": {
+      "url": "https://static.crates.io/crates/fastrand/fastrand-2.5.0.crate",
+      "archive": "fastrand-2.5.0.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/fastrand",
+      "tree_root": "fastrand-2.5.0",
+      "sha256": "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
+    },
+    "flate2": {
+      "url": "https://static.crates.io/crates/flate2/flate2-1.1.9.crate",
+      "archive": "flate2-1.1.9.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/flate2",
+      "tree_root": "flate2-1.1.9",
+      "sha256": "843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c"
+    },
+    "fnv": {
+      "url": "https://static.crates.io/crates/fnv/fnv-1.0.7.crate",
+      "archive": "fnv-1.0.7.crate",
+      "license": "Apache-2.0 / MIT",
+      "directory": "external/rust/android-crates-io/crates/fnv",
+      "tree_root": "fnv-1.0.7",
+      "sha256": "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
+    },
+    "foldhash": {
+      "url": "https://static.crates.io/crates/foldhash/foldhash-0.2.0.crate",
+      "archive": "foldhash-0.2.0.crate",
+      "license": "Zlib",
+      "directory": "external/rust/android-crates-io/crates/foldhash",
+      "tree_root": "foldhash-0.2.0",
+      "sha256": "77ce24cb58228fbb8aa041425bb1050850ac19177686ea6e0f41a70416f56fdb"
+    },
+    "form_urlencoded": {
+      "url": "https://static.crates.io/crates/form_urlencoded/form_urlencoded-1.2.2.crate",
+      "archive": "form_urlencoded-1.2.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/form_urlencoded",
+      "tree_root": "form_urlencoded-1.2.2",
+      "sha256": "cb4cb245038516f5f85277875cdaa4f7d2c9a0fa0468de06ed190163b1581fcf"
+    },
+    "fragile": {
+      "url": "https://static.crates.io/crates/fragile/fragile-2.1.0.crate",
+      "archive": "fragile-2.1.0.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/fragile",
+      "tree_root": "fragile-2.1.0",
+      "sha256": "8878864ba14bb86e818a412bfd6f18f9eabd4ec0f008a28e8f7eb61db532fcf9"
+    },
+    "futures-channel": {
+      "url": "https://static.crates.io/crates/futures-channel/futures-channel-0.3.34.crate",
+      "archive": "futures-channel-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-channel",
+      "tree_root": "futures-channel-0.3.34",
+      "sha256": "b1f9e3d69d39e4862ffed03ed071a76f9a13ba1d9109d355b0f0aa6b15e393c4"
+    },
+    "futures-core": {
+      "url": "https://static.crates.io/crates/futures-core/futures-core-0.3.34.crate",
+      "archive": "futures-core-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-core",
+      "tree_root": "futures-core-0.3.34",
+      "sha256": "92d699e522242e69e3003b94ecc1f960f3a5e015aa7c5d7486e65ad01dd94f5e"
+    },
+    "futures-executor": {
+      "url": "https://static.crates.io/crates/futures-executor/futures-executor-0.3.34.crate",
+      "archive": "futures-executor-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-executor",
+      "tree_root": "futures-executor-0.3.34",
+      "sha256": "031b47cf1a3c6cc8bc2fc76cd437f521619387907d469316e7c0bc278f1f5432"
+    },
+    "futures-io": {
+      "url": "https://static.crates.io/crates/futures-io/futures-io-0.3.34.crate",
+      "archive": "futures-io-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-io",
+      "tree_root": "futures-io-0.3.34",
+      "sha256": "53c0fa8157de1303bfffdaa1cc2a673bfffb60102f76b0ef4441659124373fed"
+    },
+    "futures-macro": {
+      "url": "https://static.crates.io/crates/futures-macro/futures-macro-0.3.34.crate",
+      "archive": "futures-macro-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-macro",
+      "tree_root": "futures-macro-0.3.34",
+      "sha256": "9fb9654ba8355388abeb8dcb4fc62f511300867002afc858860463bdd9fe0c44"
+    },
+    "futures-sink": {
+      "url": "https://static.crates.io/crates/futures-sink/futures-sink-0.3.34.crate",
+      "archive": "futures-sink-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-sink",
+      "tree_root": "futures-sink-0.3.34",
+      "sha256": "1944426bf7d03f1d14f708785e4b33efd750b36d48a157b836b3efc15ede8e1d"
+    },
+    "futures-task": {
+      "url": "https://static.crates.io/crates/futures-task/futures-task-0.3.34.crate",
+      "archive": "futures-task-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-task",
+      "tree_root": "futures-task-0.3.34",
+      "sha256": "cd417de3d1d015fc3bfd2b1ea46dfc7bab72ef86f1cc7cc9c78e728b34a6d1fd"
+    },
+    "futures-util": {
+      "url": "https://static.crates.io/crates/futures-util/futures-util-0.3.34.crate",
+      "archive": "futures-util-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures-util",
+      "tree_root": "futures-util-0.3.34",
+      "sha256": "0d50a92467f8ba5dd6e3ee5d4bd04d73ab2e4e1c44474a0674821dfce14b79bc"
+    },
+    "futures": {
+      "url": "https://static.crates.io/crates/futures/futures-0.3.34.crate",
+      "archive": "futures-0.3.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/futures",
+      "tree_root": "futures-0.3.34",
+      "sha256": "9a31d2a3fbaaeb2af2368bbdd904aa8e812d3c04a1ee10d3171f52d556e5d0a3"
+    },
+    "getrandom": {
+      "url": "https://static.crates.io/crates/getrandom/getrandom-0.4.3.crate",
+      "archive": "getrandom-0.4.3.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/getrandom",
+      "tree_root": "getrandom-0.4.3",
+      "sha256": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
+    },
+    "getrandom_v0_2": {
+      "url": "https://static.crates.io/crates/getrandom/getrandom-0.2.12.crate",
+      "archive": "getrandom-0.2.12.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io-pinned/crates/getrandom",
+      "tree_root": "getrandom-0.2.12",
+      "sha256": "190092ea657667030ac6a35e305e62fc4dd69fd98ac98631e5d3a2b1575a12b5"
+    },
+    "glam": {
+      "url": "https://static.crates.io/crates/glam/glam-0.33.6.crate",
+      "archive": "glam-0.33.6.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/glam",
+      "tree_root": "glam-0.33.6",
+      "sha256": "21fef0953c54fd3de2f44b743fbf77e044c81a25faee03636dfccc0d35135e23"
+    },
+    "grpcio-sys": {
+      "url": "https://static.crates.io/crates/grpcio-sys/grpcio-sys-0.13.0+1.56.2-patched.crate",
+      "archive": "grpcio-sys-0.13.0+1.56.2-patched.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/grpcio-sys",
+      "tree_root": "grpcio-sys-0.13.0+1.56.2-patched",
+      "sha256": "b3dae9132320ae1b03ea55b5ddc88ca72a31fb85fa631a241a40157f5feffe43"
+    },
+    "grpcio": {
+      "url": "https://static.crates.io/crates/grpcio/grpcio-0.13.0.crate",
+      "archive": "grpcio-0.13.0.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/grpcio",
+      "tree_root": "grpcio-0.13.0",
+      "sha256": "9e398946b5721d72478eb647260a1b7c1d5f70f0de35399846c3913bd369a33e"
+    },
+    "h2": {
+      "url": "https://static.crates.io/crates/h2/h2-0.4.19.crate",
+      "archive": "h2-0.4.19.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/h2",
+      "tree_root": "h2-0.4.19",
+      "sha256": "ef8e5e5a340588f4452631496976cf8636d4a7ecf600239fdc27615d2530bc16"
+    },
+    "hashbrown": {
+      "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.17.1.crate",
+      "archive": "hashbrown-0.17.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/hashbrown",
+      "tree_root": "hashbrown-0.17.1",
+      "sha256": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+    },
+    "heck": {
+      "url": "https://static.crates.io/crates/heck/heck-0.5.0.crate",
+      "archive": "heck-0.5.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/heck",
+      "tree_root": "heck-0.5.0",
+      "sha256": "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
+    },
+    "hex": {
+      "url": "https://static.crates.io/crates/hex/hex-0.4.3.crate",
+      "archive": "hex-0.4.3.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/hex",
+      "tree_root": "hex-0.4.3",
+      "sha256": "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
+    },
+    "http-body-util": {
+      "url": "https://static.crates.io/crates/http-body-util/http-body-util-0.1.5.crate",
+      "archive": "http-body-util-0.1.5.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/http-body-util",
+      "tree_root": "http-body-util-0.1.5",
+      "sha256": "23169fe34a5fbcdd3f3862e78fb9b6fccd5f02a6dc6f732547005d45631ce71c"
+    },
+    "http-body": {
+      "url": "https://static.crates.io/crates/http-body/http-body-1.1.0.crate",
+      "archive": "http-body-1.1.0.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/http-body",
+      "tree_root": "http-body-1.1.0",
+      "sha256": "ca2a8f2913ee65f60facd6a5905613afaa448497a0230cc41ce022d93290bc2c"
+    },
+    "http": {
+      "url": "https://static.crates.io/crates/http/http-1.5.0.crate",
+      "archive": "http-1.5.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/http",
+      "tree_root": "http-1.5.0",
+      "sha256": "918d3568bebf352712bc2ef3d46a8bcf1a75b373be6539de198e9105cbbf9ce0"
+    },
+    "httparse": {
+      "url": "https://static.crates.io/crates/httparse/httparse-1.10.1.crate",
+      "archive": "httparse-1.10.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/httparse",
+      "tree_root": "httparse-1.10.1",
+      "sha256": "6dbf3de79e51f3d586ab4cb9d5c3e2c14aa28ed23d180cf89b4df0454a69cc87"
+    },
+    "httpdate": {
+      "url": "https://static.crates.io/crates/httpdate/httpdate-1.0.3.crate",
+      "archive": "httpdate-1.0.3.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/httpdate",
+      "tree_root": "httpdate-1.0.3",
+      "sha256": "df3b46402a9d5adb4c86a0cf463f42e19994e3ee891101b1841f30a545cb49a9"
+    },
+    "hyper-util": {
+      "url": "https://static.crates.io/crates/hyper-util/hyper-util-0.1.21.crate",
+      "archive": "hyper-util-0.1.21.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/hyper-util",
+      "tree_root": "hyper-util-0.1.21",
+      "sha256": "ddc03d96684f9226b8a787cdb71488417b53ab5ea8fdb1dac946cb9431cc8bff"
+    },
+    "hyper": {
+      "url": "https://static.crates.io/crates/hyper/hyper-1.11.1.crate",
+      "archive": "hyper-1.11.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/hyper",
+      "tree_root": "hyper-1.11.1",
+      "sha256": "27b501faa50e7a26c3d3560ca625132f4078a17771f4810baf70475ae48cbe43"
+    },
+    "icu_collections": {
+      "url": "https://static.crates.io/crates/icu_collections/icu_collections-2.2.0.crate",
+      "archive": "icu_collections-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_collections",
+      "tree_root": "icu_collections-2.2.0",
+      "sha256": "2984d1cd16c883d7935b9e07e44071dca8d917fd52ecc02c04d5fa0b5a3f191c"
+    },
+    "icu_locale_core": {
+      "url": "https://static.crates.io/crates/icu_locale_core/icu_locale_core-2.2.0.crate",
+      "archive": "icu_locale_core-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_locale_core",
+      "tree_root": "icu_locale_core-2.2.0",
+      "sha256": "92219b62b3e2b4d88ac5119f8904c10f8f61bf7e95b640d25ba3075e6cac2c29"
+    },
+    "icu_normalizer": {
+      "url": "https://static.crates.io/crates/icu_normalizer/icu_normalizer-2.2.0.crate",
+      "archive": "icu_normalizer-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_normalizer",
+      "tree_root": "icu_normalizer-2.2.0",
+      "sha256": "c56e5ee99d6e3d33bd91c5d85458b6005a22140021cc324cea84dd0e72cff3b4"
+    },
+    "icu_normalizer_data": {
+      "url": "https://static.crates.io/crates/icu_normalizer_data/icu_normalizer_data-2.2.0.crate",
+      "archive": "icu_normalizer_data-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_normalizer_data",
+      "tree_root": "icu_normalizer_data-2.2.0",
+      "sha256": "da3be0ae77ea334f4da67c12f149704f19f81d1adf7c51cf482943e84a2bad38"
+    },
+    "icu_properties": {
+      "url": "https://static.crates.io/crates/icu_properties/icu_properties-2.2.0.crate",
+      "archive": "icu_properties-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_properties",
+      "tree_root": "icu_properties-2.2.0",
+      "sha256": "bee3b67d0ea5c2cca5003417989af8996f8604e34fb9ddf96208a033901e70de"
+    },
+    "icu_properties_data": {
+      "url": "https://static.crates.io/crates/icu_properties_data/icu_properties_data-2.2.0.crate",
+      "archive": "icu_properties_data-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_properties_data",
+      "tree_root": "icu_properties_data-2.2.0",
+      "sha256": "8e2bbb201e0c04f7b4b3e14382af113e17ba4f63e2c9d2ee626b720cbce54a14"
+    },
+    "icu_provider": {
+      "url": "https://static.crates.io/crates/icu_provider/icu_provider-2.2.0.crate",
+      "archive": "icu_provider-2.2.0.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/icu_provider",
+      "tree_root": "icu_provider-2.2.0",
+      "sha256": "139c4cf31c8b5f33d7e199446eff9c1e02decfc2f0eec2c8d71f65befa45b421"
+    },
+    "idna": {
+      "url": "https://static.crates.io/crates/idna/idna-1.1.0.crate",
+      "archive": "idna-1.1.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/idna",
+      "tree_root": "idna-1.1.0",
+      "sha256": "3b0875f23caa03898994f6ddc501886a45c7d3d62d04d2d90788d47be1b1e4de"
+    },
+    "idna_adapter": {
+      "url": "https://static.crates.io/crates/idna_adapter/idna_adapter-1.2.2.crate",
+      "archive": "idna_adapter-1.2.2.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/idna_adapter",
+      "tree_root": "idna_adapter-1.2.2",
+      "sha256": "cb68373c0d6620ef8105e855e7745e18b0d00d3bdb07fb532e434244cdb9a714"
+    },
+    "indexmap": {
+      "url": "https://static.crates.io/crates/indexmap/indexmap-2.14.2.crate",
+      "archive": "indexmap-2.14.2.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/indexmap",
+      "tree_root": "indexmap-2.14.2",
+      "sha256": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
+    },
+    "ipnet": {
+      "url": "https://static.crates.io/crates/ipnet/ipnet-2.12.2.crate",
+      "archive": "ipnet-2.12.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/ipnet",
+      "tree_root": "ipnet-2.12.2",
+      "sha256": "791930b43c0d5973160d90a8f3894509f2b273430f5c5c73b668636d0287c5c0"
+    },
+    "itoa": {
+      "url": "https://static.crates.io/crates/itoa/itoa-1.0.18.crate",
+      "archive": "itoa-1.0.18.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/itoa",
+      "tree_root": "itoa-1.0.18",
+      "sha256": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+    },
+    "jiff": {
+      "url": "https://static.crates.io/crates/jiff/jiff-0.2.32.crate",
+      "archive": "jiff-0.2.32.crate",
+      "license": "Unlicense OR MIT",
+      "directory": "external/rust/android-crates-io/crates/jiff",
+      "tree_root": "jiff-0.2.32",
+      "sha256": "961d16382652bfdd8c6f68b223b26a8c93e0d475c672f414411db31c6c5c900e"
+    },
+    "lazy_static": {
+      "url": "https://static.crates.io/crates/lazy_static/lazy_static-1.5.0.crate",
+      "archive": "lazy_static-1.5.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/lazy_static",
+      "tree_root": "lazy_static-1.5.0",
+      "sha256": "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
+    },
+    "libc": {
+      "url": "https://static.crates.io/crates/libc/libc-0.2.189.crate",
+      "archive": "libc-0.2.189.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/libc",
+      "tree_root": "libc-0.2.189",
+      "sha256": "3eaf3ede3fee6db1a4c2ee091bf8a8b4dccdc6d17f656fb07896ee72867612f2"
+    },
+    "libz-sys": {
+      "url": "https://static.crates.io/crates/libz-sys/libz-sys-1.1.29.crate",
+      "archive": "libz-sys-1.1.29.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/libz-sys",
+      "tree_root": "libz-sys-1.1.29",
+      "sha256": "85bc9657773828b90eeb625adff10eeac83cc21bbfd8e23a03eaa8a33c9e28d9"
+    },
+    "litemap": {
+      "url": "https://static.crates.io/crates/litemap/litemap-0.8.3.crate",
+      "archive": "litemap-0.8.3.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/litemap",
+      "tree_root": "litemap-0.8.3",
+      "sha256": "47d9d19d1d6efa0109d2f65ff4c85cddd50bd572e5a00127ab10987290bcefae"
+    },
+    "lock_api": {
+      "url": "https://static.crates.io/crates/lock_api/lock_api-0.4.14.crate",
+      "archive": "lock_api-0.4.14.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/lock_api",
+      "tree_root": "lock_api-0.4.14",
+      "sha256": "224399e74b87b5f3557511d98dff8b14089b3dadafcab6bb93eab67d3aace965"
+    },
+    "log": {
+      "url": "https://static.crates.io/crates/log/log-0.4.34.crate",
+      "archive": "log-0.4.34.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/log",
+      "tree_root": "log-0.4.34",
+      "sha256": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
+    },
+    "matchers": {
+      "url": "https://static.crates.io/crates/matchers/matchers-0.2.0.crate",
+      "archive": "matchers-0.2.0.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/matchers",
+      "tree_root": "matchers-0.2.0",
+      "sha256": "d1525a2a28c7f4fa0fc98bb91ae755d1e2d1505079e05539e35bc876b5d65ae9"
+    },
+    "memchr": {
+      "url": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+      "archive": "memchr-2.8.3.crate",
+      "license": "Unlicense OR MIT",
+      "directory": "external/rust/android-crates-io/crates/memchr",
+      "tree_root": "memchr-2.8.3",
+      "sha256": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+    },
+    "memoffset": {
+      "url": "https://static.crates.io/crates/memoffset/memoffset-0.9.1.crate",
+      "archive": "memoffset-0.9.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/memoffset",
+      "tree_root": "memoffset-0.9.1",
+      "sha256": "488016bfae457b036d996092f6cb448677611ce4449e970ceaf42695203f218a"
+    },
+    "minimal-lexical": {
+      "url": "https://static.crates.io/crates/minimal-lexical/minimal-lexical-0.2.1.crate",
+      "archive": "minimal-lexical-0.2.1.crate",
+      "license": "MIT/Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/minimal-lexical",
+      "tree_root": "minimal-lexical-0.2.1",
+      "sha256": "68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a"
+    },
+    "mio": {
+      "url": "https://static.crates.io/crates/mio/mio-1.2.3.crate",
+      "archive": "mio-1.2.3.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/mio",
+      "tree_root": "mio-1.2.3",
+      "sha256": "4b18443e9c262bfe8fa82f51666e2642c53393f7e5c27b3e1aeab922cff5b9d8"
+    },
+    "mockall": {
+      "url": "https://static.crates.io/crates/mockall/mockall-0.15.0.crate",
+      "archive": "mockall-0.15.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/mockall",
+      "tree_root": "mockall-0.15.0",
+      "sha256": "1a6ceddfe3ce334925e96bf420fdb2dcee5bed6c632a168ece622676dadeaf8a"
+    },
+    "mockall_derive": {
+      "url": "https://static.crates.io/crates/mockall_derive/mockall_derive-0.15.0.crate",
+      "archive": "mockall_derive-0.15.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/mockall_derive",
+      "tree_root": "mockall_derive-0.15.0",
+      "sha256": "9cfe16fbe8a314aeec0b861ac24e60b1e123e97634bab045475b9d6a18416fd8"
+    },
+    "nix": {
+      "url": "https://static.crates.io/crates/nix/nix-0.31.3.crate",
+      "archive": "nix-0.31.3.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/nix",
+      "tree_root": "nix-0.31.3",
+      "sha256": "cf20d2fde8ff38632c426f1165ed7436270b44f199fc55284c38276f9db47c3d"
+    },
+    "nom": {
+      "url": "https://static.crates.io/crates/nom/nom-7.1.3.crate",
+      "archive": "nom-7.1.3.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/nom",
+      "tree_root": "nom-7.1.3",
+      "sha256": "d273983c5a657a70a3e8f2a01329822f3b8c8172b73826411a55751e404a0a4a"
+    },
+    "num-bigint": {
+      "url": "https://static.crates.io/crates/num-bigint/num-bigint-0.5.1.crate",
+      "archive": "num-bigint-0.5.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/num-bigint",
+      "tree_root": "num-bigint-0.5.1",
+      "sha256": "93e7820bc0a80a0238e650327316f929ba18d5be054b647490a3a6a339f3e7c0"
+    },
+    "num-derive": {
+      "url": "https://static.crates.io/crates/num-derive/num-derive-0.5.1.crate",
+      "archive": "num-derive-0.5.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/num-derive",
+      "tree_root": "num-derive-0.5.1",
+      "sha256": "e4e98dc3b890f6c23a0f9d3d491a2823d0dea0fa656302a13dd225fa924112a8"
+    },
+    "num-integer": {
+      "url": "https://static.crates.io/crates/num-integer/num-integer-0.1.47.crate",
+      "archive": "num-integer-0.1.47.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/num-integer",
+      "tree_root": "num-integer-0.1.47",
+      "sha256": "7ce2d95d4b3734dc35aa2f45e1aa22cd416814592a4f9d9205e11affd5b8e10b"
+    },
+    "num-traits": {
+      "url": "https://static.crates.io/crates/num-traits/num-traits-0.2.19.crate",
+      "archive": "num-traits-0.2.19.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/num-traits",
+      "tree_root": "num-traits-0.2.19",
+      "sha256": "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
+    },
+    "num_cpus": {
+      "url": "https://static.crates.io/crates/num_cpus/num_cpus-1.17.0.crate",
+      "archive": "num_cpus-1.17.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/num_cpus",
+      "tree_root": "num_cpus-1.17.0",
+      "sha256": "91df4bbde75afed763b708b7eee1e8e7651e02d97f6d5dd763e89367e957b23b"
+    },
+    "once_cell": {
+      "url": "https://static.crates.io/crates/once_cell/once_cell-1.21.4.crate",
+      "archive": "once_cell-1.21.4.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/once_cell",
+      "tree_root": "once_cell-1.21.4",
+      "sha256": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
+    },
+    "parking_lot": {
+      "url": "https://static.crates.io/crates/parking_lot/parking_lot-0.12.5.crate",
+      "archive": "parking_lot-0.12.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/parking_lot",
+      "tree_root": "parking_lot-0.12.5",
+      "sha256": "93857453250e3077bd71ff98b6a65ea6621a19bb0f559a85248955ac12c45a1a"
+    },
+    "parking_lot_core": {
+      "url": "https://static.crates.io/crates/parking_lot_core/parking_lot_core-0.9.12.crate",
+      "archive": "parking_lot_core-0.9.12.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/parking_lot_core",
+      "tree_root": "parking_lot_core-0.9.12",
+      "sha256": "2621685985a2ebf1c516881c026032ac7deafcda1a2c9b7850dc81e3dfcb64c1"
+    },
+    "pdl-compiler": {
+      "url": "https://static.crates.io/crates/pdl-compiler/pdl-compiler-0.5.2.crate",
+      "archive": "pdl-compiler-0.5.2.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pdl-compiler",
+      "tree_root": "pdl-compiler-0.5.2",
+      "sha256": "a9eef2e2c3cc7af6282f40085b33e37ae48f0ea23082bffdb01ed061df12b0a4"
+    },
+    "pdl-runtime": {
+      "url": "https://static.crates.io/crates/pdl-runtime/pdl-runtime-0.5.2.crate",
+      "archive": "pdl-runtime-0.5.2.crate",
+      "license": "Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pdl-runtime",
+      "tree_root": "pdl-runtime-0.5.2",
+      "sha256": "5ba295ad92bae1d85d1bd85853c51e7ea10a0eb8ffd30948822d1a7b26ed0666"
+    },
+    "percent-encoding": {
+      "url": "https://static.crates.io/crates/percent-encoding/percent-encoding-2.3.2.crate",
+      "archive": "percent-encoding-2.3.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/percent-encoding",
+      "tree_root": "percent-encoding-2.3.2",
+      "sha256": "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
+    },
+    "pest": {
+      "url": "https://static.crates.io/crates/pest/pest-2.9.2.crate",
+      "archive": "pest-2.9.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pest",
+      "tree_root": "pest-2.9.2",
+      "sha256": "45d3aca230fad2e6f6317ca0a72724338c4960cb97168a85cdee66df4a9a21a8"
+    },
+    "pest_derive": {
+      "url": "https://static.crates.io/crates/pest_derive/pest_derive-2.9.0.crate",
+      "archive": "pest_derive-2.9.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pest_derive",
+      "tree_root": "pest_derive-2.9.0",
+      "sha256": "b3a83744a5c8455b8b3e0dc5031362780a347c878bdd11584d1a8984228cc88d"
+    },
+    "pest_generator": {
+      "url": "https://static.crates.io/crates/pest_generator/pest_generator-2.9.0.crate",
+      "archive": "pest_generator-2.9.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pest_generator",
+      "tree_root": "pest_generator-2.9.0",
+      "sha256": "e0cd3451aa3de60d4b9a1e736885e4dea6b31617598026f12256ad566d63304a"
+    },
+    "pest_meta": {
+      "url": "https://static.crates.io/crates/pest_meta/pest_meta-2.9.0.crate",
+      "archive": "pest_meta-2.9.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pest_meta",
+      "tree_root": "pest_meta-2.9.0",
+      "sha256": "e04d3a0849e241d7dfce834c83b1c5edc8622009e8dd51a12ba1927c32f05496"
+    },
+    "pica": {
+      "url": "https://static.crates.io/crates/pica/pica-0.2.0.crate",
+      "archive": "pica-0.2.0.crate",
+      "license": "Apache-2.0",
+      "directory": "third_party/rust/crates/pica",
+      "tree_root": "pica-0.2.0",
+      "sha256": "56ff0cbaabe610bdac182cefb7ed1ca0a7e5d8f816070b3c5aa4eef67ac6d167"
+    },
+    "pin-project-lite": {
+      "url": "https://static.crates.io/crates/pin-project-lite/pin-project-lite-0.2.17.crate",
+      "archive": "pin-project-lite-0.2.17.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/pin-project-lite",
+      "tree_root": "pin-project-lite-0.2.17",
+      "sha256": "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
+    },
+    "pin-utils": {
+      "url": "https://static.crates.io/crates/pin-utils/pin-utils-0.1.0.crate",
+      "archive": "pin-utils-0.1.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/pin-utils",
+      "tree_root": "pin-utils-0.1.0",
+      "sha256": "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
+    },
+    "potential_utf": {
+      "url": "https://static.crates.io/crates/potential_utf/potential_utf-0.1.6.crate",
+      "archive": "potential_utf-0.1.6.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/potential_utf",
+      "tree_root": "potential_utf-0.1.6",
+      "sha256": "d83eb9bc6d8e5cf568e7a1101d60ee05e81ed50ea106026f3d18deeb046d7661"
+    },
+    "predicates-core": {
+      "url": "https://static.crates.io/crates/predicates-core/predicates-core-1.0.10.crate",
+      "archive": "predicates-core-1.0.10.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/predicates-core",
+      "tree_root": "predicates-core-1.0.10",
+      "sha256": "cad38746f3166b4031b1a0d39ad9f954dd291e7854fcc0eed52ee41a0b50d144"
+    },
+    "predicates-tree": {
+      "url": "https://static.crates.io/crates/predicates-tree/predicates-tree-1.0.13.crate",
+      "archive": "predicates-tree-1.0.13.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/predicates-tree",
+      "tree_root": "predicates-tree-1.0.13",
+      "sha256": "d0de1b847b39c8131db0467e9df1ff60e6d0562ab8e9a16e568ad0fdb372e2f2"
+    },
+    "predicates": {
+      "url": "https://static.crates.io/crates/predicates/predicates-3.1.4.crate",
+      "archive": "predicates-3.1.4.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/predicates",
+      "tree_root": "predicates-3.1.4",
+      "sha256": "ada8f2932f28a27ee7b70dd6c1c39ea0675c55a36879ab92f3a715eaa1e63cfe"
+    },
+    "prettyplease": {
+      "url": "https://static.crates.io/crates/prettyplease/prettyplease-0.2.37.crate",
+      "archive": "prettyplease-0.2.37.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/prettyplease",
+      "tree_root": "prettyplease-0.2.37",
+      "sha256": "479ca8adacdd7ce8f1fb39ce9ecccbfe93a3f1344b3d0d97f20bc0196208f62b"
+    },
+    "proc-macro2": {
+      "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.107.crate",
+      "archive": "proc-macro2-1.0.107.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/proc-macro2",
+      "tree_root": "proc-macro2-1.0.107",
+      "sha256": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+    },
+    "protobuf-codegen": {
+      "url": "https://static.crates.io/crates/protobuf-codegen/protobuf-codegen-3.7.2.crate",
+      "archive": "protobuf-codegen-3.7.2.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/protobuf-codegen",
+      "tree_root": "protobuf-codegen-3.7.2",
+      "sha256": "5d3976825c0014bbd2f3b34f0001876604fe87e0c86cd8fa54251530f1544ace"
+    },
+    "protobuf-json-mapping": {
+      "url": "https://static.crates.io/crates/protobuf-json-mapping/protobuf-json-mapping-3.7.2.crate",
+      "archive": "protobuf-json-mapping-3.7.2.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/protobuf-json-mapping",
+      "tree_root": "protobuf-json-mapping-3.7.2",
+      "sha256": "e0d6e4be637b310d8a5c02fa195243328e2d97fa7df1127a27281ef1187fcb1d"
+    },
+    "protobuf-parse": {
+      "url": "https://static.crates.io/crates/protobuf-parse/protobuf-parse-3.7.2.crate",
+      "archive": "protobuf-parse-3.7.2.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/protobuf-parse",
+      "tree_root": "protobuf-parse-3.7.2",
+      "sha256": "b4aeaa1f2460f1d348eeaeed86aea999ce98c1bded6f089ff8514c9d9dbdc973"
+    },
+    "protobuf-rust": {
+      "url": "https://static.crates.io/crates/protobuf/protobuf-3.7.2.crate",
+      "archive": "protobuf-3.7.2.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/protobuf",
+      "tree_root": "protobuf-3.7.2",
+      "sha256": "d65a1d4ddae7d8b5de68153b48f6aa3bba8cb002b243dbdbc55a5afbc98f99f4"
+    },
+    "protobuf-support": {
+      "url": "https://static.crates.io/crates/protobuf-support/protobuf-support-3.7.2.crate",
+      "archive": "protobuf-support-3.7.2.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/protobuf-support",
+      "tree_root": "protobuf-support-3.7.2",
+      "sha256": "3e36c2f31e0a47f9280fb347ef5e461ffcd2c52dd520d8e216b52f93b0b0d7d6"
+    },
+    "quote": {
+      "url": "https://static.crates.io/crates/quote/quote-1.0.47.crate",
+      "archive": "quote-1.0.47.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/quote",
+      "tree_root": "quote-1.0.47",
+      "sha256": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+    },
+    "rand": {
+      "url": "https://static.crates.io/crates/rand/rand-0.10.2.crate",
+      "archive": "rand-0.10.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/rand",
+      "tree_root": "rand-0.10.2",
+      "sha256": "c7f5fa3a058cd35567ef9bfa5e75732bee0f9e4c55fa90477bef2dfcdbc4be80"
+    },
+    "rand_core": {
+      "url": "https://static.crates.io/crates/rand_core/rand_core-0.10.1.crate",
+      "archive": "rand_core-0.10.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/rand_core",
+      "tree_root": "rand_core-0.10.1",
+      "sha256": "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69"
+    },
+    "regex-automata": {
+      "url": "https://static.crates.io/crates/regex-automata/regex-automata-0.4.18.crate",
+      "archive": "regex-automata-0.4.18.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/regex-automata",
+      "tree_root": "regex-automata-0.4.18",
+      "sha256": "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2"
+    },
+    "regex-syntax": {
+      "url": "https://static.crates.io/crates/regex-syntax/regex-syntax-0.8.11.crate",
+      "archive": "regex-syntax-0.8.11.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/regex-syntax",
+      "tree_root": "regex-syntax-0.8.11",
+      "sha256": "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4"
+    },
+    "regex": {
+      "url": "https://static.crates.io/crates/regex/regex-1.13.1.crate",
+      "archive": "regex-1.13.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/regex",
+      "tree_root": "regex-1.13.1",
+      "sha256": "f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d"
+    },
+    "ring": {
+      "url": "https://static.crates.io/crates/ring/ring-0.17.2.crate",
+      "archive": "ring-0.17.2.crate",
+      "license": "ISC and legacy OpenSSL/SSLeay and MIT, by source file",
+      "directory": "external/rust/android-crates-io/crates/ring",
+      "tree_root": "ring-0.17.2",
+      "sha256": "911b295d2d302948838c8ac142da1ee09fa7863163b44e6715bc9357905878b8"
+    },
+    "rustix": {
+      "url": "https://static.crates.io/crates/rustix/rustix-1.1.4.crate",
+      "archive": "rustix-1.1.4.crate",
+      "license": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/rustix",
+      "tree_root": "rustix-1.1.4",
+      "sha256": "b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190"
+    },
+    "ryu": {
+      "url": "https://static.crates.io/crates/ryu/ryu-1.0.23.crate",
+      "archive": "ryu-1.0.23.crate",
+      "license": "Apache-2.0 OR BSL-1.0",
+      "directory": "external/rust/android-crates-io/crates/ryu",
+      "tree_root": "ryu-1.0.23",
+      "sha256": "9774ba4a74de5f7b1c1451ed6cd5285a32eddb5cccb8cc655a4e50009e06477f"
+    },
+    "scopeguard": {
+      "url": "https://static.crates.io/crates/scopeguard/scopeguard-1.2.0.crate",
+      "archive": "scopeguard-1.2.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/scopeguard",
+      "tree_root": "scopeguard-1.2.0",
+      "sha256": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+    },
+    "serde-xml-rs": {
+      "url": "https://static.crates.io/crates/serde-xml-rs/serde-xml-rs-0.6.0.crate",
+      "archive": "serde-xml-rs-0.6.0.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/serde-xml-rs",
+      "tree_root": "serde-xml-rs-0.6.0",
+      "sha256": "fb3aa78ecda1ebc9ec9847d5d3aba7d618823446a049ba2491940506da6e2782"
+    },
+    "serde": {
+      "url": "https://static.crates.io/crates/serde/serde-1.0.228.crate",
+      "archive": "serde-1.0.228.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/serde",
+      "tree_root": "serde-1.0.228",
+      "sha256": "9a8e94ea7f378bd32cbbd37198a4a91436180c5bb472411e48b5ec2e2124ae9e"
+    },
+    "serde_core": {
+      "url": "https://static.crates.io/crates/serde_core/serde_core-1.0.228.crate",
+      "archive": "serde_core-1.0.228.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/serde_core",
+      "tree_root": "serde_core-1.0.228",
+      "sha256": "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad"
+    },
+    "serde_derive": {
+      "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.228.crate",
+      "archive": "serde_derive-1.0.228.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/serde_derive",
+      "tree_root": "serde_derive-1.0.228",
+      "sha256": "d540f220d3187173da220f885ab66608367b6574e925011a9353e4badda91d79"
+    },
+    "serde_json": {
+      "url": "https://static.crates.io/crates/serde_json/serde_json-1.0.151.crate",
+      "archive": "serde_json-1.0.151.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/serde_json",
+      "tree_root": "serde_json-1.0.151",
+      "sha256": "c841b55ecdae098c80dcae9cf767f6f8a0c2cdb3416bbef72181df4d0fe73f14"
+    },
+    "serde_yaml": {
+      "url": "https://static.crates.io/crates/serde_yaml/serde_yaml-0.9.34+deprecated.crate",
+      "archive": "serde_yaml-0.9.34+deprecated.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/serde_yaml",
+      "tree_root": "serde_yaml-0.9.34+deprecated",
+      "sha256": "6a8b1a1a2ebf674015cc02edccce75287f1a0130d394307b36743c2f5d504b47"
+    },
+    "sharded-slab": {
+      "url": "https://static.crates.io/crates/sharded-slab/sharded-slab-0.1.7.crate",
+      "archive": "sharded-slab-0.1.7.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/sharded-slab",
+      "tree_root": "sharded-slab-0.1.7",
+      "sha256": "f40ca3c46823713e0d4209592e8d6e826aa57e928f09752619fc696c499637f6"
+    },
+    "signal-hook-registry": {
+      "url": "https://static.crates.io/crates/signal-hook-registry/signal-hook-registry-1.4.8.crate",
+      "archive": "signal-hook-registry-1.4.8.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/signal-hook-registry",
+      "tree_root": "signal-hook-registry-1.4.8",
+      "sha256": "c4db69cba1110affc0e9f7bcd48bbf87b3f4fc7c61fc9155afd4c469eb3d6c1b"
+    },
+    "slab": {
+      "url": "https://static.crates.io/crates/slab/slab-0.4.12.crate",
+      "archive": "slab-0.4.12.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/slab",
+      "tree_root": "slab-0.4.12",
+      "sha256": "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5"
+    },
+    "smallvec": {
+      "url": "https://static.crates.io/crates/smallvec/smallvec-1.16.0.crate",
+      "archive": "smallvec-1.16.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/smallvec",
+      "tree_root": "smallvec-1.16.0",
+      "sha256": "b9be42f50aa861c555654aa3a37f52f4b1074bacf4e48fe0ef7fa584e80f1f0f"
+    },
+    "socket2": {
+      "url": "https://static.crates.io/crates/socket2/socket2-0.6.5.crate",
+      "archive": "socket2-0.6.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/socket2",
+      "tree_root": "socket2-0.6.5",
+      "sha256": "c3d1e2c7f27f8d4cb10542a02c49005dbd6e93095799d6f3be745fae9f8fedd4"
+    },
+    "spin": {
+      "url": "https://static.crates.io/crates/spin/spin-0.12.3.crate",
+      "archive": "spin-0.12.3.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/spin",
+      "tree_root": "spin-0.12.3",
+      "sha256": "0134f9043ed38b087ac4f7d4af44c79e2c9e5094421fe3164f435ce585953b10"
+    },
+    "stable_deref_trait": {
+      "url": "https://static.crates.io/crates/stable_deref_trait/stable_deref_trait-1.2.1.crate",
+      "archive": "stable_deref_trait-1.2.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/stable_deref_trait",
+      "tree_root": "stable_deref_trait-1.2.1",
+      "sha256": "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
+    },
+    "strsim": {
+      "url": "https://static.crates.io/crates/strsim/strsim-0.11.1.crate",
+      "archive": "strsim-0.11.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/strsim",
+      "tree_root": "strsim-0.11.1",
+      "sha256": "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
+    },
+    "syn": {
+      "url": "https://static.crates.io/crates/syn/syn-2.0.119.crate",
+      "archive": "syn-2.0.119.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/syn",
+      "tree_root": "syn-2.0.119",
+      "sha256": "872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297"
+    },
+    "synstructure": {
+      "url": "https://static.crates.io/crates/synstructure/synstructure-0.13.2.crate",
+      "archive": "synstructure-0.13.2.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/synstructure",
+      "tree_root": "synstructure-0.13.2",
+      "sha256": "728a70f3dbaf5bab7f0c4b1ac8d7ae5ea60a4b5549c8a5914361c99147a709d2"
+    },
+    "tempfile": {
+      "url": "https://static.crates.io/crates/tempfile/tempfile-3.27.0.crate",
+      "archive": "tempfile-3.27.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/tempfile",
+      "tree_root": "tempfile-3.27.0",
+      "sha256": "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
+    },
+    "termcolor": {
+      "url": "https://static.crates.io/crates/termcolor/termcolor-1.4.1.crate",
+      "archive": "termcolor-1.4.1.crate",
+      "license": "Unlicense OR MIT",
+      "directory": "external/rust/android-crates-io/crates/termcolor",
+      "tree_root": "termcolor-1.4.1",
+      "sha256": "06794f8f6c5c898b3275aebefa6b8a1cb24cd2c6c79397ab15774837a0bc5755"
+    },
+    "termtree": {
+      "url": "https://static.crates.io/crates/termtree/termtree-1.0.0.crate",
+      "archive": "termtree-1.0.0.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/termtree",
+      "tree_root": "termtree-1.0.0",
+      "sha256": "d4d1330fe7f7f872cd05165130b10602d667b205fd85be09be2814b115d4ced9"
+    },
+    "thiserror-impl": {
+      "url": "https://static.crates.io/crates/thiserror-impl/thiserror-impl-2.0.18.crate",
+      "archive": "thiserror-impl-2.0.18.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/thiserror-impl",
+      "tree_root": "thiserror-impl-2.0.18",
+      "sha256": "ebc4ee7f67670e9b64d05fa4253e753e016c6c95ff35b89b7941d6b856dec1d5"
+    },
+    "thiserror": {
+      "url": "https://static.crates.io/crates/thiserror/thiserror-2.0.18.crate",
+      "archive": "thiserror-2.0.18.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/thiserror",
+      "tree_root": "thiserror-2.0.18",
+      "sha256": "4288b5bcbc7920c07a1149a35cf9590a2aa808e0bc1eafaade0b80947865fbc4"
+    },
+    "thread_local": {
+      "url": "https://static.crates.io/crates/thread_local/thread_local-1.1.10.crate",
+      "archive": "thread_local-1.1.10.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/thread_local",
+      "tree_root": "thread_local-1.1.10",
+      "sha256": "1ad99c4c6d32803332c548b1af0540b357b3f5fc0be8f6c6bfe8b2e6ae784070"
+    },
+    "tinystr": {
+      "url": "https://static.crates.io/crates/tinystr/tinystr-0.8.4.crate",
+      "archive": "tinystr-0.8.4.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/tinystr",
+      "tree_root": "tinystr-0.8.4",
+      "sha256": "b1e27c91459209c2986af3dcf603a5a74a4368754ce37414f59acc971167f643"
+    },
+    "tokio-macros": {
+      "url": "https://static.crates.io/crates/tokio-macros/tokio-macros-2.7.1.crate",
+      "archive": "tokio-macros-2.7.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tokio-macros",
+      "tree_root": "tokio-macros-2.7.1",
+      "sha256": "6328af13490e73a9b4694030fafd93f8c8c6a9dede33e821c3fc63eddf8042ba"
+    },
+    "tokio-stream": {
+      "url": "https://static.crates.io/crates/tokio-stream/tokio-stream-0.1.19.crate",
+      "archive": "tokio-stream-0.1.19.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tokio-stream",
+      "tree_root": "tokio-stream-0.1.19",
+      "sha256": "a3d06f0b082ba57c26b79407372e57cf2a1e28124f78e9479fe80322cf53420b"
+    },
+    "tokio-util": {
+      "url": "https://static.crates.io/crates/tokio-util/tokio-util-0.7.19.crate",
+      "archive": "tokio-util-0.7.19.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tokio-util",
+      "tree_root": "tokio-util-0.7.19",
+      "sha256": "494815d09bf52b5548659851081238f0ca39ff638363907596da739561c62c52"
+    },
+    "tokio": {
+      "url": "https://static.crates.io/crates/tokio/tokio-1.53.1.crate",
+      "archive": "tokio-1.53.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tokio",
+      "tree_root": "tokio-1.53.1",
+      "sha256": "202caea871b69668250d242070849eb495be178ed697a3e98aebce5bc81a0bed"
+    },
+    "tower-layer": {
+      "url": "https://static.crates.io/crates/tower-layer/tower-layer-0.3.3.crate",
+      "archive": "tower-layer-0.3.3.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tower-layer",
+      "tree_root": "tower-layer-0.3.3",
+      "sha256": "121c2a6cda46980bb0fcd1647ffaf6cd3fc79a013de288782836f6df9c48780e"
+    },
+    "tower-service": {
+      "url": "https://static.crates.io/crates/tower-service/tower-service-0.3.3.crate",
+      "archive": "tower-service-0.3.3.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tower-service",
+      "tree_root": "tower-service-0.3.3",
+      "sha256": "8df9b6e13f2d32c91b9bd719c00d1958837bc7dec474d94952798cc8e69eeec3"
+    },
+    "tracing-attributes": {
+      "url": "https://static.crates.io/crates/tracing-attributes/tracing-attributes-0.1.31.crate",
+      "archive": "tracing-attributes-0.1.31.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tracing-attributes",
+      "tree_root": "tracing-attributes-0.1.31",
+      "sha256": "7490cfa5ec963746568740651ac6781f701c9c5ea257c58e057f3ba8cf69e8da"
+    },
+    "tracing-core": {
+      "url": "https://static.crates.io/crates/tracing-core/tracing-core-0.1.36.crate",
+      "archive": "tracing-core-0.1.36.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tracing-core",
+      "tree_root": "tracing-core-0.1.36",
+      "sha256": "db97caf9d906fbde555dd62fa95ddba9eecfd14cb388e4f491a66d74cd5fb79a"
+    },
+    "tracing-log": {
+      "url": "https://static.crates.io/crates/tracing-log/tracing-log-0.2.0.crate",
+      "archive": "tracing-log-0.2.0.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tracing-log",
+      "tree_root": "tracing-log-0.2.0",
+      "sha256": "ee855f1f400bd0e5c02d150ae5de3840039a3f54b025156404e34c23c03f47c3"
+    },
+    "tracing-subscriber": {
+      "url": "https://static.crates.io/crates/tracing-subscriber/tracing-subscriber-0.3.23.crate",
+      "archive": "tracing-subscriber-0.3.23.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tracing-subscriber",
+      "tree_root": "tracing-subscriber-0.3.23",
+      "sha256": "cb7f578e5945fb242538965c2d0b04418d38ec25c79d160cd279bf0731c8d319"
+    },
+    "tracing": {
+      "url": "https://static.crates.io/crates/tracing/tracing-0.1.44.crate",
+      "archive": "tracing-0.1.44.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/tracing",
+      "tree_root": "tracing-0.1.44",
+      "sha256": "63e71662fa4b2a2c3a26f570f037eb95bb1f85397f3cd8076caed2f026a6d100"
+    },
+    "try-lock": {
+      "url": "https://static.crates.io/crates/try-lock/try-lock-0.2.5.crate",
+      "archive": "try-lock-0.2.5.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/try-lock",
+      "tree_root": "try-lock-0.2.5",
+      "sha256": "e421abadd41a4225275504ea4d6566923418b7f05506fbc9c0fe86ba7396114b"
+    },
+    "tungstenite": {
+      "url": "https://static.crates.io/crates/tungstenite/tungstenite-0.30.0.crate",
+      "archive": "tungstenite-0.30.0.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/tungstenite",
+      "tree_root": "tungstenite-0.30.0",
+      "sha256": "e48ac77174b19c110a50ab2128b24215ac9cb40e0e12e093fb602d175c569d22"
+    },
+    "ucd-trie": {
+      "url": "https://static.crates.io/crates/ucd-trie/ucd-trie-0.1.7.crate",
+      "archive": "ucd-trie-0.1.7.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/ucd-trie",
+      "tree_root": "ucd-trie-0.1.7",
+      "sha256": "2896d95c02a80c6d6a5d6e953d479f5ddf2dfdb6a244441010e373ac0fb88971"
+    },
+    "unicode-bidi": {
+      "url": "https://static.crates.io/crates/unicode-bidi/unicode-bidi-0.3.18.crate",
+      "archive": "unicode-bidi-0.3.18.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/unicode-bidi",
+      "tree_root": "unicode-bidi-0.3.18",
+      "sha256": "5c1cb5db39152898a79168971543b1cb5020dff7fe43c8dc468b0885f5e29df5"
+    },
+    "unicode-ident": {
+      "url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.25.crate",
+      "archive": "unicode-ident-1.0.25.crate",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/unicode-ident",
+      "tree_root": "unicode-ident-1.0.25",
+      "sha256": "ab72a15cf68d77cb0987d3684aa8a45c5ef827e8cb49ee2f30bfd7ba2feb519f"
+    },
+    "unicode-width": {
+      "url": "https://static.crates.io/crates/unicode-width/unicode-width-0.2.2.crate",
+      "archive": "unicode-width-0.2.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/unicode-width",
+      "tree_root": "unicode-width-0.2.2",
+      "sha256": "b4ac048d71ede7ee76d585517add45da530660ef4390e49b098733c6e897f254"
+    },
+    "unsafe-libyaml": {
+      "url": "https://static.crates.io/crates/unsafe-libyaml/unsafe-libyaml-0.2.11.crate",
+      "archive": "unsafe-libyaml-0.2.11.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/unsafe-libyaml",
+      "tree_root": "unsafe-libyaml-0.2.11",
+      "sha256": "673aac59facbab8a9007c7f6108d11f63b603f7cabff99fabf650fea5c32b861"
+    },
+    "untrusted": {
+      "url": "https://static.crates.io/crates/untrusted/untrusted-0.9.0.crate",
+      "archive": "untrusted-0.9.0.crate",
+      "license": "ISC",
+      "directory": "external/rust/android-crates-io/crates/untrusted",
+      "tree_root": "untrusted-0.9.0",
+      "sha256": "8ecb6da28b8a351d773b68d5825ac39017e680750f980f3a1a85cd8dd28a47c1"
+    },
+    "url": {
+      "url": "https://static.crates.io/crates/url/url-2.5.8.crate",
+      "archive": "url-2.5.8.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/url",
+      "tree_root": "url-2.5.8",
+      "sha256": "ff67a8a4397373c3ef660812acab3268222035010ab8680ec4215f38ba3d0eed"
+    },
+    "utf-8": {
+      "url": "https://static.crates.io/crates/utf-8/utf-8-0.7.6.crate",
+      "archive": "utf-8-0.7.6.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/utf-8",
+      "tree_root": "utf-8-0.7.6",
+      "sha256": "09cc8ee72d2a9becf2f2febe0205bbed8fc6615b7cb429ad062dc7b7ddd036a9"
+    },
+    "utf8_iter": {
+      "url": "https://static.crates.io/crates/utf8_iter/utf8_iter-1.0.4.crate",
+      "archive": "utf8_iter-1.0.4.crate",
+      "license": "Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/utf8_iter",
+      "tree_root": "utf8_iter-1.0.4",
+      "sha256": "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
+    },
+    "want": {
+      "url": "https://static.crates.io/crates/want/want-0.3.1.crate",
+      "archive": "want-0.3.1.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/want",
+      "tree_root": "want-0.3.1",
+      "sha256": "bfa7760aed19e106de2c7c0b581b509f2f25d3dacaf737cb82ac61bc6d760b0e"
+    },
+    "which": {
+      "url": "https://static.crates.io/crates/which/which-8.0.6.crate",
+      "archive": "which-8.0.6.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/which",
+      "tree_root": "which-8.0.6",
+      "sha256": "bae2f2b2b816647a1cab1acc91f5bd20812d53cb344382635ec2181940c8034f"
+    },
+    "winapi-util": {
+      "url": "https://static.crates.io/crates/winapi-util/winapi-util-0.1.11.crate",
+      "archive": "winapi-util-0.1.11.crate",
+      "license": "Unlicense OR MIT",
+      "directory": "external/rust/android-crates-io/crates/winapi-util",
+      "tree_root": "winapi-util-0.1.11",
+      "sha256": "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
+    },
+    "windows-link": {
+      "url": "https://static.crates.io/crates/windows-link/windows-link-0.2.1.crate",
+      "archive": "windows-link-0.2.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/windows-link",
+      "tree_root": "windows-link-0.2.1",
+      "sha256": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
+    },
+    "windows-sys": {
+      "url": "https://static.crates.io/crates/windows-sys/windows-sys-0.61.2.crate",
+      "archive": "windows-sys-0.61.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/windows-sys",
+      "tree_root": "windows-sys-0.61.2",
+      "sha256": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
+    },
+    "windows-targets": {
+      "url": "https://static.crates.io/crates/windows-targets/windows-targets-0.53.5.crate",
+      "archive": "windows-targets-0.53.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/windows-targets",
+      "tree_root": "windows-targets-0.53.5",
+      "sha256": "4945f9f551b88e0d65f3db0bc25c33b8acea4d9e41163edf90dcd0b19f9069f3"
+    },
+    "windows_aarch64_gnullvm": {
+      "url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.53.1.crate",
+      "archive": "windows_aarch64_gnullvm-0.53.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/windows_aarch64_gnullvm",
+      "tree_root": "windows_aarch64_gnullvm-0.53.1",
+      "sha256": "a9d8416fa8b42f5c947f8482c43e7d89e73a173cead56d044f6a56104a6d1b53"
+    },
+    "windows_i686_gnullvm": {
+      "url": "https://static.crates.io/crates/windows_i686_gnullvm/windows_i686_gnullvm-0.53.1.crate",
+      "archive": "windows_i686_gnullvm-0.53.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/windows_i686_gnullvm",
+      "tree_root": "windows_i686_gnullvm-0.53.1",
+      "sha256": "fa7359d10048f68ab8b09fa71c3daccfb0e9b559aed648a8f95469c27057180c"
+    },
+    "windows_x86_64_gnullvm": {
+      "url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.53.1.crate",
+      "archive": "windows_x86_64_gnullvm-0.53.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "directory": "external/rust/android-crates-io/crates/windows_x86_64_gnullvm",
+      "tree_root": "windows_x86_64_gnullvm-0.53.1",
+      "sha256": "0ffa179e2d07eee8ad8f57493436566c7cc30ac536a3379fdf008f47f6bb7ae1"
+    },
+    "writeable": {
+      "url": "https://static.crates.io/crates/writeable/writeable-0.6.4.crate",
+      "archive": "writeable-0.6.4.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/writeable",
+      "tree_root": "writeable-0.6.4",
+      "sha256": "3ad82d2a33cdc9674dc7465672f271e096168fcdbe0f799d9e6db8c5892679dc"
+    },
+    "xml-rs": {
+      "url": "https://static.crates.io/crates/xml-rs/xml-rs-0.8.20.crate",
+      "archive": "xml-rs-0.8.20.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/xml-rs",
+      "tree_root": "xml-rs-0.8.20",
+      "sha256": "791978798f0597cfc70478424c2b4fdc2b7a8024aaff78497ef00f24ef674193"
+    },
+    "yoke-derive": {
+      "url": "https://static.crates.io/crates/yoke-derive/yoke-derive-0.8.2.crate",
+      "archive": "yoke-derive-0.8.2.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/yoke-derive",
+      "tree_root": "yoke-derive-0.8.2",
+      "sha256": "de844c262c8848816172cef550288e7dc6c7b7814b4ee56b3e1553f275f1858e"
+    },
+    "yoke": {
+      "url": "https://static.crates.io/crates/yoke/yoke-0.8.3.crate",
+      "archive": "yoke-0.8.3.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/yoke",
+      "tree_root": "yoke-0.8.3",
+      "sha256": "709fe23a0424b6a435d82152b1bd3fdfb0833487d5fa90d05d42762a9891fef5"
+    },
+    "zerocopy-derive": {
+      "url": "https://static.crates.io/crates/zerocopy-derive/zerocopy-derive-0.8.57.crate",
+      "archive": "zerocopy-derive-0.8.57.crate",
+      "license": "BSD-2-Clause OR Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/zerocopy-derive",
+      "tree_root": "zerocopy-derive-0.8.57",
+      "sha256": "146c01f5ab44258da43cf276c74a2763db2ff3969c9c652c3f2de07041d0b2bc"
+    },
+    "zerocopy": {
+      "url": "https://static.crates.io/crates/zerocopy/zerocopy-0.8.57.crate",
+      "archive": "zerocopy-0.8.57.crate",
+      "license": "BSD-2-Clause OR Apache-2.0 OR MIT",
+      "directory": "external/rust/android-crates-io/crates/zerocopy",
+      "tree_root": "zerocopy-0.8.57",
+      "sha256": "d35102a9f36d089ccae9e4c6802bc118be4487b80aaffc0ab4e0cf5ce92d2873"
+    },
+    "zerofrom-derive": {
+      "url": "https://static.crates.io/crates/zerofrom-derive/zerofrom-derive-0.1.7.crate",
+      "archive": "zerofrom-derive-0.1.7.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/zerofrom-derive",
+      "tree_root": "zerofrom-derive-0.1.7",
+      "sha256": "11532158c46691caf0f2593ea8358fed6bbf68a0315e80aae9bd41fbade684a1"
+    },
+    "zerofrom": {
+      "url": "https://static.crates.io/crates/zerofrom/zerofrom-0.1.8.crate",
+      "archive": "zerofrom-0.1.8.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/zerofrom",
+      "tree_root": "zerofrom-0.1.8",
+      "sha256": "0ec05a11813ea801ff6d75110ad09cd0824ddba17dfe17128ea0d5f68e6c5272"
+    },
+    "zerotrie": {
+      "url": "https://static.crates.io/crates/zerotrie/zerotrie-0.2.5.crate",
+      "archive": "zerotrie-0.2.5.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/zerotrie",
+      "tree_root": "zerotrie-0.2.5",
+      "sha256": "4ea269c3bd32f0a32c321907a2ae912ba6f4649bb0fc764a15627e99a7095a3f"
+    },
+    "zerovec-derive": {
+      "url": "https://static.crates.io/crates/zerovec-derive/zerovec-derive-0.11.6.crate",
+      "archive": "zerovec-derive-0.11.6.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/zerovec-derive",
+      "tree_root": "zerovec-derive-0.11.6",
+      "sha256": "34df6fc39dbd26ddc9c10e6a2984476e13acce22e64e4487636ef494369225da"
+    },
+    "zerovec": {
+      "url": "https://static.crates.io/crates/zerovec/zerovec-0.11.8.crate",
+      "archive": "zerovec-0.11.8.crate",
+      "license": "Unicode-3.0",
+      "directory": "external/rust/android-crates-io/crates/zerovec",
+      "tree_root": "zerovec-0.11.8",
+      "sha256": "bb0464e17806c1d976d5cba29399c7f08e516e279e2ba493f63123b5fca67dd8"
+    },
+    "zip": {
+      "url": "https://static.crates.io/crates/zip/zip-0.6.6.crate",
+      "archive": "zip-0.6.6.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/zip",
+      "tree_root": "zip-0.6.6",
+      "sha256": "760394e246e4c28189f19d488c058bf16f564016aefac5d32bb1f3b51d5e9261"
+    },
+    "zlib-rs": {
+      "url": "https://static.crates.io/crates/zlib-rs/zlib-rs-0.6.7.crate",
+      "archive": "zlib-rs-0.6.7.crate",
+      "license": "Zlib",
+      "directory": "external/rust/android-crates-io/crates/zlib-rs",
+      "tree_root": "zlib-rs-0.6.7",
+      "sha256": "34b31d188d9d685a4f9c7b46d6e36631b07058d2cfe190267adce54dc230bf12"
+    },
+    "zmij": {
+      "url": "https://static.crates.io/crates/zmij/zmij-1.0.23.crate",
+      "archive": "zmij-1.0.23.crate",
+      "license": "MIT",
+      "directory": "external/rust/android-crates-io/crates/zmij",
+      "tree_root": "zmij-1.0.23",
+      "sha256": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+    },
+    "casimir": {
+      "url": "https://codeload.github.com/google/casimir/tar.gz/50476e85f54349178c455844039b62ce9261e5f3",
+      "sha256": "a6870d5b4dce1c9598b3b177c265ec352d94f0e71e2238aed05967b3fd85b777",
+      "archive": "casimir-50476e85f54349178c455844039b62ce9261e5f3.tar.gz",
+      "tree_root": "casimir-50476e85f54349178c455844039b62ce9261e5f3",
+      "directory": "packages/modules/Nfc/libnfc-nci/tools/casimir",
+      "license": "Apache-2.0"
+    },
+    "libslirp": {
+      "url": "https://android.googlesource.com/trusty/external/qemu-libslirp/+archive/6559d5fa78a9afc4e21cffdad4b91e45265d359b.tar.gz",
+      "archive": "external__libslirp-6559d5fa78a9afc4e21cffdad4b91e45265d359b.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "third_party/libslirp",
+      "tree_sha256": "50c828706f2ffc22fcbc342ec64b71b303e0249960762893dc750d5066bc7076"
+    }
+  },
+  "core": {
+    "tools__rootcanal_proto": {
+      "url": "https://android.googlesource.com/platform/tools/rootcanal/+archive/bba9b040de190d195ec34e52f8e722e43696b7dd.tar.gz",
+      "archive": "tools__rootcanal-bba9b040de190d195ec34e52f8e722e43696b7dd.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "tools/rootcanal",
+      "tree_sha256": "c2054ad4bab456595266e70ac86677565f3c5577ae8020ba181727e16bf158c8",
+      "members": [
+        "proto"
+      ]
+    },
+    "cuttlefish_shared_buf": {
+      "url": "https://android.googlesource.com/device/google/cuttlefish/+/010fb1827e4c430a57dd1e75561a961b8ffc142e/common/libs/fs/shared_buf.h?format=TEXT",
+      "archive": "cuttlefish-shared_buf-010fb1827e4c430a57dd1e75561a961b8ffc142e.h",
+      "license": "Apache-2.0",
+      "sha256": "cb391a69e921012ba26a53206f74273d7170f0a1c550101d1716d94664ed56e8",
+      "file": "device/google/cuttlefish/common/libs/fs/shared_buf.h",
+      "encoding": "base64"
+    },
+    "device__google__cuttlefish__host__commands__modem_simulator": {
+      "url": "https://android.googlesource.com/device/google/cuttlefish/+archive/010fb1827e4c430a57dd1e75561a961b8ffc142e/host/commands/modem_simulator.tar.gz",
+      "archive": "device__google__cuttlefish__host__commands__modem_simulator-010fb1827e4c430a57dd1e75561a961b8ffc142e.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "device/google/cuttlefish/host/commands/modem_simulator",
+      "tree_sha256": "8f42425007442a7bab0f38d52b3fb0833b118f732da285e1e1ea6b85c25b322a"
+    },
+    "external__abseil-cpp": {
+      "url": "https://android.googlesource.com/platform/external/abseil-cpp/+archive/000dabbd0c985dae5c40eb3a9531d4c8ee3f9d18.tar.gz",
+      "archive": "external__abseil-cpp-000dabbd0c985dae5c40eb3a9531d4c8ee3f9d18.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/abseil-cpp",
+      "tree_sha256": "136fc6d80906043806026ab4d6d152b47be48cd4b89f1ec9d81dee726ffa318b"
+    },
+    "external__angle": {
+      "url": "https://android.googlesource.com/platform/external/angle/+archive/901e32aa9923b05c3a2af846f8a28fc79c93d0be.tar.gz",
+      "archive": "external__angle-901e32aa9923b05c3a2af846f8a28fc79c93d0be.tar.gz",
+      "license": "BSD-3-Clause and third-party notices",
+      "directory": "external/angle",
+      "tree_sha256": "ce9feb181a96362c5b9e644913fe3593fe19ccef0b6c1f093186c5537688b304"
+    },
+    "external__astc-codec": {
+      "url": "https://android.googlesource.com/platform/external/astc-codec/+archive/17ae36822a8084f45ae51f9031e81f8318254f33.tar.gz",
+      "archive": "external__astc-codec-17ae36822a8084f45ae51f9031e81f8318254f33.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/astc-codec",
+      "tree_sha256": "4a55bac22274424710c77ccf6301d25fcb0546332af632bb9809d0994462ae47"
+    },
+    "external__boringssl": {
+      "url": "https://android.googlesource.com/platform/external/boringssl/+archive/12a513beab0dfba3fa7e92baab5b7e473d5d52ce.tar.gz",
+      "archive": "external__boringssl-12a513beab0dfba3fa7e92baab5b7e473d5d52ce.tar.gz",
+      "license": "ISC, OpenSSL and file-specific upstream terms",
+      "directory": "external/boringssl",
+      "tree_sha256": "784663e26821812704d77081d62af331560e40c346a6bb2d99809413845e168f"
+    },
+    "external__cares": {
+      "url": "https://android.googlesource.com/platform/external/c-ares/+archive/42cf8dee534419f1826f474d2f5fd67ac94a1706.tar.gz",
+      "archive": "external__cares-42cf8dee534419f1826f474d2f5fd67ac94a1706.tar.gz",
+      "license": "MIT",
+      "directory": "external/cares",
+      "tree_sha256": "31d0384bb7d2eb094012278396ea9706f858c964d613185942c054455d04565c"
+    },
+    "external__crashpad": {
+      "url": "https://android.googlesource.com/platform/external/crashpad/+archive/1967b1e3f928ce7660abc0966954c03e695011d6.tar.gz",
+      "archive": "external__crashpad-1967b1e3f928ce7660abc0966954c03e695011d6.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/crashpad",
+      "tree_sha256": "878588724e506d079c9491fba1c3c49ea97be05047241a29a5696248dbc0c3e0"
+    },
+    "external__curl": {
+      "url": "https://android.googlesource.com/platform/external/curl/+archive/1da4b04273638c8afe6f88bd7a7ccfb693640773.tar.gz",
+      "archive": "external__curl-1da4b04273638c8afe6f88bd7a7ccfb693640773.tar.gz",
+      "license": "curl",
+      "directory": "external/curl",
+      "tree_sha256": "22a695f3df96b3a647a29a3f635dc6aec642e483f4147db742e2e8f5b14f2011"
+    },
+    "external__dtc": {
+      "url": "https://android.googlesource.com/platform/external/dtc/+archive/e895d82d389eaece070a27533936077d2c8f414b.tar.gz",
+      "archive": "external__dtc-e895d82d389eaece070a27533936077d2c8f414b.tar.gz",
+      "license": "GPL-2.0-or-later for tools; BSD-2-Clause OR GPL-2.0-or-later for libfdt",
+      "directory": "external/dtc",
+      "tree_sha256": "afea5901f9851a22a89516401daed8475e65d293b6318658db9aeb6c5b466b87"
+    },
+    "external__flatbuffers": {
+      "url": "https://android.googlesource.com/platform/external/flatbuffers/+archive/a551e2263a3f5036b46502aa6822257ed1a8a49f.tar.gz",
+      "archive": "external__flatbuffers-a551e2263a3f5036b46502aa6822257ed1a8a49f.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/flatbuffers",
+      "tree_sha256": "c3278657a83a29863716c413febaee181ec59fff6848f9846944858679550881"
+    },
+    "external__glib": {
+      "url": "https://android.googlesource.com/platform/external/bluetooth/glib/+archive/9f3ee561eee2bc195845201a4931d4709ff597e5.tar.gz",
+      "archive": "external__glib-9f3ee561eee2bc195845201a4931d4709ff597e5.tar.gz",
+      "license": "LGPL-2.1-or-later",
+      "directory": "external/glib",
+      "tree_sha256": "6a92e67cfd1c8d6232dd9aaf9cfdef62fb73f194d3fa8c1ce7350c61abfca541"
+    },
+    "external__google-benchmark": {
+      "url": "https://android.googlesource.com/platform/external/google-benchmark/+archive/1bff076dad8a0cbb740e7f68586d59c3bb3e1bfd.tar.gz",
+      "archive": "external__google-benchmark-1bff076dad8a0cbb740e7f68586d59c3bb3e1bfd.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/google-benchmark",
+      "tree_sha256": "8beb0dcef6b83813a91a282f9a6fffd7350ed4603fdd94569658ec6acee77166"
+    },
+    "external__google-breakpad": {
+      "url": "https://android.googlesource.com/platform/external/google-breakpad/+archive/61a8ef3ca8494875cb37e28a69500ed366328810.tar.gz",
+      "archive": "external__google-breakpad-61a8ef3ca8494875cb37e28a69500ed366328810.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/google-breakpad",
+      "tree_sha256": "8067ca674d8d34e37a58f8162f63a78c2ba78d4fad79867616dd9c2d64ef480c"
+    },
+    "external__googletest": {
+      "url": "https://android.googlesource.com/platform/external/googletest/+archive/013ef6db94e3677b24b8e4c9fbdf1708ecea516b.tar.gz",
+      "archive": "external__googletest-013ef6db94e3677b24b8e4c9fbdf1708ecea516b.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/googletest",
+      "tree_sha256": "c162d51fb23d7868c7ea1da87635900d532783cda932dbbb5059b983a4a879f8"
+    },
+    "external__grpc": {
+      "url": "https://android.googlesource.com/platform/external/grpc-grpc/+archive/fea7de5acfa2da17203f8eea78f974b41bcb6807.tar.gz",
+      "archive": "external__grpc-fea7de5acfa2da17203f8eea78f974b41bcb6807.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/grpc",
+      "tree_sha256": "bf8268ab1c1930de85c37dfe0aac9947f35fce6c361a4f388be2d2cd20ccd533"
+    },
+    "external__libpng": {
+      "url": "https://android.googlesource.com/platform/external/libpng/+archive/9e617f38e8a384ccf0e2554d12d1aea2bcc08401.tar.gz",
+      "archive": "external__libpng-9e617f38e8a384ccf0e2554d12d1aea2bcc08401.tar.gz",
+      "license": "libpng license",
+      "directory": "external/libpng",
+      "tree_sha256": "32c827883dc6b53a2956c15d7f88ce883024cadc8ec850309f80f377ae80e019"
+    },
+    "external__libslirp": {
+      "url": "https://android.googlesource.com/trusty/external/qemu-libslirp/+archive/6559d5fa78a9afc4e21cffdad4b91e45265d359b.tar.gz",
+      "archive": "external__libslirp-6559d5fa78a9afc4e21cffdad4b91e45265d359b.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/libslirp",
+      "tree_sha256": "50c828706f2ffc22fcbc342ec64b71b303e0249960762893dc750d5066bc7076"
+    },
+    "external__libusb": {
+      "url": "https://android.googlesource.com/platform/external/libusb/+archive/23f123a3f531572d14a253db3451c950e21d2447.tar.gz",
+      "archive": "external__libusb-23f123a3f531572d14a253db3451c950e21d2447.tar.gz",
+      "license": "LGPL-2.1-or-later",
+      "directory": "external/libusb",
+      "tree_sha256": "95ade04f84b35a0df040b2cbe51321904627fe23454a6aaf530c820e00932e0c"
+    },
+    "external__lz4": {
+      "url": "https://android.googlesource.com/platform/external/lz4/+archive/649782b223e2d62ca5743140f3d4e6afccb85eb4.tar.gz",
+      "archive": "external__lz4-649782b223e2d62ca5743140f3d4e6afccb85eb4.tar.gz",
+      "license": "BSD-2-Clause for library",
+      "directory": "external/lz4",
+      "tree_sha256": "4bafb363ec98b0d68c37c7925810ef5787dfb21ba608476013a832e9b0e7a3c0"
+    },
+    "external__protobuf": {
+      "url": "https://android.googlesource.com/platform/external/protobuf/+archive/623d88a75a0b17ad2cc4be8fa79c3b97e7384a40.tar.gz",
+      "archive": "external__protobuf-623d88a75a0b17ad2cc4be8fa79c3b97e7384a40.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/protobuf",
+      "tree_sha256": "82be66c6fcd95ffec5b9ce864339a443040f3e8e42c4f4d203646bc85b6bb8d2"
+    },
+    "external__regex-re2": {
+      "url": "https://android.googlesource.com/platform/external/regex-re2/+archive/3b76205b4a5ab7fd9a11df8ac930d21cf52ad189.tar.gz",
+      "archive": "external__regex-re2-3b76205b4a5ab7fd9a11df8ac930d21cf52ad189.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/regex-re2",
+      "tree_sha256": "5463b56c3f3bfa3f616efbc4861c8d5272420dc1332ba78651e72b32ce4aef3a"
+    },
+    "external__tink": {
+      "url": "https://android.googlesource.com/platform/external/tink/+archive/f416fdeb6d1ebafda566d4ecff80eace51a750f2.tar.gz",
+      "archive": "external__tink-f416fdeb6d1ebafda566d4ecff80eace51a750f2.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "external/tink",
+      "tree_sha256": "b9332eda1c90901feeb2c94221508a752a515343f4da6fb2d2632351f45d30f7"
+    },
+    "external__tinyobjloader": {
+      "url": "https://android.googlesource.com/platform/external/tinyobjloader/+archive/d16a940067fbc191364fc1d3e2a2d907209c9320.tar.gz",
+      "archive": "external__tinyobjloader-d16a940067fbc191364fc1d3e2a2d907209c9320.tar.gz",
+      "license": "MIT",
+      "directory": "external/tinyobjloader",
+      "tree_sha256": "027fbc981a0f1625cf30b17fb69ce2e271a2efa438760a0e49ca73bbc55169bb"
+    },
+    "external__virglrenderer": {
+      "url": "https://android.googlesource.com/platform/external/virglrenderer/+archive/5d6e453751926c5209c7bad5ef7a6285feef5bb6.tar.gz",
+      "archive": "external__virglrenderer-5d6e453751926c5209c7bad5ef7a6285feef5bb6.tar.gz",
+      "license": "MIT",
+      "directory": "external/virglrenderer",
+      "tree_sha256": "002acd2d78b4283dff3153262ba4313c1023b678cc1448bbbe58cdb832d87312"
+    },
+    "external__webrtc__third_party__jsoncpp": {
+      "url": "https://android.googlesource.com/platform/external/webrtc/+archive/34c5ae008bf811fce3006818f26f922b3647237a/third_party/jsoncpp.tar.gz",
+      "archive": "external__webrtc__third_party__jsoncpp-34c5ae008bf811fce3006818f26f922b3647237a.tar.gz",
+      "license": "MIT or public-domain grant",
+      "directory": "external/webrtc/third_party/jsoncpp",
+      "tree_sha256": "08ced5cc12f98d03614ed909db5d82bec9ca811086f2fb02b1b819fdfa527882"
+    },
+    "external__webrtc__third_party__libevent": {
+      "url": "https://android.googlesource.com/platform/external/webrtc/+archive/34c5ae008bf811fce3006818f26f922b3647237a/third_party/libevent.tar.gz",
+      "archive": "external__webrtc__third_party__libevent-34c5ae008bf811fce3006818f26f922b3647237a.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/webrtc/third_party/libevent",
+      "tree_sha256": "619226df69d616035d8fefc8739ef778da16334dc250fdb454c9456fd15636fb"
+    },
+    "external__webrtc__third_party__libyuv": {
+      "url": "https://android.googlesource.com/platform/external/webrtc/+archive/34c5ae008bf811fce3006818f26f922b3647237a/third_party/libyuv.tar.gz",
+      "archive": "external__webrtc__third_party__libyuv-34c5ae008bf811fce3006818f26f922b3647237a.tar.gz",
+      "license": "BSD-3-Clause",
+      "directory": "external/webrtc/third_party/libyuv",
+      "tree_sha256": "4b2d13b60c0b7cd299e97b011ac0319f48c94305894a8b12f7707b19c6c13895"
+    },
+    "external__wpa_supplicant_8": {
+      "url": "https://android.googlesource.com/platform/external/wpa_supplicant_8/+archive/db64ab725acee6991a7ee9746d960731cca0b563.tar.gz",
+      "archive": "external__wpa_supplicant_8-db64ab725acee6991a7ee9746d960731cca0b563.tar.gz",
+      "license": "BSD-3-Clause and upstream notices",
+      "directory": "external/wpa_supplicant_8",
+      "tree_sha256": "f18c04fc060e6c87e1edcba1543b77fc5132eb61b2fa022170917003a7712854"
+    },
+    "external__zlib": {
+      "url": "https://android.googlesource.com/platform/external/zlib/+archive/5a4f1701693dff36e495d13dd14b70e15abe0d01.tar.gz",
+      "archive": "external__zlib-5a4f1701693dff36e495d13dd14b70e15abe0d01.tar.gz",
+      "license": "Zlib with upstream notices",
+      "directory": "external/zlib",
+      "tree_sha256": "bdd0bd66f56dc418699e1f1557d35623416dac808ca293a06125a238ffb62e79"
+    },
+    "hardware__google__aemu": {
+      "url": "https://android.googlesource.com/platform/hardware/google/aemu/+archive/36815ef31763c79dfc42b461e6ce35264ead08c4.tar.gz",
+      "archive": "hardware__google__aemu-36815ef31763c79dfc42b461e6ce35264ead08c4.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "hardware/google/aemu",
+      "tree_sha256": "c73bfbb2fe367f8fe2583b13f7153c7c7ed67782b805dc35cf626530de1d2e98"
+    },
+    "hardware__google__gfxstream": {
+      "url": "https://android.googlesource.com/platform/hardware/google/gfxstream/+archive/501867e6a3b1a3be7b935cc977d291150846edab.tar.gz",
+      "archive": "hardware__google__gfxstream-501867e6a3b1a3be7b935cc977d291150846edab.tar.gz",
+      "license": "Apache-2.0",
+      "directory": "hardware/google/gfxstream",
+      "tree_sha256": "6ee0a375fc474ec5542f5bfa51af26014d2bb4a4272c9133a7a71bce04924d6d"
+    },
+    "qemu": {
+      "url": "https://android.googlesource.com/platform/external/qemu/+archive/5e51202879523d4df1bca8ca6944129ff05df02b.tar.gz",
+      "archive": "qemu-5e51202879523d4df1bca8ca6944129ff05df02b.tar.gz",
+      "license": "GPL-2.0-only and file-specific upstream terms",
+      "directory": "external/qemu",
+      "tree_sha256": "e606bb3b9ea6ce35ba747c347e686f5e1cce5cdb17ed4e05ea3e4b548b93d678"
+    },
+    "ffmpeg": {
+      "url": "https://ffmpeg.org/releases/ffmpeg-4.4.2.tar.xz",
+      "archive": "ffmpeg-4.4.2.tar.xz",
+      "license": "LGPL-2.1-or-later or GPL-2.0-or-later depending on configured options",
+      "sha256": "af419a7f88adbc56c758ab19b4c708afbcae15ef09606b82b855291f6a6faa93",
+      "directory": "host-libraries/ffmpeg",
+      "tree_root": "ffmpeg-4.4.2"
+    },
+    "x264": {
+      "url": "https://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20170103-2245.tar.bz2",
+      "archive": "x264-snapshot-20170103-2245.tar.bz2",
+      "license": "GPL-2.0-or-later",
+      "sha256": "99410ce5c6d67ac26a2d3fee1b6a088681063035f44bd5b2dbb243426e4eceeb",
+      "directory": "host-libraries/x264",
+      "tree_root": "x264-snapshot-20170103-2245"
+    },
+    "pixman": {
+      "url": "https://cairographics.org/releases/pixman-0.34.0.tar.gz",
+      "archive": "pixman-0.34.0.tar.gz",
+      "license": "MIT and upstream notices",
+      "sha256": "21b6b249b51c6800dc9553b65106e1e37d0e25df942c90531d4c3997aa20a88e",
+      "directory": "host-libraries/pixman",
+      "tree_root": "pixman-0.34.0"
+    },
+    "gnss": {
+      "url": "https://android.googlesource.com/device/google/cuttlefish/+/010fb1827e4c430a57dd1e75561a961b8ffc142e/host/commands/gnss_grpc_proxy/gnss_grpc_proxy.proto?format=TEXT",
+      "archive": "gnss_grpc_proxy.proto",
+      "license": "Apache-2.0",
+      "sha256": "251e9b5c34aeba77424dd4d2e423c765649247b1f39263d6f281f43111b2614f",
+      "file": "device/google/cuttlefish/host/commands/gnss_grpc_proxy/gnss_grpc_proxy.proto",
+      "encoding": "base64"
+    }
+  },
+  "netsim_bootstrap": {
+    "bazel": {
+      "url": "https://github.com/bazelbuild/bazel/releases/download/9.1.1rc1/bazel_nojdk-9.1.1rc1-linux-x86_64",
+      "archive": "bazel_nojdk-9.1.1rc1-linux-x86_64",
+      "license": "Apache-2.0",
+      "file": "bazel",
+      "sha256": "f64796eddfa9202122a4a9f569cebc8dd8a39157fdefce0c1b62922d828d148d"
+    },
+    "jdk": {
+      "url": "https://github.com/aosstudio/jdk/releases/download/latest/aosstudio-jdk-21.0.13.1-2-linux-x86_64.tar.gz",
+      "archive": "aosstudio-jdk-21.0.13.1-2-linux-x86_64.tar.gz",
+      "license": "GPL-2.0-only WITH Classpath-exception-2.0 and upstream notices",
+      "file": "jdk.tar.gz",
+      "sha256": "38ea3237e496258a103aa482a7733a08bef94572473625d47a2f5a9854948840"
+    },
+    "go": {
+      "url": "https://go.dev/dl/go1.22.4.linux-amd64.tar.gz",
+      "archive": "go1.22.4.linux-amd64.tar.gz",
+      "license": "BSD-3-Clause and upstream notices",
+      "file": "dist/go1.22.4.linux-amd64.tar.gz",
+      "sha256": "ba79d4526102575196273416239cca418a651e049c2b099f3159db85e7bade7d"
+    },
+    "rustc-1.94.1-x86_64-unknown-linux-gnu.tar.xz": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/rustc-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "archive": "rustc-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "license": "MIT OR Apache-2.0 and respective upstream notices",
+      "file": "dist/rustc-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "0a6b16ca476461c6238f48efcb74a7aa08a3983e61adf587f208ba48504d87e1"
+    },
+    "cargo-1.94.1-x86_64-unknown-linux-gnu.tar.xz": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/cargo-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "archive": "cargo-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "license": "MIT OR Apache-2.0 and respective upstream notices",
+      "file": "dist/cargo-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "03595624775204f80ff3a67986f69c8918e4cd311877ced635108888013a1e39"
+    },
+    "rust-std-1.94.1-x86_64-unknown-linux-gnu.tar.xz": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/rust-std-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "archive": "rust-std-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "license": "MIT OR Apache-2.0 and respective upstream notices",
+      "file": "dist/rust-std-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "74109ee2c19098f1d7122087dd338a8f643203b3ce678c9d58169db733e17a03"
+    },
+    "rustfmt-1.94.1-x86_64-unknown-linux-gnu.tar.xz": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/rustfmt-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "archive": "rustfmt-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "license": "MIT OR Apache-2.0 and respective upstream notices",
+      "file": "dist/rustfmt-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "eaff8c808a1b82261e235002fc86ad217cba194525364cfd8d3a4de21c179d0f"
+    },
+    "clippy-1.94.1-x86_64-unknown-linux-gnu.tar.xz": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/clippy-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "archive": "clippy-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "license": "MIT OR Apache-2.0 and respective upstream notices",
+      "file": "dist/clippy-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "883a8116360741aca335e12cc02c201e027473861c807027df19bb82583a8603"
+    },
+    "llvm-tools-1.94.1-x86_64-unknown-linux-gnu.tar.xz": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/llvm-tools-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "archive": "llvm-tools-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "license": "MIT OR Apache-2.0 and respective upstream notices",
+      "file": "dist/llvm-tools-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+      "sha256": "058274dede890491d156aa9fe7da397e56c88f9b564bc15455f540f420d2ef9e"
+    },
+    "channel-rust-1.94.1.toml": {
+      "url": "https://static.rust-lang.org/dist/2026-03-26/channel-rust-1.94.1.toml",
+      "archive": "channel-rust-1.94.1.toml",
+      "license": "Rust release metadata",
+      "file": "dist/channel-rust-1.94.1.toml",
+      "sha256": "cc2f04dfc883549d683c8cc2a9393f523a3dfbd931f5d5eaef00303cca64a60d"
+    }
+  },
+  "netsim_dist": {
+    "0.2.4.tar.gz": {
+      "url": "https://github.com/bazel-contrib/rules_perl/archive/refs/tags/0.2.4.tar.gz",
+      "archive": "0.2.4.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "0.2.4.tar.gz",
+      "sha256": "bc7550f3881f63255a65c6dec7ce83c35e0ae48d7b9aa7e6e9237b06733cbff8"
+    },
+    "1dbb1a14e079f78d9214f8e48bf083f32e3ddb96.zip": {
+      "url": "https://github.com/googleapis/googleapis/archive/1dbb1a14e079f78d9214f8e48bf083f32e3ddb96.zip",
+      "archive": "1dbb1a14e079f78d9214f8e48bf083f32e3ddb96.zip",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "1dbb1a14e079f78d9214f8e48bf083f32e3ddb96.zip",
+      "sha256": "08fdc10f41d9b5e550164371fbe9365a5b02ff8a189a5c1c3e64e688077bed04"
+    },
+    "6ef568cf4a67362849911d1d2a546fd9f35db2ff.tar.gz": {
+      "url": "https://github.com/envoyproxy/data-plane-api/archive/6ef568cf4a67362849911d1d2a546fd9f35db2ff.tar.gz",
+      "archive": "6ef568cf4a67362849911d1d2a546fd9f35db2ff.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "6ef568cf4a67362849911d1d2a546fd9f35db2ff.tar.gz",
+      "sha256": "ed5e6c319f8ebcdf24a9491f866a599bb9a3c193b859a94ad13bd31f85b46855"
+    },
+    "abseil-cpp-20250814.1.tar.gz": {
+      "url": "https://github.com/abseil/abseil-cpp/releases/download/20250814.1/abseil-cpp-20250814.1.tar.gz",
+      "archive": "abseil-cpp-20250814.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "abseil-cpp-20250814.1.tar.gz",
+      "sha256": "1692f77d1739bacf3f94337188b78583cf09bab7e420d2dc6c5605a4f86785a1"
+    },
+    "apple_support.1.24.2.tar.gz": {
+      "url": "https://github.com/bazelbuild/apple_support/releases/download/1.24.2/apple_support.1.24.2.tar.gz",
+      "archive": "apple_support.1.24.2.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "apple_support.1.24.2.tar.gz",
+      "sha256": "8625cc7b7b2952e38101e17b4a9e7c043b3a79f55d26e4772819891998725e16"
+    },
+    "apple_support.2.2.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/apple_support/releases/download/2.2.0/apple_support.2.2.0.tar.gz",
+      "archive": "apple_support.2.2.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "apple_support.2.2.0.tar.gz",
+      "sha256": "cd2b8896e0a6100a1a7b14cd6abe2275202b5a0f8b1e1548ed71fb81b8c19182"
+    },
+    "b3ecb621bd0c38c7dd91d395608283cc4e849042.tar.gz": {
+      "url": "https://github.com/PCRE2Project/pcre2/archive/b3ecb621bd0c38c7dd91d395608283cc4e849042.tar.gz",
+      "archive": "b3ecb621bd0c38c7dd91d395608283cc4e849042.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "b3ecb621bd0c38c7dd91d395608283cc4e849042.tar.gz",
+      "sha256": "03001060c6cebe00862bd0cfb2338aaac7b72b96a7286cc9eb64c6115b60f518"
+    },
+    "bazel-gazelle-v0.46.0.tar.gz": {
+      "url": "https://github.com/bazel-contrib/bazel-gazelle/releases/download/v0.46.0/bazel-gazelle-v0.46.0.tar.gz",
+      "archive": "bazel-gazelle-v0.46.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "bazel-gazelle-v0.46.0.tar.gz",
+      "sha256": "efd44914900fe52eed891b5e11ff443e8b18ea9b84e304213f04d18e8e20df3d"
+    },
+    "bazel-skylib-1.9.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/bazel-skylib/releases/download/1.9.0/bazel-skylib-1.9.0.tar.gz",
+      "archive": "bazel-skylib-1.9.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "bazel-skylib-1.9.0.tar.gz",
+      "sha256": "3b5b49006181f5f8ff626ef8ddceaa95e9bb8ad294f7b5d7b11ea9f7ddaf8c59"
+    },
+    "bazel_features-v1.43.0.tar.gz": {
+      "url": "https://github.com/bazel-contrib/bazel_features/releases/download/v1.43.0/bazel_features-v1.43.0.tar.gz",
+      "archive": "bazel_features-v1.43.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "bazel_features-v1.43.0.tar.gz",
+      "sha256": "c26b4e69cf02fea24511a108d158188b9d8174426311aac59ce803a78d107648"
+    },
+    "bazel_jar_jar-v0.1.11.tar.gz": {
+      "url": "https://github.com/bazeltools/bazel_jar_jar/releases/download/v0.1.11/bazel_jar_jar-v0.1.11.tar.gz",
+      "archive": "bazel_jar_jar-v0.1.11.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "bazel_jar_jar-v0.1.11.tar.gz",
+      "sha256": "7a7d1c8cdd139864c55b1a09a76f92c4fdd2de0b5ccfd6137423006e2cfb2ed1"
+    },
+    "boringssl-0.20251124.0.tar.gz": {
+      "url": "https://github.com/google/boringssl/releases/download/0.20251124.0/boringssl-0.20251124.0.tar.gz",
+      "archive": "boringssl-0.20251124.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "boringssl-0.20251124.0.tar.gz",
+      "sha256": "d47f89b894bf534c82071d7426c5abf1e5bd044fee242def53cd5d3d0f656c09"
+    },
+    "buildozer-v8.5.1.tar.gz": {
+      "url": "https://github.com/fmeum/buildozer/releases/download/v8.5.1/buildozer-v8.5.1.tar.gz",
+      "archive": "buildozer-v8.5.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "buildozer-v8.5.1.tar.gz",
+      "sha256": "bd0786e0f8b6aed8c35898b4c06f64ba853d61d7c8361edb5a8d43c6ea37f5c6"
+    },
+    "cxx-1.0.175.tar.gz": {
+      "url": "https://github.com/dtolnay/cxx/releases/download/1.0.175/cxx-1.0.175.tar.gz",
+      "archive": "cxx-1.0.175.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "cxx-1.0.175.tar.gz",
+      "sha256": "88d9d39412274b71d8d2999574b00ccd2fbf3ca94296ea3ecca1f571f8a5ab9a"
+    },
+    "ee656c7534f5d7dc23d44dd611689568f72017a6.tar.gz": {
+      "url": "https://github.com/cncf/xds/archive/ee656c7534f5d7dc23d44dd611689568f72017a6.tar.gz",
+      "archive": "ee656c7534f5d7dc23d44dd611689568f72017a6.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "ee656c7534f5d7dc23d44dd611689568f72017a6.tar.gz",
+      "sha256": "49535f3c3370004309da50194c09bbfc528d4702424dd46e7d56a278a3dfc15d"
+    },
+    "fmt-12.0.0.zip": {
+      "url": "https://github.com/fmtlib/fmt/releases/download/12.0.0/fmt-12.0.0.zip",
+      "archive": "fmt-12.0.0.zip",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "fmt-12.0.0.zip",
+      "sha256": "1c32293203449792bf8e94c7f6699c643887e826f2d66a80869b4f279fb07d25"
+    },
+    "glib-2.82.2.tar.xz": {
+      "url": "https://download.gnome.org/sources/glib/2.82/glib-2.82.2.tar.xz",
+      "archive": "glib-2.82.2.tar.xz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "glib-2.82.2.tar.xz",
+      "sha256": "ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63"
+    },
+    "googleapis-rules-registry-v1.1.5.tar.gz": {
+      "url": "https://github.com/bazel-contrib/googleapis-rules-registry/releases/download/v1.1.5/googleapis-rules-registry-v1.1.5.tar.gz",
+      "archive": "googleapis-rules-registry-v1.1.5.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "googleapis-rules-registry-v1.1.5.tar.gz",
+      "sha256": "c7ce18a6d00764e2eed1ad683f0389e394fb5ef0b80a0927603af84dc7db96c6"
+    },
+    "googletest-1.17.0.tar.gz": {
+      "url": "https://github.com/google/googletest/releases/download/v1.17.0/googletest-1.17.0.tar.gz",
+      "archive": "googletest-1.17.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "googletest-1.17.0.tar.gz",
+      "sha256": "65fab701d9829d38cb77c14acdc431d2108bfdbf8979e40eb8ae567edf10b27c"
+    },
+    "platforms-1.1.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/platforms/releases/download/1.1.0/platforms-1.1.0.tar.gz",
+      "archive": "platforms-1.1.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "platforms-1.1.0.tar.gz",
+      "sha256": "dbad4a23abcca6171e47b79edc53bd6a41067a3b75f9e8b104656b459ff25046"
+    },
+    "protobuf-33.5.bazel.tar.gz": {
+      "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.5/protobuf-33.5.bazel.tar.gz",
+      "archive": "protobuf-33.5.bazel.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "protobuf-33.5.bazel.tar.gz",
+      "sha256": "692ea6352402599c72020d2487c8bace5c50439bac2029ed864b323e5e214e8b"
+    },
+    "pybind11_bazel-2.13.6.tar.gz": {
+      "url": "https://github.com/pybind/pybind11_bazel/releases/download/v2.13.6/pybind11_bazel-2.13.6.tar.gz",
+      "archive": "pybind11_bazel-2.13.6.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "pybind11_bazel-2.13.6.tar.gz",
+      "sha256": "cae680670bfa6e82703c03f2a3c995408cdcbf43616d7bdd198ef45d3c327731"
+    },
+    "re2-2025-08-12.zip": {
+      "url": "https://github.com/google/re2/releases/download/2025-08-12/re2-2025-08-12.zip",
+      "archive": "re2-2025-08-12.zip",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "re2-2025-08-12.zip",
+      "sha256": "817a073d6cbb1bc6fb91a4267375998a361437470d11bd27dea6f00d5b963990"
+    },
+    "rules_apple.4.1.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_apple/releases/download/4.1.0/rules_apple.4.1.0.tar.gz",
+      "archive": "rules_apple.4.1.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_apple.4.1.0.tar.gz",
+      "sha256": "20152b14d9a420afc15ace905c02fd6425ddceb084630f3f043b287adf0fcdbd"
+    },
+    "rules_cc-0.2.18.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_cc/releases/download/0.2.18/rules_cc-0.2.18.tar.gz",
+      "archive": "rules_cc-0.2.18.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_cc-0.2.18.tar.gz",
+      "sha256": "1de5b47721fce0af0dd453b3071228fdfc44bd18199826b3f0b03b423aae9f65"
+    },
+    "rules_foreign_cc-0.13.0.tar.gz": {
+      "url": "https://github.com/bazel-contrib/rules_foreign_cc/releases/download/0.13.0/rules_foreign_cc-0.13.0.tar.gz",
+      "archive": "rules_foreign_cc-0.13.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_foreign_cc-0.13.0.tar.gz",
+      "sha256": "8e5605dc2d16a4229cb8fbe398514b10528553ed4f5f7737b663fdd92f48e1c2"
+    },
+    "rules_gcs-v1.0.1.tar.gz": {
+      "url": "https://github.com/tweag/rules_gcs/releases/download/v1.0.1/rules_gcs-v1.0.1.tar.gz",
+      "archive": "rules_gcs-v1.0.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_gcs-v1.0.1.tar.gz",
+      "sha256": "410e0b7825562536e13cdfaef0bd0e28b1adbdd3ce72666628173dbfee094565"
+    },
+    "rules_go-v0.59.0.zip": {
+      "url": "https://github.com/bazel-contrib/rules_go/releases/download/v0.59.0/rules_go-v0.59.0.zip",
+      "archive": "rules_go-v0.59.0.zip",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_go-v0.59.0.zip",
+      "sha256": "68af54cb97fbdee5e5e8fe8d210d15a518f9d62abfd71620c3eaff3b26a5ff86"
+    },
+    "rules_java-9.3.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_java/releases/download/9.3.0/rules_java-9.3.0.tar.gz",
+      "archive": "rules_java-9.3.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_java-9.3.0.tar.gz",
+      "sha256": "6ef26d4f978e8b4cf5ce1d47532d70cb62cd18431227a1c8007c8f7843243c06"
+    },
+    "rules_jvm_external-6.8.tar.gz": {
+      "url": "https://github.com/bazel-contrib/rules_jvm_external/releases/download/6.8/rules_jvm_external-6.8.tar.gz",
+      "archive": "rules_jvm_external-6.8.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_jvm_external-6.8.tar.gz",
+      "sha256": "704a0197e4e966f96993260418f2542568198490456c21814f647ae7091f56f2"
+    },
+    "rules_kotlin-v1.9.6.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_kotlin/releases/download/v1.9.6/rules_kotlin-v1.9.6.tar.gz",
+      "archive": "rules_kotlin-v1.9.6.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_kotlin-v1.9.6.tar.gz",
+      "sha256": "3b772976fec7bdcda1d84b9d39b176589424c047eb2175bed09aac630e50af43"
+    },
+    "rules_license-1.0.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_license/releases/download/1.0.0/rules_license-1.0.0.tar.gz",
+      "archive": "rules_license-1.0.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_license-1.0.0.tar.gz",
+      "sha256": "26d4021f6898e23b82ef953078389dd49ac2b5618ac564ade4ef87cced147b38"
+    },
+    "rules_pkg-1.1.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_pkg/releases/download/1.1.0/rules_pkg-1.1.0.tar.gz",
+      "archive": "rules_pkg-1.1.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_pkg-1.1.0.tar.gz",
+      "sha256": "b7215c636f22c1849f1c3142c72f4b954bb12bb8dcf3cbe229ae6e69cc6479db"
+    },
+    "rules_proto-7.1.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_proto/releases/download/7.1.0/rules_proto-7.1.0.tar.gz",
+      "archive": "rules_proto-7.1.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_proto-7.1.0.tar.gz",
+      "sha256": "14a225870ab4e91869652cfd69ef2028277fc1dc4910d65d353b62d6e0ae21f4"
+    },
+    "rules_python-1.7.0.tar.gz": {
+      "url": "https://github.com/bazel-contrib/rules_python/releases/download/1.7.0/rules_python-1.7.0.tar.gz",
+      "archive": "rules_python-1.7.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_python-1.7.0.tar.gz",
+      "sha256": "f609f341d6e9090b981b3f45324d05a819fd7a5a56434f849c761971ce2c47da"
+    },
+    "rules_rust-0.69.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_rust/releases/download/0.69.0/rules_rust-0.69.0.tar.gz",
+      "archive": "rules_rust-0.69.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_rust-0.69.0.tar.gz",
+      "sha256": "bbc764c252d061281b2359277a4d46480e2dcfaf72afc1ce6e00ada58ccbfd4c"
+    },
+    "rules_shell-v0.6.1.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_shell/releases/download/v0.6.1/rules_shell-v0.6.1.tar.gz",
+      "archive": "rules_shell-v0.6.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_shell-v0.6.1.tar.gz",
+      "sha256": "e6b87c89bd0b27039e3af2c5da01147452f240f75d505f5b6880874f31036307"
+    },
+    "rules_swift.3.1.2.tar.gz": {
+      "url": "https://github.com/bazelbuild/rules_swift/releases/download/3.1.2/rules_swift.3.1.2.tar.gz",
+      "archive": "rules_swift.3.1.2.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "rules_swift.3.1.2.tar.gz",
+      "sha256": "5eff717c18bb513285b499add68f2331509cd4e411ff085e96a86b3342c1e5aa"
+    },
+    "supply-chain-v0.0.5.tar.gz": {
+      "url": "https://github.com/bazel-contrib/supply-chain/releases/download/v0.0.5/supply-chain-v0.0.5.tar.gz",
+      "archive": "supply-chain-v0.0.5.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "supply-chain-v0.0.5.tar.gz",
+      "sha256": "49ed11e5d6b752c55fa539cbb10b2736974f347b081d7bd500a80dacb7dbec06"
+    },
+    "v0.25.1.tar.gz": {
+      "url": "https://github.com/google/cel-spec/archive/refs/tags/v0.25.1.tar.gz",
+      "archive": "v0.25.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "v0.25.1.tar.gz",
+      "sha256": "13583c5a312861648449845b709722676a3c9b43396b6b8e9cbe4538feb74ad2"
+    },
+    "v1.3.0.tar.gz": {
+      "url": "https://github.com/bufbuild/protoc-gen-validate/archive/refs/tags/v1.3.0.tar.gz",
+      "archive": "v1.3.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "v1.3.0.tar.gz",
+      "sha256": "26dc6db523ee943af51fdfc292658a2dbe7046735654f1dc839745988f0fe26b"
+    },
+    "v1.81.1.tar.gz": {
+      "url": "https://github.com/grpc/grpc/archive/refs/tags/v1.81.1.tar.gz",
+      "archive": "v1.81.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "v1.81.1.tar.gz",
+      "sha256": "48ae0d05f87206112d9e9144a923191ee1e482141a70686ec58dc86d0b40fddc"
+    },
+    "v1.82.0.tar.gz": {
+      "url": "https://github.com/grpc/grpc-java/archive/refs/tags/v1.82.0.tar.gz",
+      "archive": "v1.82.0.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "v1.82.0.tar.gz",
+      "sha256": "079bdef3cb6343e5036e3dd86ce2f535a667e5df540e2b51284b47bfd00a359f"
+    },
+    "with_cfg.bzl-v0.10.1.tar.gz": {
+      "url": "https://github.com/fmeum/with_cfg.bzl/releases/download/v0.10.1/with_cfg.bzl-v0.10.1.tar.gz",
+      "archive": "with_cfg.bzl-v0.10.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "with_cfg.bzl-v0.10.1.tar.gz",
+      "sha256": "2e09939d8a404da11a4fc1b7931ce1d76541a4c53970138cf0a4a50c4b257e7b"
+    },
+    "zlib-1.3.1.tar.gz": {
+      "url": "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+      "archive": "zlib-1.3.1.tar.gz",
+      "license": "Upstream license and notices recorded by the Netsim dependency audit",
+      "file": "zlib-1.3.1.tar.gz",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"
+    },
+    "icu_locid_transform-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_locid_transform/icu_locid_transform-1.5.0.crate",
+      "archive": "icu_locid_transform-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "01d11ac35de8e40fdeda00d9e1e9d92525f3f9d887cdd7aa81d727596788b54e/download",
+      "sha256": "01d11ac35de8e40fdeda00d9e1e9d92525f3f9d887cdd7aa81d727596788b54e"
+    },
+    "serde-1.0.217.crate": {
+      "url": "https://static.crates.io/crates/serde/serde-1.0.217.crate",
+      "archive": "serde-1.0.217.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "02fc4265df13d6fa1d00ecff087228cc0a2b5f3c0e87e258d8b94a156e984c70/download",
+      "sha256": "02fc4265df13d6fa1d00ecff087228cc0a2b5f3c0e87e258d8b94a156e984c70"
+    },
+    "termcolor-1.4.1.crate": {
+      "url": "https://static.crates.io/crates/termcolor/termcolor-1.4.1.crate",
+      "archive": "termcolor-1.4.1.crate",
+      "license": "Unlicense OR MIT",
+      "file": "06794f8f6c5c898b3275aebefa6b8a1cb24cd2c6c79397ab15774837a0bc5755/download",
+      "sha256": "06794f8f6c5c898b3275aebefa6b8a1cb24cd2c6c79397ab15774837a0bc5755"
+    },
+    "num-traits-0.2.19.crate": {
+      "url": "https://static.crates.io/crates/num-traits/num-traits-0.2.19.crate",
+      "archive": "num-traits-0.2.19.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841/download",
+      "sha256": "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
+    },
+    "winapi-util-0.1.10.crate": {
+      "url": "https://static.crates.io/crates/winapi-util/winapi-util-0.1.10.crate",
+      "archive": "winapi-util-0.1.10.crate",
+      "license": "Unlicense OR MIT",
+      "file": "0978bf7171b3d90bac376700cb56d606feb40f251a475a5d6634613564460b22/download",
+      "sha256": "0978bf7171b3d90bac376700cb56d606feb40f251a475a5d6634613564460b22"
+    },
+    "toml_datetime-0.6.8.crate": {
+      "url": "https://static.crates.io/crates/toml_datetime/toml_datetime-0.6.8.crate",
+      "archive": "toml_datetime-0.6.8.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "0dd7358ecb8fc2f8d014bf86f6f638ce72ba252a2c3a2572f2a795f1d23efb41/download",
+      "sha256": "0dd7358ecb8fc2f8d014bf86f6f638ce72ba252a2c3a2572f2a795f1d23efb41"
+    },
+    "typeid-1.0.2.crate": {
+      "url": "https://static.crates.io/crates/typeid/typeid-1.0.2.crate",
+      "archive": "typeid-1.0.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "0e13db2e0ccd5e14a544e8a246ba2312cd25223f616442d7f2cb0e3db614236e/download",
+      "sha256": "0e13db2e0ccd5e14a544e8a246ba2312cd25223f616442d7f2cb0e3db614236e"
+    },
+    "quote-1.0.38.crate": {
+      "url": "https://static.crates.io/crates/quote/quote-1.0.38.crate",
+      "archive": "quote-1.0.38.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "0e4dccaaaf89514f546c693ddc140f729f958c247918a13380cccc6078391acc/download",
+      "sha256": "0e4dccaaaf89514f546c693ddc140f729f958c247918a13380cccc6078391acc"
+    },
+    "yoke-0.7.5.crate": {
+      "url": "https://static.crates.io/crates/yoke/yoke-0.7.5.crate",
+      "archive": "yoke-0.7.5.crate",
+      "license": "Unicode-3.0",
+      "file": "120e6aef9aa629e3d4f52dc8cc43a015c7724194c97dfaf45180d2daf2b77f40/download",
+      "sha256": "120e6aef9aa629e3d4f52dc8cc43a015c7724194c97dfaf45180d2daf2b77f40"
+    },
+    "icu_locid-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_locid/icu_locid-1.5.0.crate",
+      "archive": "icu_locid-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "13acbb8371917fc971be86fc8057c41a64b521c184808a698c02acc242dbf637/download",
+      "sha256": "13acbb8371917fc971be86fc8057c41a64b521c184808a698c02acc242dbf637"
+    },
+    "cargo-util-schemas-0.3.1.crate": {
+      "url": "https://static.crates.io/crates/cargo-util-schemas/cargo-util-schemas-0.3.1.crate",
+      "archive": "cargo-util-schemas-0.3.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "161d4f7828830c7893180528e121e701bb8070b80c0f97f793a930d285b315a6/download",
+      "sha256": "161d4f7828830c7893180528e121e701bb8070b80c0f97f793a930d285b315a6"
+    },
+    "toml_edit-0.22.24.crate": {
+      "url": "https://static.crates.io/crates/toml_edit/toml_edit-0.22.24.crate",
+      "archive": "toml_edit-0.22.24.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "17b4795ff5edd201c7cd6dca065ae59972ce77d1b80fa0a84d94950ece7d1474/download",
+      "sha256": "17b4795ff5edd201c7cd6dca065ae59972ce77d1b80fa0a84d94950ece7d1474"
+    },
+    "quote-1.0.40.crate": {
+      "url": "https://static.crates.io/crates/quote/quote-1.0.40.crate",
+      "archive": "quote-1.0.40.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "1885c039570dc00dcb4ff087a89e185fd56bae234ddc7f056a945bf36467248d/download",
+      "sha256": "1885c039570dc00dcb4ff087a89e185fd56bae234ddc7f056a945bf36467248d"
+    },
+    "icu_normalizer-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_normalizer/icu_normalizer-1.5.0.crate",
+      "archive": "icu_normalizer-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "19ce3e0da2ec68599d193c93d088142efd7f9c5d6fc9b803774855747dc6a84f/download",
+      "sha256": "19ce3e0da2ec68599d193c93d088142efd7f9c5d6fc9b803774855747dc6a84f"
+    },
+    "writeable-0.5.5.crate": {
+      "url": "https://static.crates.io/crates/writeable/writeable-0.5.5.crate",
+      "archive": "writeable-0.5.5.crate",
+      "license": "Unicode-3.0",
+      "file": "1e9df38ee2d2c3c5948ea468a8406ff0db0b29ae1ffde1bcf20ef305bcc95c51/download",
+      "sha256": "1e9df38ee2d2c3c5948ea468a8406ff0db0b29ae1ffde1bcf20ef305bcc95c51"
+    },
+    "icu_provider_macros-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_provider_macros/icu_provider_macros-1.5.0.crate",
+      "archive": "icu_provider_macros-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "1ec89e9337638ecdc08744df490b221a7399bf8d164eb52a665454e60e075ad6/download",
+      "sha256": "1ec89e9337638ecdc08744df490b221a7399bf8d164eb52a665454e60e075ad6"
+    },
+    "yoke-derive-0.7.5.crate": {
+      "url": "https://static.crates.io/crates/yoke-derive/yoke-derive-0.7.5.crate",
+      "archive": "yoke-derive-0.7.5.crate",
+      "license": "Unicode-3.0",
+      "file": "2380878cad4ac9aac1e2435f3eb4020e8374b5f13c296cb75b4620ff8e229154/download",
+      "sha256": "2380878cad4ac9aac1e2435f3eb4020e8374b5f13c296cb75b4620ff8e229154"
+    },
+    "erased-serde-0.4.5.crate": {
+      "url": "https://static.crates.io/crates/erased-serde/erased-serde-0.4.5.crate",
+      "archive": "erased-serde-0.4.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "24e2389d65ab4fab27dc2a5de7b191e1f6617d1f1c8855c0dc569c94a4cbb18d/download",
+      "sha256": "24e2389d65ab4fab27dc2a5de7b191e1f6617d1f1c8855c0dc569c94a4cbb18d"
+    },
+    "serde-untagged-0.1.6.crate": {
+      "url": "https://static.crates.io/crates/serde-untagged/serde-untagged-0.1.6.crate",
+      "archive": "serde-untagged-0.1.6.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "2676ba99bd82f75cae5cbd2c8eda6fa0b8760f18978ea840e980dd5567b5c5b6/download",
+      "sha256": "2676ba99bd82f75cae5cbd2c8eda6fa0b8760f18978ea840e980dd5567b5c5b6"
+    },
+    "clap_builder-4.5.47.crate": {
+      "url": "https://static.crates.io/crates/clap_builder/clap_builder-4.5.47.crate",
+      "archive": "clap_builder-4.5.47.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "2ad9bbf750e73b5884fb8a211a9424a1906c1e156724260fdae972f31d70e1d6/download",
+      "sha256": "2ad9bbf750e73b5884fb8a211a9424a1906c1e156724260fdae972f31d70e1d6"
+    },
+    "url-2.5.4.crate": {
+      "url": "https://static.crates.io/crates/url/url-2.5.4.crate",
+      "archive": "url-2.5.4.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "32f8b686cadd1473f4bd0117a5d28d36b1ade384ea9b5069a1c40aefed7fda60/download",
+      "sha256": "32f8b686cadd1473f4bd0117a5d28d36b1ade384ea9b5069a1c40aefed7fda60"
+    },
+    "syn-2.0.98.crate": {
+      "url": "https://static.crates.io/crates/syn/syn-2.0.98.crate",
+      "archive": "syn-2.0.98.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "36147f1a48ae0ec2b5b3bc5b537d267457555a10dc06f3dbc8cb11ba3006d3b1/download",
+      "sha256": "36147f1a48ae0ec2b5b3bc5b537d267457555a10dc06f3dbc8cb11ba3006d3b1"
+    },
+    "smallvec-1.13.2.crate": {
+      "url": "https://static.crates.io/crates/smallvec/smallvec-1.13.2.crate",
+      "archive": "smallvec-1.13.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "3c5e1a9a646d36c3599cd173a41282daf47c44583ad367b8e6837255952e5c67/download",
+      "sha256": "3c5e1a9a646d36c3599cd173a41282daf47c44583ad367b8e6837255952e5c67"
+    },
+    "unicode-width-0.2.1.crate": {
+      "url": "https://static.crates.io/crates/unicode-width/unicode-width-0.2.1.crate",
+      "archive": "unicode-width-0.2.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "4a1a07cc7db3810833284e8d372ccdc6da29741639ecc70c9ec107df0fa6154c/download",
+      "sha256": "4a1a07cc7db3810833284e8d372ccdc6da29741639ecc70c9ec107df0fa6154c"
+    },
+    "litemap-0.7.4.crate": {
+      "url": "https://static.crates.io/crates/litemap/litemap-0.7.4.crate",
+      "archive": "litemap-0.7.4.crate",
+      "license": "Unicode-3.0",
+      "file": "4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104/download",
+      "sha256": "4ee93343901ab17bd981295f2cf0026d4ad018c7c31ba84549a4ddbb47a45104"
+    },
+    "thiserror-impl-1.0.69.crate": {
+      "url": "https://static.crates.io/crates/thiserror-impl/thiserror-impl-1.0.69.crate",
+      "archive": "thiserror-impl-1.0.69.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1/download",
+      "sha256": "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1"
+    },
+    "equivalent-1.0.1.crate": {
+      "url": "https://static.crates.io/crates/equivalent/equivalent-1.0.1.crate",
+      "archive": "equivalent-1.0.1.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5/download",
+      "sha256": "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
+    },
+    "cc-1.2.35.crate": {
+      "url": "https://static.crates.io/crates/cc/cc-1.2.35.crate",
+      "archive": "cc-1.2.35.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "590f9024a68a8c40351881787f1934dc11afd69090f5edb6831464694d836ea3/download",
+      "sha256": "590f9024a68a8c40351881787f1934dc11afd69090f5edb6831464694d836ea3"
+    },
+    "zerofrom-derive-0.1.5.crate": {
+      "url": "https://static.crates.io/crates/zerofrom-derive/zerofrom-derive-0.1.5.crate",
+      "archive": "zerofrom-derive-0.1.5.crate",
+      "license": "Unicode-3.0",
+      "file": "595eed982f7d355beb85837f651fa22e90b3c044842dc7f2c2842c086f295808/download",
+      "sha256": "595eed982f7d355beb85837f651fa22e90b3c044842dc7f2c2842c086f295808"
+    },
+    "winnow-0.7.2.crate": {
+      "url": "https://static.crates.io/crates/winnow/winnow-0.7.2.crate",
+      "archive": "winnow-0.7.2.crate",
+      "license": "MIT",
+      "file": "59690dea168f2198d1a3b0cac23b8063efcd11012f10ae4698f284808c8ef603/download",
+      "sha256": "59690dea168f2198d1a3b0cac23b8063efcd11012f10ae4698f284808c8ef603"
+    },
+    "unicode-ident-1.0.18.crate": {
+      "url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.18.crate",
+      "archive": "unicode-ident-1.0.18.crate",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "file": "5a5f39404a5da50712a4c1eecf25e90dd62b613502b7e925fd4e4d19b5c96512/download",
+      "sha256": "5a5f39404a5da50712a4c1eecf25e90dd62b613502b7e925fd4e4d19b5c96512"
+    },
+    "serde_derive-1.0.217.crate": {
+      "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.217.crate",
+      "archive": "serde_derive-1.0.217.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "5a9bf7cf98d04a2b28aead066b7496853d4779c9cc183c440dbac457641e19a0/download",
+      "sha256": "5a9bf7cf98d04a2b28aead066b7496853d4779c9cc183c440dbac457641e19a0"
+    },
+    "proc-macro2-1.0.93.crate": {
+      "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.93.crate",
+      "archive": "proc-macro2-1.0.93.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "60946a68e5f9d28b0dc1c21bb8a97ee7d018a8b322fa57838ba31cc878e22d99/download",
+      "sha256": "60946a68e5f9d28b0dc1c21bb8a97ee7d018a8b322fa57838ba31cc878e22d99"
+    },
+    "icu_properties_data-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_properties_data/icu_properties_data-1.5.0.crate",
+      "archive": "icu_properties_data-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "67a8effbc3dd3e4ba1afa8ad918d5684b8868b3b26500753effea8d2eed19569/download",
+      "sha256": "67a8effbc3dd3e4ba1afa8ad918d5684b8868b3b26500753effea8d2eed19569"
+    },
+    "idna-1.0.3.crate": {
+      "url": "https://static.crates.io/crates/idna/idna-1.0.3.crate",
+      "archive": "idna-1.0.3.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "686f825264d630750a544639377bae737628043f20d38bbc029e8f29ea968a7e/download",
+      "sha256": "686f825264d630750a544639377bae737628043f20d38bbc029e8f29ea968a7e"
+    },
+    "ordered-float-2.10.1.crate": {
+      "url": "https://static.crates.io/crates/ordered-float/ordered-float-2.10.1.crate",
+      "archive": "ordered-float-2.10.1.crate",
+      "license": "MIT",
+      "file": "68f19d67e5a2795c94e73e0bb1cc1a7edeb2e28efd39e2e1c9b7a40c1108b11c/download",
+      "sha256": "68f19d67e5a2795c94e73e0bb1cc1a7edeb2e28efd39e2e1c9b7a40c1108b11c"
+    },
+    "zerovec-derive-0.10.3.crate": {
+      "url": "https://static.crates.io/crates/zerovec-derive/zerovec-derive-0.10.3.crate",
+      "archive": "zerovec-derive-0.10.3.crate",
+      "license": "Unicode-3.0",
+      "file": "6eafa6dfb17584ea3e2bd6e76e0cc15ad7af12b09abdd1ca55961bed9b1063c6/download",
+      "sha256": "6eafa6dfb17584ea3e2bd6e76e0cc15ad7af12b09abdd1ca55961bed9b1063c6"
+    },
+    "icu_provider-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_provider/icu_provider-1.5.0.crate",
+      "archive": "icu_provider-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "6ed421c8a8ef78d3e2dbc98a973be2f3770cb42b606e3ab18d6237c4dfde68d9/download",
+      "sha256": "6ed421c8a8ef78d3e2dbc98a973be2f3770cb42b606e3ab18d6237c4dfde68d9"
+    },
+    "foldhash-0.2.0.crate": {
+      "url": "https://static.crates.io/crates/foldhash/foldhash-0.2.0.crate",
+      "archive": "foldhash-0.2.0.crate",
+      "license": "Zlib",
+      "file": "77ce24cb58228fbb8aa041425bb1050850ac19177686ea6e0f41a70416f56fdb/download",
+      "sha256": "77ce24cb58228fbb8aa041425bb1050850ac19177686ea6e0f41a70416f56fdb"
+    },
+    "clap-4.5.47.crate": {
+      "url": "https://static.crates.io/crates/clap/clap-4.5.47.crate",
+      "archive": "clap-4.5.47.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "7eac00902d9d136acd712710d71823fb8ac8004ca445a89e73a41d45aa712931/download",
+      "sha256": "7eac00902d9d136acd712710d71823fb8ac8004ca445a89e73a41d45aa712931"
+    },
+    "anstyle-1.0.11.crate": {
+      "url": "https://static.crates.io/crates/anstyle/anstyle-1.0.11.crate",
+      "archive": "anstyle-1.0.11.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "862ed96ca487e809f1c8e5a8447f6ee2cf102f846893800b20cebdf541fc6bbd/download",
+      "sha256": "862ed96ca487e809f1c8e5a8447f6ee2cf102f846893800b20cebdf541fc6bbd"
+    },
+    "serde_spanned-0.6.8.crate": {
+      "url": "https://static.crates.io/crates/serde_spanned/serde_spanned-0.6.8.crate",
+      "archive": "serde_spanned-0.6.8.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "87607cb1398ed59d48732e575a4c28a7a8ebf2454b964fe3f224f2afc07909e1/download",
+      "sha256": "87607cb1398ed59d48732e575a4c28a7a8ebf2454b964fe3f224f2afc07909e1"
+    },
+    "equivalent-1.0.2.crate": {
+      "url": "https://static.crates.io/crates/equivalent/equivalent-1.0.2.crate",
+      "archive": "equivalent-1.0.2.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f/download",
+      "sha256": "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f"
+    },
+    "proc-macro2-1.0.101.crate": {
+      "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.101.crate",
+      "archive": "proc-macro2-1.0.101.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "89ae43fd86e4158d6db51ad8e2b80f313af9cc74f5c0e03ccb87de09998732de/download",
+      "sha256": "89ae43fd86e4158d6db51ad8e2b80f313af9cc74f5c0e03ccb87de09998732de"
+    },
+    "indexmap-2.7.1.crate": {
+      "url": "https://static.crates.io/crates/indexmap/indexmap-2.7.1.crate",
+      "archive": "indexmap-2.7.1.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "8c9c992b02b5b4c94ea26e32fe5bccb7aa7d9f390ab5c1221ff895bc7ea8b652/download",
+      "sha256": "8c9c992b02b5b4c94ea26e32fe5bccb7aa7d9f390ab5c1221ff895bc7ea8b652"
+    },
+    "tinystr-0.7.6.crate": {
+      "url": "https://static.crates.io/crates/tinystr/tinystr-0.7.6.crate",
+      "archive": "tinystr-0.7.6.crate",
+      "license": "Unicode-3.0",
+      "file": "9117f5d4db391c1cf6927e7bea3db74b9a1c1add8f7eda9ffd5364f40f57b82f/download",
+      "sha256": "9117f5d4db391c1cf6927e7bea3db74b9a1c1add8f7eda9ffd5364f40f57b82f"
+    },
+    "hashbrown-0.15.5.crate": {
+      "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.15.5.crate",
+      "archive": "hashbrown-0.15.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "9229cfe53dfd69f0609a49f65461bd93001ea1ef889cd5529dd176593f5338a1/download",
+      "sha256": "9229cfe53dfd69f0609a49f65461bd93001ea1ef889cd5529dd176593f5338a1"
+    },
+    "icu_properties-1.5.1.crate": {
+      "url": "https://static.crates.io/crates/icu_properties/icu_properties-1.5.1.crate",
+      "archive": "icu_properties-1.5.1.crate",
+      "license": "Unicode-3.0",
+      "file": "93d6020766cfc6302c15dbbc9c8778c37e62c14427cb7f6e601d849e092aeef5/download",
+      "sha256": "93d6020766cfc6302c15dbbc9c8778c37e62c14427cb7f6e601d849e092aeef5"
+    },
+    "displaydoc-0.2.5.crate": {
+      "url": "https://static.crates.io/crates/displaydoc/displaydoc-0.2.5.crate",
+      "archive": "displaydoc-0.2.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "97369cbbc041bc366949bc74d34658d6cda5621039731c6310521892a3a20ae0/download",
+      "sha256": "97369cbbc041bc366949bc74d34658d6cda5621039731c6310521892a3a20ae0"
+    },
+    "unicode-ident-1.0.16.crate": {
+      "url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.16.crate",
+      "archive": "unicode-ident-1.0.16.crate",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "file": "a210d160f08b701c8721ba1c726c11662f877ea6b7094007e1ca9a1041945034/download",
+      "sha256": "a210d160f08b701c8721ba1c726c11662f877ea6b7094007e1ca9a1041945034"
+    },
+    "pathdiff-0.1.0.crate": {
+      "url": "https://static.crates.io/crates/pathdiff/pathdiff-0.1.0.crate",
+      "archive": "pathdiff-0.1.0.crate",
+      "license": "MIT/Apache-2.0",
+      "file": "a3bf70094d203e07844da868b634207e71bfab254fe713171fae9a6e751ccf31/download",
+      "sha256": "a3bf70094d203e07844da868b634207e71bfab254fe713171fae9a6e751ccf31"
+    },
+    "stable_deref_trait-1.2.0.crate": {
+      "url": "https://static.crates.io/crates/stable_deref_trait/stable_deref_trait-1.2.0.crate",
+      "archive": "stable_deref_trait-1.2.0.crate",
+      "license": "MIT/Apache-2.0",
+      "file": "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3/download",
+      "sha256": "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
+    },
+    "zerovec-0.10.4.crate": {
+      "url": "https://static.crates.io/crates/zerovec/zerovec-0.10.4.crate",
+      "archive": "zerovec-0.10.4.crate",
+      "license": "Unicode-3.0",
+      "file": "aa2b893d79df23bfb12d5461018d408ea19dfafe76c2c7ef6d4eba614f8ff079/download",
+      "sha256": "aa2b893d79df23bfb12d5461018d408ea19dfafe76c2c7ef6d4eba614f8ff079"
+    },
+    "rustversion-1.0.22.crate": {
+      "url": "https://static.crates.io/crates/rustversion/rustversion-1.0.22.crate",
+      "archive": "rustversion-1.0.22.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d/download",
+      "sha256": "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d"
+    },
+    "thiserror-1.0.69.crate": {
+      "url": "https://static.crates.io/crates/thiserror/thiserror-1.0.69.crate",
+      "archive": "thiserror-1.0.69.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52/download",
+      "sha256": "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52"
+    },
+    "utf8_iter-1.0.4.crate": {
+      "url": "https://static.crates.io/crates/utf8_iter/utf8_iter-1.0.4.crate",
+      "archive": "utf8_iter-1.0.4.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be/download",
+      "sha256": "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
+    },
+    "clap_lex-0.7.5.crate": {
+      "url": "https://static.crates.io/crates/clap_lex/clap_lex-0.7.5.crate",
+      "archive": "clap_lex-0.7.5.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "b94f61472cee1439c0b966b47e3aca9ae07e45d070759512cd390ea2bebc6675/download",
+      "sha256": "b94f61472cee1439c0b966b47e3aca9ae07e45d070759512cd390ea2bebc6675"
+    },
+    "hashbrown-0.15.2.crate": {
+      "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.15.2.crate",
+      "archive": "hashbrown-0.15.2.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "bf151400ff0baff5465007dd2f3e717f3fe502074ca563069ce3a6629d07b289/download",
+      "sha256": "bf151400ff0baff5465007dd2f3e717f3fe502074ca563069ce3a6629d07b289"
+    },
+    "autocfg-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/autocfg/autocfg-1.5.0.crate",
+      "archive": "autocfg-1.5.0.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8/download",
+      "sha256": "c08606f8c3cbf4ce6ec8e28fb0014a2c086708fe954eaa885384a6165172e7e8"
+    },
+    "utf16_iter-1.0.5.crate": {
+      "url": "https://static.crates.io/crates/utf16_iter/utf16_iter-1.0.5.crate",
+      "archive": "utf16_iter-1.0.5.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "c8232dd3cdaed5356e0f716d285e4b40b932ac434100fe9b7e0e8e935b9e6246/download",
+      "sha256": "c8232dd3cdaed5356e0f716d285e4b40b932ac434100fe9b7e0e8e935b9e6246"
+    },
+    "synstructure-0.13.1.crate": {
+      "url": "https://static.crates.io/crates/synstructure/synstructure-0.13.1.crate",
+      "archive": "synstructure-0.13.1.crate",
+      "license": "MIT",
+      "file": "c8af7666ab7b6390ab78131fb5b0fce11d6b7a6951602017c35fa82800708971/download",
+      "sha256": "c8af7666ab7b6390ab78131fb5b0fce11d6b7a6951602017c35fa82800708971"
+    },
+    "toml-0.8.20.crate": {
+      "url": "https://static.crates.io/crates/toml/toml-0.8.20.crate",
+      "archive": "toml-0.8.20.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "cd87a5cdd6ffab733b2f74bc4fd7ee5fff6634124999ac278c35fc78c6120148/download",
+      "sha256": "cd87a5cdd6ffab733b2f74bc4fd7ee5fff6634124999ac278c35fc78c6120148"
+    },
+    "zerofrom-0.1.5.crate": {
+      "url": "https://static.crates.io/crates/zerofrom/zerofrom-0.1.5.crate",
+      "archive": "zerofrom-0.1.5.crate",
+      "license": "Unicode-3.0",
+      "file": "cff3ee08c995dee1859d998dea82f7374f2826091dd9cd47def953cae446cd2e/download",
+      "sha256": "cff3ee08c995dee1859d998dea82f7374f2826091dd9cd47def953cae446cd2e"
+    },
+    "write16-1.0.0.crate": {
+      "url": "https://static.crates.io/crates/write16/write16-1.0.0.crate",
+      "archive": "write16-1.0.0.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "d1890f4022759daae28ed4fe62859b1236caebfc61ede2f63ed4e695f3f6d936/download",
+      "sha256": "d1890f4022759daae28ed4fe62859b1236caebfc61ede2f63ed4e695f3f6d936"
+    },
+    "idna_adapter-1.2.0.crate": {
+      "url": "https://static.crates.io/crates/idna_adapter/idna_adapter-1.2.0.crate",
+      "archive": "idna_adapter-1.2.0.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "daca1df1c957320b2cf139ac61e7bd64fed304c5040df000a745aa1de3b4ef71/download",
+      "sha256": "daca1df1c957320b2cf139ac61e7bd64fed304c5040df000a745aa1de3b4ef71"
+    },
+    "icu_collections-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_collections/icu_collections-1.5.0.crate",
+      "archive": "icu_collections-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "db2fa452206ebee18c4b5c2274dbf1de17008e874b4dc4f0aea9d01ca79e4526/download",
+      "sha256": "db2fa452206ebee18c4b5c2274dbf1de17008e874b4dc4f0aea9d01ca79e4526"
+    },
+    "form_urlencoded-1.2.1.crate": {
+      "url": "https://static.crates.io/crates/form_urlencoded/form_urlencoded-1.2.1.crate",
+      "archive": "form_urlencoded-1.2.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456/download",
+      "sha256": "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
+    },
+    "percent-encoding-2.3.1.crate": {
+      "url": "https://static.crates.io/crates/percent-encoding/percent-encoding-2.3.1.crate",
+      "archive": "percent-encoding-2.3.1.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e/download",
+      "sha256": "e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e"
+    },
+    "unicode-xid-0.2.6.crate": {
+      "url": "https://static.crates.io/crates/unicode-xid/unicode-xid-0.2.6.crate",
+      "archive": "unicode-xid-0.2.6.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853/download",
+      "sha256": "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
+    },
+    "syn-2.0.106.crate": {
+      "url": "https://static.crates.io/crates/syn/syn-2.0.106.crate",
+      "archive": "syn-2.0.106.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "ede7c438028d4436d71104916910f5bb611972c5cfd7f89b8300a8186e6fada6/download",
+      "sha256": "ede7c438028d4436d71104916910f5bb611972c5cfd7f89b8300a8186e6fada6"
+    },
+    "indexmap-2.11.0.crate": {
+      "url": "https://static.crates.io/crates/indexmap/indexmap-2.11.0.crate",
+      "archive": "indexmap-2.11.0.crate",
+      "license": "Apache-2.0 OR MIT",
+      "file": "f2481980430f9f78649238835720ddccc57e52df14ffce1c6f37391d61b563e9/download",
+      "sha256": "f2481980430f9f78649238835720ddccc57e52df14ffce1c6f37391d61b563e9"
+    },
+    "serde-value-0.7.0.crate": {
+      "url": "https://static.crates.io/crates/serde-value/serde-value-0.7.0.crate",
+      "archive": "serde-value-0.7.0.crate",
+      "license": "MIT",
+      "file": "f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c/download",
+      "sha256": "f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c"
+    },
+    "semver-1.0.25.crate": {
+      "url": "https://static.crates.io/crates/semver/semver-1.0.25.crate",
+      "archive": "semver-1.0.25.crate",
+      "license": "MIT OR Apache-2.0",
+      "file": "f79dfe2d285b0488816f30e700a7438c5a73d816b5b7d3ac72fbc48b0d185e03/download",
+      "sha256": "f79dfe2d285b0488816f30e700a7438c5a73d816b5b7d3ac72fbc48b0d185e03"
+    },
+    "icu_normalizer_data-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_normalizer_data/icu_normalizer_data-1.5.0.crate",
+      "archive": "icu_normalizer_data-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "f8cafbf7aa791e9b22bec55a167906f9e1215fd475cd22adfcf660e03e989516/download",
+      "sha256": "f8cafbf7aa791e9b22bec55a167906f9e1215fd475cd22adfcf660e03e989516"
+    },
+    "icu_locid_transform_data-1.5.0.crate": {
+      "url": "https://static.crates.io/crates/icu_locid_transform_data/icu_locid_transform_data-1.5.0.crate",
+      "archive": "icu_locid_transform_data-1.5.0.crate",
+      "license": "Unicode-3.0",
+      "file": "fdc8ff3388f852bede6b579ad4e978ab004f139284d7b28715f773507b946f6e/download",
+      "sha256": "fdc8ff3388f852bede6b579ad4e978ab004f139284d7b28715f773507b946f6e"
+    },
+    "codespan-reporting-0.12.0.crate": {
+      "url": "https://static.crates.io/crates/codespan-reporting/codespan-reporting-0.12.0.crate",
+      "archive": "codespan-reporting-0.12.0.crate",
+      "license": "Apache-2.0",
+      "file": "fe6d2e5af09e8c8ad56c969f2157a3d4238cebc7c55f0a517728c38f7b200f81/download",
+      "sha256": "fe6d2e5af09e8c8ad56c969f2157a3d4238cebc7c55f0a517728c38f7b200f81"
+    },
+    "cb0929a385a058d1839db410e0aca4d23e3543df.tar.gz": {
+      "url": "https://github.com/bazelbuild/bazel-toolchains/archive/cb0929a385a058d1839db410e0aca4d23e3543df.tar.gz",
+      "archive": "cb0929a385a058d1839db410e0aca4d23e3543df.tar.gz",
+      "file": "cb0929a385a058d1839db410e0aca4d23e3543df.tar.gz",
+      "sha256": "907ad3a40dc6065b30d95f8444f4f0a45de011faa8ef4739006f002d7a0e6ed5",
+      "license": "Apache-2.0"
+    },
+    "cpython-3.11.14+20251014-x86_64-unknown-linux-gnu-install_only.tar.gz": {
+      "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20251014/cpython-3.11.14+20251014-x86_64-unknown-linux-gnu-install_only.tar.gz",
+      "archive": "cpython-3.11.14+20251014-x86_64-unknown-linux-gnu-install_only.tar.gz",
+      "file": "cpython-3.11.14+20251014-x86_64-unknown-linux-gnu-install_only.tar.gz",
+      "sha256": "d0623c777fb89b904b56cd5aba51af29cbb34b1f9d45f0672f90f6dce30fa93e",
+      "license": "PSF-2.0 and bundled dependency licenses"
+    },
+    "bazel-toolchains-4.1.0.tar.gz": {
+      "url": "https://github.com/bazelbuild/bazel-toolchains/releases/download/4.1.0/bazel-toolchains-4.1.0.tar.gz",
+      "archive": "bazel-toolchains-4.1.0.tar.gz",
+      "file": "bazel-toolchains-4.1.0.tar.gz",
+      "sha256": "179ec02f809e86abf56356d8898c8bd74069f1bd7c56044050c2cd3d79d0e024",
+      "license": "Apache-2.0"
+    },
+    "tinyjson-2.5.1.crate": {
+      "url": "https://static.crates.io/crates/tinyjson/tinyjson-2.5.1.crate",
+      "archive": "tinyjson-2.5.1.crate",
+      "file": "tinyjson-2.5.1.crate",
+      "sha256": "9ab95735ea2c8fd51154d01e39cf13912a78071c2d89abc49a7ef102a7dd725a",
+      "license": "MIT"
+    },
+    "c-ares-1.34.9.tar.gz": {
+      "url": "https://github.com/c-ares/c-ares/releases/download/v1.34.9/c-ares-1.34.9.tar.gz",
+      "archive": "c-ares-1.34.9.tar.gz",
+      "file": "c-ares-1.34.9.tar.gz",
+      "sha256": "9364b70a12eb59a06830fb488d9357f90100dff0d98b23ea3593a183d43e6f2f",
+      "license": "MIT"
+    },
+    "package_metadata-0.0.13.tar.gz": {
+      "url": "https://github.com/bazel-contrib/supply-chain/releases/download/package_metadata-0.0.13/package_metadata-0.0.13.tar.gz",
+      "archive": "package_metadata-0.0.13.tar.gz",
+      "file": "package_metadata-0.0.13.tar.gz",
+      "sha256": "755bd6c8a3751982e2555d96c913ec070954ca9d01f935563392255da4ebad72",
+      "license": "Apache-2.0"
+    }
+  }
+}

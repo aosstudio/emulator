@@ -1,0 +1,14 @@
+Use the C++ driver's runtime for native Linux linking. The pilot builds
+all of its C++ dependencies with the host toolchain's libstdc++ ABI.
+
+--- a/android/android-emu/android-emu.cmake
++++ b/android/android-emu/android-emu.cmake
+@@ -365,7 +365,7 @@
+          psapi::psapi)
+ 
+ # These are the libs needed for android-emu on linux.
+-android_target_link_libraries(android-emu linux-x86_64 PUBLIC -lrt -lc++)
++android_target_link_libraries(android-emu linux-x86_64 PUBLIC -lrt)
+ 
+ # Here are the darwin library and link dependencies. They are public and will
+ # propagate onwards to others that depend on android-emu. You should really only

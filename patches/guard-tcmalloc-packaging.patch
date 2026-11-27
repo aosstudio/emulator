@@ -1,0 +1,75 @@
+Keep the allocator package and its runtime edges aligned with OPTION_TCMALLOC.
+Gfxstream disables the allocator before CMake resolves packaging dependencies.
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -616,7 +616,7 @@
+ 
+ prebuilt(PIXMAN)
+ prebuilt(VIRGLRENDERER)
+-if(NOT DARWIN_AARCH64)
++if(OPTION_TCMALLOC AND NOT DARWIN_AARCH64)
+   prebuilt(TCMALLOC)
+ endif()
+ 
+--- a/android/emulator/CMakeLists.txt
++++ b/android/emulator/CMakeLists.txt
+@@ -115,7 +115,9 @@
+   android_target_dependency(emulator all EMULATOR_MACROS_DEPENDENCIES)
+ endif()
+ android_target_dependency(emulator all VULKAN_DEPENDENCIES)
+-android_target_dependency(emulator linux TCMALLOC_OS_DEPENDENCIES)
++if(OPTION_TCMALLOC)
++  android_target_dependency(emulator linux TCMALLOC_OS_DEPENDENCIES)
++endif()
+ android_target_dependency(emulator windows_msvc-x86_64 MSVC_DEPENDENCIES)
+ # And install them for a release.
+ # TODO(b/141205876): prebuilt executables are losing their execute permission on
+@@ -146,7 +148,9 @@
+   android_install_dependency(all EMULATOR_MACROS_DEPENDENCIES)
+ endif()
+ android_install_dependency(all VULKAN_DEPENDENCIES)
+-android_install_dependency(linux TCMALLOC_OS_DEPENDENCIES)
++if(OPTION_TCMALLOC)
++  android_install_dependency(linux TCMALLOC_OS_DEPENDENCIES)
++endif()
+ android_install_dependency(windows_msvc-x86_64 ANGLE_RENDERER_DEPENDENCIES)
+ android_install_dependency(windows_msvc-x86_64 MSVC_DEPENDENCIES)
+ 
+--- a/android/build/cmake/android.cmake
++++ b/android/build/cmake/android.cmake
+@@ -925,7 +925,9 @@
+     LINUX ${build_LINUX} DARWIN ${build_DARWIN} WINDOWS ${build_WINDOWS}
+     NODISTRIBUTE)
+ 
+-  android_target_dependency(${build_TARGET} linux TCMALLOC_OS_DEPENDENCIES)
++  if(OPTION_TCMALLOC)
++    android_target_dependency(${build_TARGET} linux TCMALLOC_OS_DEPENDENCIES)
++  endif()
+   add_test(
+     NAME ${build_TARGET}
+     COMMAND
+--- a/qemu-test.cmake
++++ b/qemu-test.cmake
+@@ -18,7 +18,9 @@
+ function(add_qtest NAME DEPENDENCY)
+   android_add_test(TARGET ${NAME} SRC # cmake-format: sortable
+                                       tests/${NAME}.c)
+-  android_target_dependency(${NAME} linux-x86_64 TCMALLOC_OS_DEPENDENCIES)
++  if(OPTION_TCMALLOC)
++    android_target_dependency(${NAME} linux-x86_64 TCMALLOC_OS_DEPENDENCIES)
++  endif()
+   target_compile_definitions(${NAME} PRIVATE -DCONFIG_ANDROID)
+   target_include_directories(${NAME} PUBLIC ${ANDROID_AUTOGEN}/tests)
+   target_link_libraries(${NAME} PRIVATE "-fuse-ld=ld" ${DEPENDENCY} qemu2-common libqemu2-util android-qemu-deps)
+--- a/android/android-emu-base/CMakeLists.txt
++++ b/android/android-emu-base/CMakeLists.txt
+@@ -5,7 +5,7 @@
+ # Dependencies
+ prebuilt(UUID)
+ prebuilt(LIBUNWIND)
+-if(NOT DARWIN_AARCH64)
++if(OPTION_TCMALLOC AND NOT DARWIN_AARCH64)
+   prebuilt(TCMALLOC)
+ endif()
+ prebuilt(Threads)

@@ -1,0 +1,11 @@
+--- a/android/third_party/netsim/util/os_utils.h
++++ b/android/third_party/netsim/util/os_utils.h
+@@ -17,6 +17,8 @@
+ #pragma once
+ // OS specific utility functions.
+ 
++#include <stdint.h>
++
+ #include <memory>
+ #include <optional>
+ #include <string>

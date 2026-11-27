@@ -1,0 +1,91 @@
+Register notices and origins of the actual third-party source packages.
+
+--- a/android/third_party/dtc/CMakeLists.txt
++++ b/android/third_party/dtc/CMakeLists.txt
+@@ -3,6 +3,9 @@
+ android_add_library(
+   TARGET fdt
+   LICENSE BSD-2-Clause
++  URL "https://android.googlesource.com/platform/external/dtc/+/e895d82d389eaece070a27533936077d2c8f414b"
++  REPO "${LIBDTC_ROOT}"
++  NOTICE "REPO/BSD-2-Clause"
+   SOURCE_DIR ${LIBDTC_ROOT}/libfdt
+   SRC acpi.c
+       fdt.c
+--- a/android/third_party/libusb/CMakeLists.txt
++++ b/android/third_party/libusb/CMakeLists.txt
+@@ -5,7 +5,10 @@
+ android_add_library(
+   TARGET emulator-libusb
+   LIBNAME libusb
+-  LICENSE LGPL-2.1
++  LICENSE LGPL-2.1-or-later
++  URL "https://android.googlesource.com/platform/external/libusb/+/23f123a3f531572d14a253db3451c950e21d2447"
++  REPO "${src}"
++  NOTICE "REPO/COPYING"
+   SRC ${src}/libusb/core.c ${src}/libusb/descriptor.c ${src}/libusb/hotplug.c
+       ${src}/libusb/io.c ${src}/libusb/strerror.c ${src}/libusb/sync.c
+   DARWIN ${src}/libusb/os/darwin_usb.c ${src}/libusb/os/events_posix.c
+--- a/android/third_party/libevent/CMakeLists.txt
++++ b/android/third_party/libevent/CMakeLists.txt
+@@ -2,6 +2,9 @@
+ android_add_library(
+   TARGET libevent
+   LICENSE BSD-3-Clause
++  URL "https://android.googlesource.com/platform/external/webrtc/+/34c5ae008bf811fce3006818f26f922b3647237a/third_party/libevent"
++  REPO "${LIBEVENT_ROOT}"
++  NOTICE "REPO/LICENSE"
+   SOURCE_DIR ${LIBEVENT_ROOT}
+   SRC buffer.c
+       evbuffer.c
+--- a/android/third_party/re2/CMakeLists.txt
++++ b/android/third_party/re2/CMakeLists.txt
+@@ -21,8 +21,8 @@
+     URL
+     "https://android.googlesource.com/platform/external/regex-re2/+/refs/heads/main"
+   SOURCE_DIR "${RE2_SOURCE_DIR}"
+-  LICENSE
+-    "https://android.googlesource.com/platform/external/regex-re2/+/refs/heads/main/LICENSE"
++  REPO "${RE2_SOURCE_DIR}"
++  NOTICE "REPO/LICENSE"
+   LICENSE "BSD-3-Clause"
+   SRC re2/bitstate.cc
+       re2/compile.cc
+--- a/android/third_party/googletest/CMakeLists.txt
++++ b/android/third_party/googletest/CMakeLists.txt
+@@ -22,7 +22,7 @@
+     gtest
+     URL
+     "https://android.googlesource.com/platform/external/googletest/+/refs/heads/master"
+-  REPO "${ANDROID_QEMU2_TOP_DIR}"
++  REPO "${ANDROID_QEMU2_TOP_DIR}/../googletest"
+   NOTICE "REPO/LICENSE"
+   SRC # cmake-format: sortable
+       ${gtest_SOURCE_DIR}/src/gtest-all.cc)
+@@ -38,7 +38,7 @@
+     gtest
+     URL
+     "https://android.googlesource.com/platform/external/googletest/+/refs/heads/master"
+-  REPO "${ANDROID_QEMU2_TOP_DIR}"
++  REPO "${ANDROID_QEMU2_TOP_DIR}/../googletest"
+   NOTICE "REPO/LICENSE"
+   SRC # cmake-format: sortable
+       ${gtest_SOURCE_DIR}/src/gtest_main.cc)
+@@ -54,7 +54,7 @@
+     gtest
+     URL
+     "https://android.googlesource.com/platform/external/googletest/+/refs/heads/master"
+-  REPO "${ANDROID_QEMU2_TOP_DIR}"
++  REPO "${ANDROID_QEMU2_TOP_DIR}/../googletest"
+   NOTICE "REPO/LICENSE"
+   SRC # cmake-format: sortable
+       "${gmock_SOURCE_DIR}/src/gmock-all.cc")
+@@ -69,7 +69,7 @@
+     gtest
+     URL
+     "https://android.googlesource.com/platform/external/googletest/+/refs/heads/master"
+-  REPO "${ANDROID_QEMU2_TOP_DIR}"
++  REPO "${ANDROID_QEMU2_TOP_DIR}/../googletest"
+   NOTICE "REPO/LICENSE"
+   SRC # cmake-format: sortable
+       "${gmock_SOURCE_DIR}/src/gmock_main.cc")

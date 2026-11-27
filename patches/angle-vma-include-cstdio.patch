@@ -1,0 +1,13 @@
+Include the C stdio declarations used by VMA_IMPLEMENTATION.
+Upstream: https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/pull/312
+
+--- a/include/vk_mem_alloc.h
++++ b/include/vk_mem_alloc.h
+@@ -2389,6 +2389,7 @@
+ #undef VMA_IMPLEMENTATION
+ 
+ #include <cstdint>
++#include <cstdio>
+ #include <cstdlib>
+ #include <cstring>
+ #include <utility>

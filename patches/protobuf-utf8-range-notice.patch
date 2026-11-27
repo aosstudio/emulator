@@ -1,0 +1,15 @@
+Record the vendored utf8_range notice separately from protobuf.
+
+--- a/android/third_party/protobuf/CMakeLists.txt
++++ b/android/third_party/protobuf/CMakeLists.txt
+@@ -94,8 +94,8 @@
+   TARGET "protobuf::libprotobuf" LIBNAME protobuf SPDX "BSD-3-Clause"
+   LICENSE "BSD-3-Clause" LOCAL "${protobuf_SOURCE_DIR}/NOTICE")
+ 
+-android_license(TARGET "utf8_validity" LIBNAME protobuf SPDX "MIT" LICENSE "MIT"
+-                LOCAL "${protobuf_SOURCE_DIR}/third_party/utf8_range/NOTICE")
++android_license(TARGET "utf8_validity" LIBNAME utf8_range SPDX "MIT" LICENSE "MIT"
++                LOCAL "${protobuf_SOURCE_DIR}/third_party/utf8_range/LICENSE")
+ android_license(TARGET "libprotobuf" LIBNAME protobuf SPDX "BSD-3-Clause"
+                 LICENSE "BSD-3-Clause" LOCAL "${protobuf_SOURCE_DIR}/NOTICE")
+ 

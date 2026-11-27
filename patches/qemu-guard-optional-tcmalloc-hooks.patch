@@ -1,0 +1,58 @@
+Honor the emulator configuration that disables tcmalloc. Keep the protection from the original workaround when tcmalloc is selected.
+
+https://issuetracker.google.com/issues/225541819
+
+--- a/util/mmap-alloc.c
++++ b/util/mmap-alloc.c
+@@ -20,7 +20,8 @@
+ #include <sys/vfs.h>
+ #endif
+ 
+-#if defined(__linux__)
++#if defined(__linux__) &&                                                      \
++    (!defined(AEMU_TCMALLOC_ENABLED) || AEMU_TCMALLOC_ENABLED)
+ typedef int (*MallocHook_MunmapReplacement)(const void* ptr, size_t size,
+                                             int* result);
+ typedef int (*MallocHook_MmapReplacement)(const void* start, size_t size,
+@@ -116,7 +117,8 @@
+ #endif
+ }
+ 
+-#if defined(__linux__)
++#if defined(__linux__) &&                                                      \
++    (!defined(AEMU_TCMALLOC_ENABLED) || AEMU_TCMALLOC_ENABLED)
+ static void* s_protected_address_start = NULL;
+ static void* s_protected_address_end = NULL;
+ 
+@@ -181,7 +183,8 @@
+         return MAP_FAILED;
+     }
+ 
+-#if defined(__linux__)
++#if defined(__linux__) &&                                                      \
++    (!defined(AEMU_TCMALLOC_ENABLED) || AEMU_TCMALLOC_ENABLED)
+     // bug: 225541819
+     // there are some un-intended munmap from gl threads that
+     // punches hole in the guest address space, leading to kvm
+@@ -260,7 +263,8 @@
+ #ifndef _WIN32
+     if (ptr) {
+         /* Unmap both the RAM block and the guard page */
+-#if defined(__linux__)
++#if defined(__linux__) &&                                                      \
++    (!defined(AEMU_TCMALLOC_ENABLED) || AEMU_TCMALLOC_ENABLED)
+         {
+             long* myptr = (long*)ptr;
+             if (myptr >= (long*)s_protected_address_start &&
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -912,6 +912,9 @@
+ android_target_link_libraries(libqemu2-util windows
+                               PRIVATE psapi::psapi winmm::winmm dxguid::dxguid)
+ target_compile_definitions(libqemu2-util PRIVATE "-DPOISON_CONFIG_ANDROID")
++set_source_files_properties(
++  util/mmap-alloc.c PROPERTIES
++  COMPILE_DEFINITIONS "AEMU_TCMALLOC_ENABLED=$<BOOL:${OPTION_TCMALLOC}>")
+ 
+ # Once we have a newer version of cmake we can generate the object library in a
+ # platform independent way b/121393952

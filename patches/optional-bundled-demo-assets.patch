@@ -1,0 +1,93 @@
+Make bundled emulator demo assets optional
+
+Retain the upstream package by default. The AOSStudio source pilot uses the generic AVD hardware and disables the optional vendor resources.
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -116,6 +116,8 @@
+       BOOL
+       "Minimum set of components to support 64-bit guets only."
+ )
++option(OPTION_BUNDLE_DEMO_ASSETS
++       "Bundle virtual scenes, automation demos, and device skins." ON)
+ set(OPTION_TCMALLOC
+     TRUE
+     CACHE
+--- a/android/android-emu/android-emu.cmake
++++ b/android/android-emu/android-emu.cmake
+@@ -781,11 +781,13 @@
+       testdata/ver/poster_test.obj
+       testdata/ver/poster_test.posters)
+ 
+-  prebuilt(VIRTUALSCENE)
+   android_copy_test_files(android-emu_unittests "${android-emu-testdata}"
+                           testdata)
+-  android_target_dependency(android-emu_unittests all
+-                            VIRTUAL_SCENE_DEPENDENCIES)
++  if(OPTION_BUNDLE_DEMO_ASSETS)
++    prebuilt(VIRTUALSCENE)
++    android_target_dependency(android-emu_unittests all
++                              VIRTUAL_SCENE_DEPENDENCIES)
++  endif()
+   android_copy_test_dir(android-emu_unittests test-sdk test-sdk)
+ 
+   # Declare virtual_environment_renderer_unittests
+--- a/android/emulator/CMakeLists.txt
++++ b/android/emulator/CMakeLists.txt
+@@ -1,9 +1,11 @@
+ prebuilt(QT5)
+-prebuilt(VIRTUALSCENE)
+-prebuilt(SKIN)
+ prebuilt(E2FSPROGS)
+-prebuilt(MACROS)
+ prebuilt(MSVC)
++if(OPTION_BUNDLE_DEMO_ASSETS)
++  prebuilt(VIRTUALSCENE)
++  prebuilt(SKIN)
++  prebuilt(MACROS)
++endif()
+ android_add_executable(
+   TARGET emulator INSTALL .
+   LICENSE Apache-2.0
+@@ -107,9 +109,11 @@
+ android_target_dependency(emulator all E2FSPROGS_DEPENDENCIES)
+ android_target_dependency(emulator all CERT_DEPEPENDENCIES)
+ android_target_dependency(emulator all EMULATOR_HW_DEPENDENCIES)
+-android_target_dependency(emulator all VIRTUAL_SCENE_DEPENDENCIES)
+-android_target_dependency(emulator all SKIN_DEPENDENCIES)
+-android_target_dependency(emulator all EMULATOR_MACROS_DEPENDENCIES)
++if(OPTION_BUNDLE_DEMO_ASSETS)
++  android_target_dependency(emulator all VIRTUAL_SCENE_DEPENDENCIES)
++  android_target_dependency(emulator all SKIN_DEPENDENCIES)
++  android_target_dependency(emulator all EMULATOR_MACROS_DEPENDENCIES)
++endif()
+ android_target_dependency(emulator all VULKAN_DEPENDENCIES)
+ android_target_dependency(emulator linux TCMALLOC_OS_DEPENDENCIES)
+ android_target_dependency(emulator windows_msvc-x86_64 MSVC_DEPENDENCIES)
+@@ -136,17 +140,21 @@
+ android_install_dependency_force_exec(all E2FSPROGS_DEPENDENCIES)
+ android_install_dependency(all CERT_DEPEPENDENCIES)
+ android_install_dependency(all EMULATOR_HW_DEPENDENCIES)
+-android_install_dependency(all VIRTUAL_SCENE_DEPENDENCIES)
+-android_install_dependency(all SKIN_DEPENDENCIES)
+-android_install_dependency(all EMULATOR_MACROS_DEPENDENCIES)
++if(OPTION_BUNDLE_DEMO_ASSETS)
++  android_install_dependency(all VIRTUAL_SCENE_DEPENDENCIES)
++  android_install_dependency(all SKIN_DEPENDENCIES)
++  android_install_dependency(all EMULATOR_MACROS_DEPENDENCIES)
++endif()
+ android_install_dependency(all VULKAN_DEPENDENCIES)
+ android_install_dependency(linux TCMALLOC_OS_DEPENDENCIES)
+ android_install_dependency(windows_msvc-x86_64 ANGLE_RENDERER_DEPENDENCIES)
+ android_install_dependency(windows_msvc-x86_64 MSVC_DEPENDENCIES)
+ 
+ # Text files have no licenses.
+-android_license(TARGET "SKIN_DEPENDENCIES" LIBNAME None SPDX None
+-  LICENSE None LOCAL None)
++if(OPTION_BUNDLE_DEMO_ASSETS)
++  android_license(TARGET "SKIN_DEPENDENCIES" LIBNAME None SPDX None
++    LICENSE None LOCAL None)
++endif()
+ android_license(TARGET "EMULATOR_KEYMAP_DEPENDENCIES" LIBNAME None SPDX None
+   LICENSE None LOCAL None)
+ android_license(TARGET "CERT_DEPEPENDENCIES" LIBNAME None SPDX None LICENSE None

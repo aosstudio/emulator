@@ -1,0 +1,16 @@
+Honor USE_ANGLE_SHADER_PARSER when the optional shader translator is unavailable.
+https://issuetracker.google.com/issues/257068626
+
+--- a/android/android-emugl/combined/CMakeLists.txt
++++ b/android/android-emugl/combined/CMakeLists.txt
+@@ -160,7 +160,9 @@
+     elseif(UNIX)
+         add_compile_definitions(VK_USE_PLATFORM_XCB_KHR)
+     endif()
+-    add_compile_definitions(USE_ANGLE_SHADER_PARSER)
++    if(USE_ANGLE_SHADER_PARSER)
++        add_compile_definitions(USE_ANGLE_SHADER_PARSER)
++    endif()
+ 
+     add_compile_definitions(GLM_FORCE_RADIANS)
+     add_compile_definitions(GLM_FORCE_DEFAULT_ALIGNED_GENTYPES)

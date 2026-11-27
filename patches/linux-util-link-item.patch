@@ -1,0 +1,17 @@
+Use separate Linux link items so libutil remains valid with tcmalloc disabled.
+CMake policy: https://cmake.org/cmake/help/latest/policy/CMP0004.html
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -856,9 +856,9 @@
+   "-Wno-gnu-variable-sized-type-not-at-end"
+   "-Wno-reorder-init-list")
+ android_target_link_libraries(android-qemu-deps linux-x86_64 INTERFACE
+-                              "${TCMALLOC_LIBRARIES} -lutil")
++                              ${TCMALLOC_LIBRARIES} -lutil)
+ android_target_link_libraries(android-qemu-deps linux-aarch64 INTERFACE
+-                              "${TCMALLOC_LIBRARIES} -lutil")
++                              ${TCMALLOC_LIBRARIES} -lutil)
+ android_target_link_libraries(android-qemu-deps darwin-x86_64 INTERFACE
+                               "-framework CoreAudio" "-framework AudioToolbox")
+ android_target_link_libraries(android-qemu-deps darwin-aarch64 INTERFACE

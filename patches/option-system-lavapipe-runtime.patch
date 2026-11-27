@@ -1,0 +1,64 @@
+Subject: Package source-built Mesa drivers on Linux
+
+The source-built Mesa driver uses the host SONAMEs. Apply the packaged
+libxcb-aemu and the other private driver libraries only with the upstream SDK driver.
+Use the actual versioned Gallium filename when packaging source-built llvmpipe.
+
+Issue: https://issuetracker.google.com/issues/333829166
+
+--- a/android/build/cmake/config/emu-vulkan-config.cmake
++++ b/android/build/cmake/config/emu-vulkan-config.cmake
+@@ -17,6 +17,8 @@
+ set(VULKAN_FOUND TRUE)
+ 
+ if(LINUX_X86_64)
++  option(OPTION_SYSTEM_LAVAPIPE_RUNTIME
++         "Resolve the source-built Lavapipe driver dependencies from the host" OFF)
+   set(VULKAN_DEPENDENCIES
+       # Loader (for real)
+       "${PREBUILT_ROOT}/libvulkan.so>lib64/vulkan/libvulkan.so"
+@@ -27,17 +29,20 @@
+       # Lavapipe
+       "${PREBUILT_ROOT}/icds/libvulkan_lvp.so>lib64/vulkan/libvulkan_lvp.so"
+       "${PREBUILT_ROOT}/icds/lvp_icd.json>lib64/vulkan/lvp_icd.json"
+-      "${PREBUILT_ROOT}/icds/libxcb-aemu.so>lib64/vulkan/libxcb-aemu.so"
+-      "${PREBUILT_ROOT}/icds/libxml2.so.2>lib64/vulkan/libxml2.so.2"
+-      "${PREBUILT_ROOT}/icds/libedit.so.0>lib64/vulkan/libedit.so.0"
+-      "${PREBUILT_ROOT}/icds/libLLVM.so>lib64/vulkan/libLLVM.so"
+-      "${PREBUILT_ROOT}/icds/libncurses.so.6>lib64/vulkan/libncurses.so.6"
+       # for translating shaders to SPIRV
+       "${PREBUILT_ROOT}/glslangValidator>lib64/vulkan/glslangValidator"
+       # Validation layer
+       "${PREBUILT_ROOT}/layers/libVkLayer_khronos_validation.so>lib64/vulkan/layers/libVkLayer_khronos_validation.so"
+       "${PREBUILT_ROOT}/layers/VkLayer_khronos_validation.json>lib64/vulkan/layers/VkLayer_khronos_validation.json"
+       ${VULKAN_COMMON_DEPENDENCIES})
++  if(NOT OPTION_SYSTEM_LAVAPIPE_RUNTIME)
++    list(APPEND VULKAN_DEPENDENCIES
++      "${PREBUILT_ROOT}/icds/libxcb-aemu.so>lib64/vulkan/libxcb-aemu.so"
++      "${PREBUILT_ROOT}/icds/libxml2.so.2>lib64/vulkan/libxml2.so.2"
++      "${PREBUILT_ROOT}/icds/libedit.so.0>lib64/vulkan/libedit.so.0"
++      "${PREBUILT_ROOT}/icds/libLLVM.so>lib64/vulkan/libLLVM.so"
++      "${PREBUILT_ROOT}/icds/libncurses.so.6>lib64/vulkan/libncurses.so.6")
++  endif()
+   set(VULKAN_TEST_DEPENDENCIES
+       # Loader (for testing)
+       "${PREBUILT_ROOT}/libvulkan.so>testlib64/libvulkan.so"
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -505,11 +505,15 @@
+     "https://android.googlesource.com/platform/external/swiftshader/+/refs/heads/emu-master-dev/LICENSE.txt"
+   LOCAL "${ANDROID_QEMU2_TOP_DIR}/LICENSES/LICENSE.APACHE2")
+ 
++if(NOT DEFINED LLVMPIPE_GALLIUM_LIBRARY)
++  set(LLVMPIPE_GALLIUM_LIBRARY "libgallium-25.2.4${CMAKE_SHARED_LIBRARY_SUFFIX}")
++endif()
++
+ set(LLVMPIPE_DEPENDENCIES
+     "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/libEGL${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/libEGL${CMAKE_SHARED_LIBRARY_SUFFIX}"
+     "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/libGLES_CM${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/libGLES_CM${CMAKE_SHARED_LIBRARY_SUFFIX}"
+     "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/libGLESv2${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/libGLESv2${CMAKE_SHARED_LIBRARY_SUFFIX}"
+-    "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/libgallium-25.2.4${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/libgallium-25.2.4${CMAKE_SHARED_LIBRARY_SUFFIX}"
++    "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/${LLVMPIPE_GALLIUM_LIBRARY}>lib64/gles_llvmpipe/${LLVMPIPE_GALLIUM_LIBRARY}"
+     "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/libgbm${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/libgbm${CMAKE_SHARED_LIBRARY_SUFFIX}"
+     "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/libGL${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/libGL${CMAKE_SHARED_LIBRARY_SUFFIX}"
+     "${ANDROID_QEMU2_TOP_DIR}/../../prebuilts/android-emulator-build/common/gles_llvmpipe/dri/kms_swrast_dri${CMAKE_SHARED_LIBRARY_SUFFIX}>lib64/gles_llvmpipe/dri/kms_swrast_dri${CMAKE_SHARED_LIBRARY_SUFFIX}"

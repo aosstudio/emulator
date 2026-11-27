@@ -1,0 +1,71 @@
+Subject: Retain the API dump dispatch keys through Vulkan teardown
+
+Read the dispatch keys while the handles are live and use the stored values
+when removing the layer's tables. Keep the generator and generated file in sync.
+
+--- a/scripts/api_dump_generator.py
++++ b/scripts/api_dump_generator.py
+@@ -243,6 +243,9 @@
+     {funcReturn} result = instance_dispatch_table({funcDispatchParam})->{funcShortName}({funcNamedParams});
+     @end if
+     @if('{funcReturn}' == 'void')
++    @if('{funcName}' == 'vkDestroyInstance')
++    const auto key = get_dispatch_key(instance);
++    @end if
+     instance_dispatch_table({funcDispatchParam})->{funcShortName}({funcNamedParams});
+     @end if
+     @if('{funcName}' in BLOCKING_API_CALLS)
+@@ -258,7 +261,7 @@
+     }}
+     @end if
+     @if('{funcName}' == 'vkDestroyInstance')
+-    destroy_instance_dispatch_table(get_dispatch_key(instance));
++    destroy_instance_dispatch_table(key);
+     @end if
+ 
+     @if('{funcName}' == 'vkGetPhysicalDeviceToolPropertiesEXT')
+@@ -320,6 +323,9 @@
+     {funcReturn} result = device_dispatch_table({funcDispatchParam})->{funcShortName}({funcNamedParams});
+     @end if
+     @if('{funcReturn}' == 'void')
++    @if('{funcName}' == 'vkDestroyDevice')
++    const auto key = get_dispatch_key(device);
++    @end if
+     device_dispatch_table({funcDispatchParam})->{funcShortName}({funcNamedParams});
+     @end if
+     @if('{funcName}' in BLOCKING_API_CALLS)
+@@ -328,7 +334,7 @@
+     @end if
+     {funcStateTrackingCode}
+     @if('{funcName}' == 'vkDestroyDevice')
+-    destroy_device_dispatch_table(get_dispatch_key(device));
++    destroy_device_dispatch_table(key);
+     @end if
+ 
+     if (ApiDumpInstance::current().shouldDumpOutput()) {{
+--- a/layersvt/generated/api_dump.cpp
++++ b/layersvt/generated/api_dump.cpp
+@@ -163,9 +163,10 @@
+ {
+     ApiDumpInstance::current().outputMutex()->lock();
+     dump_function_head(ApiDumpInstance::current(), "vkDestroyInstance", "instance, pAllocator", "void");
++    const auto key = get_dispatch_key(instance);
+     instance_dispatch_table(instance)->DestroyInstance(instance, pAllocator);
+     
+-    destroy_instance_dispatch_table(get_dispatch_key(instance));
++    destroy_instance_dispatch_table(key);
+     if (ApiDumpInstance::current().shouldDumpOutput()) {
+         switch(ApiDumpInstance::current().settings().format())
+         {
+@@ -2531,9 +2532,10 @@
+ {
+     ApiDumpInstance::current().outputMutex()->lock();
+     dump_function_head(ApiDumpInstance::current(), "vkDestroyDevice", "device, pAllocator", "void");
++    const auto key = get_dispatch_key(device);
+     device_dispatch_table(device)->DestroyDevice(device, pAllocator);
+     
+-    destroy_device_dispatch_table(get_dispatch_key(device));
++    destroy_device_dispatch_table(key);
+     if (ApiDumpInstance::current().shouldDumpOutput()) {
+         switch(ApiDumpInstance::current().settings().format())
+         {

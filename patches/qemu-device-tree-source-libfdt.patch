@@ -1,0 +1,14 @@
+Export the existing source-built libfdt dependency to libqemu2-util consumers.
+qemu2-common compiles device_tree.c and needs the target's include directory.
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -908,7 +908,7 @@
+   NOTICE "REPO/LICENSE"
+   SRC # cmake-format: sortable
+       ${libqemuutil_generated_sources} ${libqemuutil_sources})
+-target_link_libraries(libqemu2-util PRIVATE android-qemu-deps fdt)
++target_link_libraries(libqemu2-util PRIVATE android-qemu-deps PUBLIC fdt)
+ android_target_link_libraries(libqemu2-util windows
+                               PRIVATE psapi::psapi winmm::winmm dxguid::dxguid)
+ target_compile_definitions(libqemu2-util PRIVATE "-DPOISON_CONFIG_ANDROID")

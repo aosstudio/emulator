@@ -1,0 +1,9 @@
+Subject: Include the fixed-width integer declarations used by robin_hood.h
+
+--- a/src/include/robin_hood.h
++++ b/src/include/robin_hood.h
+@@ -41,3 +41,4 @@
+ #include <algorithm>
++#include <cstdint>
+ #include <cstdlib>
+ #include <cstring>
