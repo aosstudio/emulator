@@ -1,11 +1,13 @@
 import argparse
 from base64 import b64decode
 from concurrent.futures import ThreadPoolExecutor
+from contextlib import suppress
 import hashlib
 import json
 from pathlib import Path
 import shutil
 import subprocess
+import sys
 import tarfile
 from tempfile import TemporaryDirectory
 from typing import TypedDict
@@ -88,18 +90,33 @@ def fetch(destination: Path, entry: Input) -> None:
         digest, expected = tree_sha256, entry["tree_sha256"]
     else:
         digest, expected = sha256, entry["sha256"]
-    if destination.is_file() and digest(destination) == expected:
-        return
+    if destination.is_file():
+        with suppress(EOFError, tarfile.ReadError):
+            if digest(destination) == expected:
+                return
     destination.parent.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(prefix=".fetch-", dir=destination.parent) as work:
         candidate = Path(work) / "download"
-        download(entry["url"], candidate)
-        if entry.get("encoding") == "base64":
-            candidate.write_bytes(b64decode(candidate.read_bytes()))
-        if digest(candidate) != expected:
-            raise ValueError(f"SHA-256 mismatch for {entry['url']}")
-        candidate.replace(destination)
-        print(f"Fetched {destination.name}", flush=True)
+        for attempt in range(1, 4):
+            download(entry["url"], candidate)
+            if entry.get("encoding") == "base64":
+                candidate.write_bytes(b64decode(candidate.read_bytes()))
+            try:
+                actual = digest(candidate)
+            except (EOFError, tarfile.ReadError) as error:
+                if attempt == 3:
+                    raise ValueError(
+                        f"Incomplete archive from {entry['url']}"
+                    ) from error
+                print(
+                    f"Retrying incomplete archive from {entry['url']}", file=sys.stderr
+                )
+                continue
+            if actual != expected:
+                raise ValueError(f"SHA-256 mismatch for {entry['url']}")
+            candidate.replace(destination)
+            print(f"Fetched {destination.name}", flush=True)
+            return
 
 
 def fetch_all(downloads: list[tuple[Path, Input]]) -> None:
