@@ -1881,10 +1881,10 @@
       "tree_sha256": "e606bb3b9ea6ce35ba747c347e686f5e1cce5cdb17ed4e05ea3e4b548b93d678"
     },
     "ffmpeg": {
-      "url": "https://ffmpeg.org/releases/ffmpeg-4.4.2.tar.gz",
-      "archive": "ffmpeg-4.4.2.tar.gz",
+      "url": "https://ffmpeg.org/releases/ffmpeg-4.4.2.tar.xz",
+      "archive": "ffmpeg-4.4.2.tar.xz",
       "license": "LGPL-2.1-or-later or GPL-2.0-or-later depending on configured options",
-      "sha256": "3e0ec15ac91e42c48f19e21065ff9048ab77dc8358acc585504a052608a47b3c",
+      "sha256": "af419a7f88adbc56c758ab19b4c708afbcae15ef09606b82b855291f6a6faa93",
       "directory": "host-libraries/ffmpeg",
       "tree_root": "ffmpeg-4.4.2"
     },
