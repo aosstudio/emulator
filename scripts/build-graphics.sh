@@ -22,6 +22,10 @@ if ! pkg-config --print-errors --exists expat xxf86vm; then
     printf 'Mesa requires the libexpat1-dev and libxxf86vm-dev packages.\n' >&2
     exit 1
 fi
+if ! pkg-config --print-errors --exists glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0; then
+    printf 'ANGLE requires the libglib2.0-dev package.\n' >&2
+    exit 1
+fi
 "$python" scripts/inputs.py graphics "$src"
 mkdir -p "$gles" "$angle" "$vulkan/icds" "$vulkan/layers"
 export CCACHE_DIR="$work/ccache"

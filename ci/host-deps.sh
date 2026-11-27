@@ -17,9 +17,10 @@ case "${1:?Supply a build target}" in
         ;;
     graphics)
         packages+=(bison build-essential clang-21 cmake flex git glslang-tools
-            libdrm-dev libelf-dev libexpat1-dev libpci-dev libunwind-dev libvulkan-dev libwayland-dev
-            libx11-xcb-dev libxcb-dri3-dev libxcb-glx0-dev libxcb-present-dev
-            libxcb-randr0-dev libxcb-shm0-dev libxfixes-dev libxrandr-dev libxshmfence-dev libxxf86vm-dev
+            libdrm-dev libelf-dev libexpat1-dev libglib2.0-dev libpci-dev libunwind-dev
+            libvulkan-dev libwayland-dev libx11-xcb-dev libxcb-dri3-dev libxcb-glx0-dev
+            libxcb-present-dev libxcb-randr0-dev libxcb-shm0-dev libxfixes-dev
+            libxrandr-dev libxshmfence-dev libxxf86vm-dev
             llvm-21-dev meson ninja-build patch pkg-config python3-mako
             spirv-tools xvfb zlib1g-dev)
         ;;
