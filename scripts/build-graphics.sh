@@ -13,9 +13,13 @@ angle="$common/ANGLE/linux-x86_64/lib"
 gles="$common/swiftshader/linux-x86_64/lib"
 jobs=${JOBS:-$(nproc)}
 python=${PYTHON:-python3}
+export CC=/usr/bin/clang-21 CXX=/usr/bin/clang++-21
+if ! printf '#include <xcb/shm.h>\n' | "$CXX" -x c++ -fsyntax-only -; then
+    printf 'SwiftShader requires the libxcb-shm0-dev package.\n' >&2
+    exit 1
+fi
 "$python" scripts/inputs.py graphics "$src"
 mkdir -p "$gles" "$angle" "$vulkan/icds" "$vulkan/layers"
-export CC=/usr/bin/clang-21 CXX=/usr/bin/clang++-21
 export CCACHE_DIR="$work/ccache"
 mkdir -p "$CCACHE_DIR"
 cmake_options=(
