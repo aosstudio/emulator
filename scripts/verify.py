@@ -256,7 +256,11 @@ def boot(work: Path, emulator: Path, kernel_archive: Path) -> None:
         or "AOSSTUDIO_EMULATOR_BOOT_OK 6.12.96-aosstudio" not in console
         or "reboot: Power down" not in console
     ):
-        raise ValueError(f"Expected BinderFS boot confirmation in {log}")
+        print(console[-16000:], file=sys.stderr)
+        raise ValueError(
+            f"Expected BinderFS boot confirmation in {log} "
+            f"(emulator exit status {result.returncode})"
+        )
     print(f"Guest kernel booted with TCG. See {log}", flush=True)
 
 
