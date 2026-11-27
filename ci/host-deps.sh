@@ -23,9 +23,6 @@ case "${1:?Supply a build target}" in
             libxrandr-dev libxshmfence-dev libxxf86vm-dev
             llvm-21-dev meson ninja-build patch pkg-config
             spirv-tools xvfb zlib1g-dev)
-        if [[ $1 == graphics || $1 == graphics-mesa ]]; then
-            packages+=(python3 python3-mako python3-packaging python3-yaml)
-        fi
         ;;
     firmware)
         packages+=(binutils build-essential gcc-multilib nasm perl python3)

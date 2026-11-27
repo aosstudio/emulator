@@ -45,8 +45,8 @@ case "$component" in
             printf 'Mesa requires the libexpat1-dev and libxxf86vm-dev packages.\n' >&2
             exit 1
         fi
-        if ! /usr/bin/python3 -c 'import mako, packaging.version, yaml'; then
-            printf 'Mesa requires python3-mako, python3-packaging and python3-yaml for system Python.\n' >&2
+        if ! mesa_python=$("$python" -c 'import sys; import mako, packaging.version, yaml; print(sys.executable)'); then
+            printf 'Install ci/mesa-requirements.txt into the Python environment selected by PYTHON.\n' >&2
             exit 1
         fi
         ;;
@@ -163,8 +163,8 @@ ARGS
         mkdir -p "$work/bin"
         ln -s /usr/bin/llvm-config-21 "$work/bin/llvm-config"
         export PATH="$work/bin:$PATH"
-        # Mesa's Python modules are installed for the Ubuntu interpreter.
-        printf "[binaries]\npython3 = '/usr/bin/python3'\n" > "$work/mesa-native.ini"
+        # Pass the selected interpreter to Mesa's generators.
+        printf "[binaries]\npython3 = '''%s'''\n" "$mesa_python" > "$work/mesa-native.ini"
         meson setup "$work/mesa" "$src/mesa" --buildtype=release --wrap-mode=nodownload \
             --native-file "$work/mesa-native.ini" \
             --prefix="$work/mesa-install" --libdir=lib \

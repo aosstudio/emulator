@@ -9,7 +9,15 @@ sudo bash ci/host-deps.sh qt
 make qt JOBS="$(nproc)"
 ```
 
-Repeat for `netsim` and `firmware`. The graphics targets are `graphics-angle`, `graphics-swiftshader-gles`, `graphics-swiftshader-vulkan`, `graphics-vulkan`, and `graphics-mesa`. Run them in separate checkouts or install the graphics dependencies once with `sudo bash ci/host-deps.sh graphics` and build all five with `make graphics`. Bring the eight `out/components/*.tar.zst` archives into one checkout for assembly.
+Repeat for `netsim` and `firmware`. The graphics targets are `graphics-angle`, `graphics-swiftshader-gles`, `graphics-swiftshader-vulkan`, `graphics-vulkan`, and `graphics-mesa`. To build Mesa, install its generator dependencies in the Python environment you select with `PYTHON`.
+
+```bash
+sudo bash ci/host-deps.sh graphics-mesa
+python -m pip install --only-binary=:all: --require-hashes -r ci/mesa-requirements.txt
+make graphics-mesa PYTHON=python JOBS="$(nproc)"
+```
+
+The graphics targets can run in separate checkouts. To build all five in one checkout, install their host dependencies with `sudo bash ci/host-deps.sh graphics` and run `make graphics PYTHON=python` in the environment prepared for Mesa. Bring the eight `out/components/*.tar.zst` archives into one checkout for assembly.
 
 ```bash
 sudo bash ci/host-deps.sh package
