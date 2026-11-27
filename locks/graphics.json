@@ -1,0 +1,260 @@
+{
+  "angle": {
+    "url": "https://android.googlesource.com/platform/external/angle/+archive/901e32aa9923b05c3a2af846f8a28fc79c93d0be.tar.gz",
+    "archive": "external__angle-901e32aa9923b05c3a2af846f8a28fc79c93d0be.tar.gz",
+    "license": "BSD-3-Clause and third-party notices",
+    "directory": "angle",
+    "tree_sha256": "ce9feb181a96362c5b9e644913fe3593fe19ccef0b6c1f093186c5537688b304"
+  },
+  "swiftshader-gles": {
+    "url": "https://android.googlesource.com/platform/external/swiftshader/+archive/9759b180cf5b6687afc1f231b1b9fa230da1b261.tar.gz",
+    "archive": "swiftshader-gles-9759b180cf5b6687afc1f231b1b9fa230da1b261.tar.gz",
+    "directory": "swiftshader-gles",
+    "license": "Apache-2.0 and bundled LLVM notices",
+    "tree_sha256": "a2e4e2bce783555577e32f53e1844c5e1b209019620385a8a64cbfe8f1ec9ef1"
+  },
+  "swiftshader-vulkan": {
+    "url": "https://swiftshader.googlesource.com/SwiftShader/+archive/0a1985c2b294e5d6690978bd49eae39042cf52a8.tar.gz",
+    "archive": "0a1985c2b294e5d6690978bd49eae39042cf52a8.tar.gz",
+    "directory": "swiftshader-vulkan",
+    "license": "Apache-2.0 and bundled LLVM notices",
+    "tree_sha256": "d7bfe98c235e1d0fb48ce0c2b450912deb3ae0db765e48e765e1942c62265716"
+  },
+  "gn": {
+    "url": "https://gn.googlesource.com/gn/+archive/0725d7827575b239594fbc8fd5192873a1d62f44.tar.gz",
+    "archive": "gn-0725d7827575b239594fbc8fd5192873a1d62f44.tar.gz",
+    "directory": "gn",
+    "license": "BSD-3-Clause",
+    "tree_sha256": "92b3c87a19d4e9018d39d037520aed2d0a6fc0c8b6bd9660eeab2559c1991471"
+  },
+  "angle-build": {
+    "url": "https://chromium.googlesource.com/chromium/src/build/+archive/37cced769fa06d45a9988504182500b1aae65f26.tar.gz",
+    "archive": "build-37cced769fa06d45a9988504182500b1aae65f26.tar.gz",
+    "directory": "angle/build",
+    "license": "BSD-3-Clause and upstream notices",
+    "tree_sha256": "4304bb1d5499894d72f0716ef928327364f0e76cf0f3f7a17a9e7a3da87d91cc",
+    "overlay": true
+  },
+  "angle-buildtools": {
+    "url": "https://chromium.googlesource.com/chromium/src/buildtools/+archive/f78b4b9f33bd8ef9944d5ce643daff1c31880189.tar.gz",
+    "archive": "buildtools-f78b4b9f33bd8ef9944d5ce643daff1c31880189.tar.gz",
+    "directory": "angle/buildtools",
+    "license": "BSD-3-Clause and upstream notices",
+    "tree_sha256": "42479be96574b86fdfe8eed2d2248f0f46523af625f297af098b55d9b871c21e",
+    "overlay": true
+  },
+  "angle-testing": {
+    "url": "https://chromium.googlesource.com/chromium/src/testing/+archive/a53609bdb80bfee69306ef530ef534aa6aca42d9.tar.gz",
+    "archive": "testing-a53609bdb80bfee69306ef530ef534aa6aca42d9.tar.gz",
+    "directory": "angle/testing",
+    "license": "BSD-3-Clause and upstream notices",
+    "tree_sha256": "d646cd43292fbad4b0ca662800385226f0d2581acfd476e41bdf0e9e8d1c2d53",
+    "overlay": true
+  },
+  "angle-tools__clang": {
+    "url": "https://chromium.googlesource.com/chromium/src/tools/clang/+archive/55189189038d366b821a45d0cd153be7e8b7cf9a.tar.gz",
+    "archive": "tools__clang-55189189038d366b821a45d0cd153be7e8b7cf9a.tar.gz",
+    "directory": "angle/tools/clang",
+    "license": "BSD-3-Clause and upstream notices",
+    "tree_sha256": "c06d5e236d58a91914be8a4de19bc035b097f4822164aaceeda993956366330c",
+    "overlay": true
+  },
+  "angle-abseil": {
+    "url": "https://chromium.googlesource.com/chromium/src/third_party/abseil-cpp/+archive/e79b8ea964f45ba0dbb11e0905ae71581ba8ec2e.tar.gz",
+    "archive": "abseil-e79b8ea964f45ba0dbb11e0905ae71581ba8ec2e.tar.gz",
+    "directory": "angle/third_party/abseil-cpp",
+    "license": "Apache-2.0",
+    "tree_sha256": "bc9d19cce4fca5273bf07c885b5f81b2b5ae5d26a6848b3b4c1e492e3e125b92",
+    "overlay": true
+  },
+  "angle-zlib": {
+    "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib/+archive/fc5cfd78a357d5bb7735a58f383634faaafe706a.tar.gz",
+    "archive": "zlib-fc5cfd78a357d5bb7735a58f383634faaafe706a.tar.gz",
+    "directory": "angle/third_party/zlib",
+    "license": "Zlib",
+    "tree_sha256": "681e87788f8a3e7bb53ad4060371398a5d516f8420a762615b37957e84727467",
+    "overlay": true
+  },
+  "angle-jsoncpp": {
+    "url": "https://chromium.googlesource.com/chromium/src/third_party/jsoncpp/+archive/30a6ac108e24dabac7c2e0df4d33d55032af4ee7.tar.gz",
+    "archive": "jsoncpp-30a6ac108e24dabac7c2e0df4d33d55032af4ee7.tar.gz",
+    "directory": "angle/third_party/jsoncpp",
+    "license": "MIT or public-domain grant",
+    "tree_sha256": "50b003809ab5924a6942328d4687dfc3f17b74e54f384adf580077bbb9a1378d",
+    "overlay": true
+  },
+  "angle-googletest": {
+    "url": "https://chromium.googlesource.com/chromium/src/third_party/googletest/+archive/17bbed2084d3127bd7bcd27283f18d7a5861bea8.tar.gz",
+    "archive": "googletest-17bbed2084d3127bd7bcd27283f18d7a5861bea8.tar.gz",
+    "directory": "angle/third_party/googletest",
+    "license": "BSD-3-Clause",
+    "tree_sha256": "a9f8d3f79514d67e77a3ed813d7388393bf1abb4cc3d39f29eda935a046465b9",
+    "overlay": true
+  },
+  "angle-vma": {
+    "url": "https://chromium.googlesource.com/external/github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/+archive/5e49f57a6e71a026a54eb42e366de09a4142d24e.tar.gz",
+    "archive": "vma-5e49f57a6e71a026a54eb42e366de09a4142d24e.tar.gz",
+    "directory": "angle/third_party/vulkan_memory_allocator",
+    "license": "MIT",
+    "tree_sha256": "6d174bb1481ddeee20f4ee77b018f53b11f0e861e50d7aae84ecf63fef626925",
+    "overlay": true
+  },
+  "angle-jsoncpp-source": {
+    "url": "https://codeload.github.com/open-source-parsers/jsoncpp/tar.gz/645250b6690785be60ab6780ce4b58698d884d11",
+    "archive": "jsoncpp-source-645250b6690785be60ab6780ce4b58698d884d11.tar.gz",
+    "directory": "angle/third_party/jsoncpp/source",
+    "license": "MIT",
+    "tree_root": "jsoncpp-645250b6690785be60ab6780ce4b58698d884d11",
+    "sha256": "d6537e3d8de9f86647b534227bce41dccb84e4031c2a3aacd6ec7689182b8416",
+    "overlay": true
+  },
+  "angle-googletest-source": {
+    "url": "https://codeload.github.com/google/googletest/tar.gz/2d924d7a971e9667d76ad09727fb2402b4f8a1e3",
+    "archive": "googletest-source-2d924d7a971e9667d76ad09727fb2402b4f8a1e3.tar.gz",
+    "directory": "angle/third_party/googletest/src",
+    "license": "BSD-3-Clause",
+    "tree_root": "googletest-2d924d7a971e9667d76ad09727fb2402b4f8a1e3",
+    "sha256": "535b5f74b61c0ddc4b5f4da68d4914e690e64c8dcac81cad99c4e72a792f7f79",
+    "overlay": true
+  },
+  "angle-vulkan-headers": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/1dace16d8044758d32736eb59802d171970e9448",
+    "archive": "vulkan-headers-1dace16d8044758d32736eb59802d171970e9448.tar.gz",
+    "directory": "angle/third_party/vulkan-deps/vulkan-headers/src",
+    "license": "Apache-2.0 OR MIT",
+    "tree_root": "Vulkan-Headers-1dace16d8044758d32736eb59802d171970e9448",
+    "sha256": "fee49cd5125361612a60489d5ec7a98c8a6feae9a4a40983238fdd5dcbf3660c",
+    "overlay": true
+  },
+  "angle-vulkan-loader": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Loader/tar.gz/db4c3177aa005ae75a01af39a30f28d0563df3f9",
+    "archive": "angle-vulkan-loader-db4c3177aa005ae75a01af39a30f28d0563df3f9.tar.gz",
+    "directory": "angle/third_party/vulkan-deps/vulkan-loader/src",
+    "license": "Apache-2.0",
+    "tree_root": "Vulkan-Loader-db4c3177aa005ae75a01af39a30f28d0563df3f9",
+    "sha256": "8f8ad39cd0688f8db186bbce2a55c19021b895769889f42fbd7d5a315cc7c217",
+    "overlay": true
+  },
+  "angle-SPIRV-Headers": {
+    "url": "https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/b42ba6d92faf6b4938e6f22ddd186dbdacc98d78",
+    "archive": "SPIRV-Headers-b42ba6d92faf6b4938e6f22ddd186dbdacc98d78.tar.gz",
+    "directory": "angle/third_party/vulkan-deps/spirv-headers/src",
+    "license": "MIT",
+    "tree_root": "SPIRV-Headers-b42ba6d92faf6b4938e6f22ddd186dbdacc98d78",
+    "sha256": "d58e8e65ea4b4f1e421caaad68f88ce7b713ac3519bd49e7b71b6a5690489eb6",
+    "overlay": true
+  },
+  "angle-SPIRV-Tools": {
+    "url": "https://codeload.github.com/KhronosGroup/SPIRV-Tools/tar.gz/5003644f554bafe7f002699d12581d6f903386f3",
+    "archive": "SPIRV-Tools-5003644f554bafe7f002699d12581d6f903386f3.tar.gz",
+    "directory": "angle/third_party/vulkan-deps/spirv-tools/src",
+    "license": "Apache-2.0",
+    "tree_root": "SPIRV-Tools-5003644f554bafe7f002699d12581d6f903386f3",
+    "sha256": "ea531f14aa9d14602a6206951e8d01e7f82bfeaf9a9222bd0b71c212c1a6dc43",
+    "overlay": true
+  },
+  "loader": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Loader/tar.gz/bac41319cafb4527a2a959237b17611dd08bfe11",
+    "archive": "bac41319cafb4527a2a959237b17611dd08bfe11.tar.gz",
+    "directory": "loader",
+    "license": "Apache-2.0",
+    "tree_root": "Vulkan-Loader-bac41319cafb4527a2a959237b17611dd08bfe11",
+    "sha256": "055fd05c7d4d51eb825aef10e73ce4a801d7e8299ff4ef890ca3960f2f3614ed"
+  },
+  "loader-headers": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/ad9ce1235e88dc09287e19171dfac384db8ec32c",
+    "archive": "headers-ad9ce1235e88dc09287e19171dfac384db8ec32c.tar.gz",
+    "directory": "loader-headers",
+    "license": "Apache-2.0 OR MIT",
+    "tree_root": "Vulkan-Headers-ad9ce1235e88dc09287e19171dfac384db8ec32c",
+    "sha256": "7f85689bfbec9d16dd2621e5102bb7649fdff1d68b08e9c5a37eb891982ea5a7"
+  },
+  "SPIRV-Headers": {
+    "url": "https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/2acb319af38d43be3ea76bfabf3998e5281d8d12",
+    "archive": "SPIRV-Headers-2acb319af38d43be3ea76bfabf3998e5281d8d12.tar.gz",
+    "directory": "SPIRV-Headers",
+    "license": "MIT",
+    "tree_root": "SPIRV-Headers-2acb319af38d43be3ea76bfabf3998e5281d8d12",
+    "sha256": "425da1e3e4ba8de41dc8c8273d281ae82f1e18a397ec476649df3c832e242329"
+  },
+  "SPIRV-Tools": {
+    "url": "https://codeload.github.com/KhronosGroup/SPIRV-Tools/tar.gz/0cfe9e7219148716dfd30b37f4d21753f098707a",
+    "archive": "SPIRV-Tools-0cfe9e7219148716dfd30b37f4d21753f098707a.tar.gz",
+    "directory": "SPIRV-Tools",
+    "license": "Apache-2.0",
+    "tree_root": "SPIRV-Tools-0cfe9e7219148716dfd30b37f4d21753f098707a",
+    "sha256": "a5277538fec0868452b1f616553c2fca80939a6a3ee0b7322e21ff063750a482"
+  },
+  "Vulkan-Headers": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/b379292b2ab6df5771ba9870d53cf8b2c9295daf",
+    "archive": "Vulkan-Headers-b379292b2ab6df5771ba9870d53cf8b2c9295daf.tar.gz",
+    "directory": "Vulkan-Headers",
+    "license": "Apache-2.0 OR MIT",
+    "tree_root": "Vulkan-Headers-b379292b2ab6df5771ba9870d53cf8b2c9295daf",
+    "sha256": "2ad177c0e468ac2eb3db9b5be6b8a18a6730d339378ac670e5fbda3503ac7d64"
+  },
+  "Vulkan-Utility-Libraries": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-Utility-Libraries/tar.gz/5f26cf65a18bc89a8e3d6569c14314b6fdac8d4d",
+    "archive": "Vulkan-Utility-Libraries-5f26cf65a18bc89a8e3d6569c14314b6fdac8d4d.tar.gz",
+    "directory": "Vulkan-Utility-Libraries",
+    "license": "Apache-2.0",
+    "tree_root": "Vulkan-Utility-Libraries-5f26cf65a18bc89a8e3d6569c14314b6fdac8d4d",
+    "sha256": "86dd3646c1ffee33887beed3c255dab3d32c6ef4a4c4ec252793dbd30644df1b"
+  },
+  "Vulkan-ValidationLayers": {
+    "url": "https://codeload.github.com/KhronosGroup/Vulkan-ValidationLayers/tar.gz/a92629196a4fed15e59c74aa965dd47bd5ece3b7",
+    "archive": "Vulkan-ValidationLayers-a92629196a4fed15e59c74aa965dd47bd5ece3b7.tar.gz",
+    "directory": "Vulkan-ValidationLayers",
+    "license": "Apache-2.0",
+    "tree_root": "Vulkan-ValidationLayers-a92629196a4fed15e59c74aa965dd47bd5ece3b7",
+    "sha256": "a74ffae613a65639958989d1ad8492bc9fd6b4093f28250163c2c50a80ac40f8"
+  },
+  "VulkanTools": {
+    "url": "https://codeload.github.com/LunarG/VulkanTools/tar.gz/ad51da9342ad95ae92ab788908e8a840fa924f8f",
+    "archive": "VulkanTools-ad51da9342ad95ae92ab788908e8a840fa924f8f.tar.gz",
+    "directory": "VulkanTools",
+    "license": "Apache-2.0",
+    "tree_root": "VulkanTools-ad51da9342ad95ae92ab788908e8a840fa924f8f",
+    "sha256": "f77aba02fc8cfc4a8bf13691bc79389d3b9cf0ee87fd2ed12e6e638984559095"
+  },
+  "glslang": {
+    "url": "https://codeload.github.com/KhronosGroup/glslang/tar.gz/fa9c3deb49e035a8abcabe366f26aac010f6cbfb",
+    "archive": "glslang-fa9c3deb49e035a8abcabe366f26aac010f6cbfb.tar.gz",
+    "directory": "glslang",
+    "license": "BSD-3-Clause and upstream notices",
+    "tree_root": "glslang-fa9c3deb49e035a8abcabe366f26aac010f6cbfb",
+    "sha256": "dc52424b8d3b302038068537084dfc557c870a9bfaec77c1ee025bba38148177"
+  },
+  "jsoncpp": {
+    "url": "https://codeload.github.com/open-source-parsers/jsoncpp/tar.gz/5defb4ed1a4293b8e2bf641e16b156fb9de498cc",
+    "archive": "jsoncpp-5defb4ed1a4293b8e2bf641e16b156fb9de498cc.tar.gz",
+    "directory": "jsoncpp",
+    "license": "MIT or public-domain grant",
+    "tree_root": "jsoncpp-5defb4ed1a4293b8e2bf641e16b156fb9de498cc",
+    "sha256": "331381ca5adf86dc7df0b467ace058f35f15942769bc8045d10cee5de808b04b"
+  },
+  "robin-hood-hashing": {
+    "url": "https://codeload.github.com/martinus/robin-hood-hashing/tar.gz/9145f963d80d6a02f0f96a47758050a89184a3ed",
+    "archive": "robin-hood-hashing-9145f963d80d6a02f0f96a47758050a89184a3ed.tar.gz",
+    "directory": "robin-hood-hashing",
+    "license": "MIT",
+    "tree_root": "robin-hood-hashing-9145f963d80d6a02f0f96a47758050a89184a3ed",
+    "sha256": "2ec51a99f9446cb60843391e05c9bf8a1e040a7f5e67e5db9e78fc9e9dc87f9b"
+  },
+  "valijson": {
+    "url": "https://codeload.github.com/tristanpenman/valijson/tar.gz/f7399c1a244982632671906d17f3ea77f3ccfc67",
+    "archive": "valijson-f7399c1a244982632671906d17f3ea77f3ccfc67.tar.gz",
+    "directory": "valijson",
+    "license": "BSD-2-Clause",
+    "tree_root": "valijson-f7399c1a244982632671906d17f3ea77f3ccfc67",
+    "sha256": "4208ba0314b6a7168aa79213e085e6534673d3f85c961ac341cdeaebe0e0700d"
+  },
+  "mesa": {
+    "url": "https://archive.mesa3d.org/mesa-26.0.8.tar.xz",
+    "archive": "mesa-26.0.8.tar.xz",
+    "directory": "mesa",
+    "license": "MIT and file-level upstream notices",
+    "tree_root": "mesa-26.0.8",
+    "sha256": "caf1c0061a68e88dfa74967a7e780c0e85d65b6c4e334cd69095a5dc54ad78bc"
+  }
+}

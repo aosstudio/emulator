@@ -1,0 +1,15 @@
+Subject: Backport the upstream LLVM Signals.h stdint include
+
+Upstream: https://swiftshader.googlesource.com/SwiftShader/+/ecefa6c6596982616fa1f564fcee363ef8533808
+Issue: https://github.com/llvm/llvm-project/issues/55711
+
+--- a/third_party/llvm-10.0/llvm/include/llvm/Support/Signals.h
++++ b/third_party/llvm-10.0/llvm/include/llvm/Support/Signals.h
+@@ -14,6 +14,7 @@
+ #ifndef LLVM_SUPPORT_SIGNALS_H
+ #define LLVM_SUPPORT_SIGNALS_H
+ 
++#include <cstdint>
+ #include <string>
+ 
+ namespace llvm {

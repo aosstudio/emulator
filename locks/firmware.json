@@ -1,0 +1,45 @@
+{
+  "qemu": {
+    "url": "https://android.googlesource.com/platform/external/qemu/+archive/5e51202879523d4df1bca8ca6944129ff05df02b.tar.gz",
+    "archive": "qemu-5e51202879523d4df1bca8ca6944129ff05df02b.tar.gz",
+    "license": "GPL-2.0-only and file-specific upstream terms",
+    "directory": "qemu",
+    "tree_sha256": "e606bb3b9ea6ce35ba747c347e686f5e1cce5cdb17ed4e05ea3e4b548b93d678",
+    "members": [
+      "COPYING",
+      "rules.mak",
+      "pc-bios/optionrom",
+      "scripts/signrom.py",
+      "include/hw/nvram/fw_cfg_keys.h"
+    ]
+  },
+  "seabios": {
+    "url": "https://codeload.github.com/coreboot/seabios/tar.gz/b52ca86e094d19b58e2304417787e96b940e39c6",
+    "sha256": "8b7082d885be6f5e11fc6570c0913165649ddbec8aa9af254ab081735edca8e5",
+    "archive": "seabios-b52ca86e094d19b58e2304417787e96b940e39c6.tar.gz",
+    "directory": "seabios",
+    "tree_root": "seabios-b52ca86e094d19b58e2304417787e96b940e39c6",
+    "license": "LGPL-3.0-only for SeaBIOS, with source-specific GPL notices"
+  },
+  "ipxe": {
+    "url": "https://codeload.github.com/ipxe/ipxe/tar.gz/6ca597eee9f95b846a3c2dc1231e63cfc02272c1",
+    "sha256": "f90cc9024d90e3fcbd738a3a1904dd552f276fcc52d177ebdd4e78d17e5c5b44",
+    "archive": "ipxe-6ca597eee9f95b846a3c2dc1231e63cfc02272c1.tar.gz",
+    "directory": "ipxe",
+    "tree_root": "ipxe-6ca597eee9f95b846a3c2dc1231e63cfc02272c1",
+    "license": "GPL-2.0-or-later, UBDL and file-level terms"
+  },
+  "efirom-edk2": {
+    "url": "https://codeload.github.com/tianocore/edk2/tar.gz/2970e5699ba6267f3384ffab20f96647578aebc8",
+    "sha256": "d4956bf7c7dc65aec6c81e0e2346f8c49d196ba1ba1df62b79375467774c85ce",
+    "archive": "efirom-edk2-2970e5699ba6267f3384ffab20f96647578aebc8.tar.gz",
+    "directory": "efirom-edk2",
+    "tree_root": "edk2-2970e5699ba6267f3384ffab20f96647578aebc8",
+    "license": "BSD-2-Clause-Patent",
+    "members": [
+      "edk2-2970e5699ba6267f3384ffab20f96647578aebc8/BaseTools/Source/C",
+      "edk2-2970e5699ba6267f3384ffab20f96647578aebc8/MdePkg/Include",
+      "edk2-2970e5699ba6267f3384ffab20f96647578aebc8/License.txt"
+    ]
+  }
+}

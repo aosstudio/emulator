@@ -1,0 +1,16 @@
+Subject: Include the fixed-width integer declarations used by ShaderVars.h
+
+The AEMU translator includes this header before any C library header on
+some compilation paths. Declare the header's dependency explicitly.
+
+--- a/include/GLSLANG/ShaderVars.h
++++ b/include/GLSLANG/ShaderVars.h
+@@ -10,6 +10,8 @@
+ #ifndef GLSLANG_SHADERVARS_H_
+ #define GLSLANG_SHADERVARS_H_
+ 
++#include <stdint.h>
++
+ #include <algorithm>
+ #include <array>
+ #include <string>

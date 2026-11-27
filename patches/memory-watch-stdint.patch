@@ -1,0 +1,10 @@
+--- a/android/android-emu/android/snapshot/MemoryWatch.h
++++ b/android/android-emu/android/snapshot/MemoryWatch.h
+@@ -11,6 +11,7 @@
+ 
+ #pragma once
+ 
++#include <stdint.h>
+ #include <functional>
+ #include <memory>
+ 
