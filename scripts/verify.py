@@ -239,6 +239,9 @@ def boot(work: Path, emulator: Path, kernel_archive: Path) -> None:
         "/mnt/ramdisk.gz",
         "-qemu",
         "-no-reboot",
+        # Ubuntu also ships BusyBox built with x86-64-v3 instructions.
+        "-cpu",
+        "max",
         "-bios",
         "/mnt/sdk/emulator/lib/pc-bios/bios-256k.bin",
     ]
