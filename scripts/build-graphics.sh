@@ -51,12 +51,21 @@ case "$component" in
         fi
         ;;
     graphics-angle)
+        if [[ -n "${EMU_HOST_OVERLAY:-}" ]]; then
+            export CPATH="$EMU_HOST_OVERLAY/usr/include/x86_64-linux-gnu${CPATH:+:$CPATH}"
+            export LIBRARY_PATH="$EMU_HOST_OVERLAY/usr/lib/x86_64-linux-gnu${LIBRARY_PATH:+:$LIBRARY_PATH}"
+        fi
         if ! pkg-config --print-errors --exists glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0; then
             printf 'ANGLE requires the libglib2.0-dev package.\n' >&2
             exit 1
         fi
         if ! printf '#include <GL/glx.h>\n' | "$CXX" -x c++ -fsyntax-only -; then
             printf 'ANGLE requires the libgl-dev package and its libglx-dev dependency.\n' >&2
+            exit 1
+        fi
+        if ! printf 'int main() { return 0; }\n' | "$CXX" -x c++ - \
+            -latomic -ldl -lpthread -lrt -lX11 -lXi -lXext -lpci -lxcb -o "$work/angle-link-check"; then
+            printf 'ANGLE requires linkable X11, XInput, Xext, PCI and XCB development libraries.\n' >&2
             exit 1
         fi
         ;;
@@ -150,13 +159,7 @@ use_lld = false
 use_gold = false
 ARGS
         "$work/gn/gn" gen "$work/angle" --root="$src/angle"
-        (
-            if [[ -n "${EMU_HOST_OVERLAY:-}" ]]; then
-                export CPATH="$EMU_HOST_OVERLAY/usr/include/x86_64-linux-gnu${CPATH:+:$CPATH}"
-                export LIBRARY_PATH="$EMU_HOST_OVERLAY/usr/lib/x86_64-linux-gnu${LIBRARY_PATH:+:$LIBRARY_PATH}"
-            fi
-            ninja -C "$work/angle" -j "$jobs" libEGL.so libGLESv2.so libshadertranslator.so
-        )
+        ninja -C "$work/angle" -j "$jobs" libEGL.so libGLESv2.so libshadertranslator.so
         install -D -s -m 755 -t "$angle" "$work/angle"/lib{EGL,GLESv2,shadertranslator}.so
         ;;
     graphics-mesa)
