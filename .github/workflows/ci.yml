@@ -7,7 +7,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: read
   contents: read
 
 jobs:
@@ -30,12 +29,3 @@ jobs:
 
       - name: Check sources
         run: make check PYTHON=python
-
-      - name: Diagnose boot of the existing emulator build
-        if: github.event_name == 'workflow_dispatch'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh run download 45941587140 --repo "$GITHUB_REPOSITORY" --name aosstudio-emulator-linux-x86_64 --dir out/dist
-          sudo bash ci/host-deps.sh verify
-          make verify PYTHON=python
