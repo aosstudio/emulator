@@ -45,6 +45,10 @@ case "$component" in
             printf 'Mesa requires the libexpat1-dev and libxxf86vm-dev packages.\n' >&2
             exit 1
         fi
+        if ! /usr/bin/python3 -c 'import mako, packaging.version, yaml'; then
+            printf 'Mesa requires python3-mako, python3-packaging and python3-yaml for system Python.\n' >&2
+            exit 1
+        fi
         ;;
     graphics-angle)
         if ! pkg-config --print-errors --exists glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0; then
@@ -159,7 +163,10 @@ ARGS
         mkdir -p "$work/bin"
         ln -s /usr/bin/llvm-config-21 "$work/bin/llvm-config"
         export PATH="$work/bin:$PATH"
+        # Mesa's Python modules are installed for the Ubuntu interpreter.
+        printf "[binaries]\npython3 = '/usr/bin/python3'\n" > "$work/mesa-native.ini"
         meson setup "$work/mesa" "$src/mesa" --buildtype=release --wrap-mode=nodownload \
+            --native-file "$work/mesa-native.ini" \
             --prefix="$work/mesa-install" --libdir=lib \
             -Dplatforms=x11 -Dgallium-drivers=llvmpipe -Dvulkan-drivers=swrast \
             -Dllvm=enabled -Dshared-llvm=enabled -Dglvnd=disabled -Degl=enabled \
@@ -169,7 +176,7 @@ ARGS
         meson install -C "$work/mesa" --strip
         mesa_lib="$work/mesa-install/lib"
         llvmpipe="$common/gles_llvmpipe"
-        mkdir -p "$llvmpipe/dri" "$llvmpipe/gbm"
+        mkdir -p "$llvmpipe/dri" "$llvmpipe/gbm" "$vulkan/icds"
         install -m 755 "$mesa_lib"/lib{EGL,GLESv2,gbm,GL}.so "$mesa_lib"/libgallium-*.so "$llvmpipe/"
         install -m 755 "$mesa_lib/libGLESv1_CM.so" "$llvmpipe/libGLES_CM.so"
         install -m 755 "$mesa_lib"/dri/{kms_swrast_dri,swrast_dri,libdril_dri}.so "$llvmpipe/dri/"
