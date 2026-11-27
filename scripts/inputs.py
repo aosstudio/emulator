@@ -110,10 +110,35 @@ def fetch_all(downloads: list[tuple[Path, Input]]) -> None:
 
 def stage(component: str, destination: Path) -> None:
     inputs: dict[str, Input]
-    if component in {"graphics", "firmware"}:
-        inputs = json.loads(
-            (ROOT / f"locks/{component}.json").read_text(encoding="utf-8")
-        )
+    if component in {"graphics", "firmware"} or component.startswith("graphics-"):
+        lock = component.split("-", maxsplit=1)[0]
+        inputs = json.loads((ROOT / f"locks/{lock}.json").read_text(encoding="utf-8"))
+        if component.startswith("graphics-"):
+            source_roots = {
+                "graphics-angle": {"angle", "gn"},
+                "graphics-swiftshader-gles": {"swiftshader-gles"},
+                "graphics-swiftshader-vulkan": {"swiftshader-vulkan"},
+                "graphics-vulkan": {
+                    "loader",
+                    "loader-headers",
+                    "SPIRV-Headers",
+                    "SPIRV-Tools",
+                    "Vulkan-Headers",
+                    "Vulkan-Utility-Libraries",
+                    "Vulkan-ValidationLayers",
+                    "VulkanTools",
+                    "glslang",
+                    "jsoncpp",
+                    "robin-hood-hashing",
+                    "valijson",
+                },
+                "graphics-mesa": {"mesa"},
+            }[component]
+            inputs = {
+                name: entry
+                for name, entry in inputs.items()
+                if Path(entry["directory"]).parts[0] in source_roots
+            }
     else:
         records: dict[str, dict[str, Input]] = json.loads(
             (ROOT / "locks/sources.json").read_text(encoding="utf-8")

@@ -9,7 +9,7 @@ sudo bash ci/host-deps.sh qt
 make qt JOBS="$(nproc)"
 ```
 
-Repeat for `netsim`, `graphics` and `firmware`. Bring the four `out/components/*.tar.zst` archives into one checkout for assembly.
+Repeat for `netsim` and `firmware`. The graphics targets are `graphics-angle`, `graphics-swiftshader-gles`, `graphics-swiftshader-vulkan`, `graphics-vulkan`, and `graphics-mesa`. Run them in separate checkouts or install the graphics dependencies once with `sudo bash ci/host-deps.sh graphics` and build all five with `make graphics`. Bring the eight `out/components/*.tar.zst` archives into one checkout for assembly.
 
 ```bash
 sudo bash ci/host-deps.sh package

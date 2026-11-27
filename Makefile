@@ -2,7 +2,9 @@ PYTHON ?= python3
 JOBS ?= 8
 export PYTHON JOBS
 
-.PHONY: check build qt netsim graphics firmware package verify
+graphics_components := graphics-angle graphics-swiftshader-gles graphics-swiftshader-vulkan graphics-vulkan graphics-mesa
+
+.PHONY: check build qt netsim graphics $(graphics_components) firmware package verify
 
 check:
 	shellcheck ci/*.sh scripts/*.sh tests/init
@@ -13,7 +15,9 @@ check:
 build: qt netsim graphics firmware
 	$(MAKE) package
 
-qt netsim graphics firmware package:
+graphics: $(graphics_components)
+
+qt netsim $(graphics_components) firmware package:
 	bash scripts/component.sh $@
 
 verify:

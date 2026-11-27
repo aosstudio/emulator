@@ -16,7 +16,8 @@ host_lib=/usr/lib/x86_64-linux-gnu
 overlay=${EMU_HOST_OVERLAY:-}
 
 mkdir -p "$parts"
-for component in qt netsim graphics firmware; do
+for component in qt netsim firmware graphics-angle graphics-swiftshader-gles \
+    graphics-swiftshader-vulkan graphics-vulkan graphics-mesa; do
     archive="out/components/$component.tar.zst"
     test -s "$archive"
     tar --zstd -xf "$archive" -C "$parts"

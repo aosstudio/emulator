@@ -15,9 +15,9 @@ case "${1:?Supply a build target}" in
     netsim)
         packages+=(bubblewrap jq)
         ;;
-    graphics)
+    graphics | graphics-angle | graphics-swiftshader-gles | graphics-swiftshader-vulkan | graphics-vulkan | graphics-mesa)
         packages+=(bison build-essential clang-21 cmake flex git glslang-tools
-            libdrm-dev libelf-dev libexpat1-dev libglib2.0-dev libpci-dev libunwind-dev
+            libdrm-dev libelf-dev libexpat1-dev libgl-dev libglib2.0-dev libpci-dev libunwind-dev
             libvulkan-dev libwayland-dev libx11-xcb-dev libxcb-dri3-dev libxcb-glx0-dev
             libxcb-present-dev libxcb-randr0-dev libxcb-shm0-dev libxfixes-dev
             libxrandr-dev libxshmfence-dev libxxf86vm-dev
